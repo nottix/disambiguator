@@ -14,7 +14,7 @@ public class DBUtil{
 		try{
 			
 		
-		File ff = new File(System.getProperty("user.dir")+"../conf/sql-ds.properties");
+		File ff = new File(System.getProperty("user.dir")+"/conf/sql-ds.properties");
 		
 		FileInputStream f;
 		f = new FileInputStream (ff);
