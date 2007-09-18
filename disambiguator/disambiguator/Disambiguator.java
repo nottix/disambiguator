@@ -200,6 +200,7 @@ public class Disambiguator extends DependencyProcessor {
 	public static void main(String[] args) {
 		try {
 			Disambiguator disamb = new Disambiguator();
+			System.out.println(System.getenv("CHAOS_HOME"));
 			Text t = dbClass.load_new(new File("C:\\ChaosParser\\Chaos\\treebank2000gold-CONLL_ORG_UTF8_0.coln.xml"));
 			//t.save(new File("C:\\ChaosParser\\Chaos2\\treebank2000gold-CONLL_ORG_UTF8_0.coln_test.xml"), AvailableOutputFormat.valueOf("xml"), true);
 			/*FileOutputStream out = new FileOutputStream(new File("C:\\ChaosParser\\Chaos2\\treebank2000gold-CONLL_ORG_UTF8_0_test.coln.xml"));

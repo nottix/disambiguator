@@ -4,7 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/chaos.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/avenger/ChaosParser/lib"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="$CHAOS_HOME/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.6-bin.jar"/>
