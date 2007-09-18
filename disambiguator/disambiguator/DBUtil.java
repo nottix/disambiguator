@@ -1,4 +1,4 @@
-package dis;
+package disambiguator;
 
 import java.io.*;
 import java.sql.*;
@@ -14,7 +14,7 @@ public class DBUtil{
 		try{
 			
 		
-		File ff = new File(System.getProperty("user.dir")+"/driver/conf/sql-ds.properties");
+		File ff = new File(System.getProperty("user.dir")+"../conf/sql-ds.properties");
 		
 		FileInputStream f;
 		f = new FileInputStream (ff);
