@@ -1,9 +1,9 @@
-package dis;
+package disambiguator;
 
 import chaos.XDG.*;
 import chaos.processors.*;
 import chaos.textstructure.*;
-import chaos.alternatives.*;
+//import chaos.alternatives.*;
 import java.io.*;
 import java.util.*;
 import java.net.*;
@@ -124,7 +124,7 @@ public class Disambiguator extends DependencyProcessor {
 	
 	/**
 	 * @param data: Lista di coppie di costituenti da ricercare nel Corpus
-	 * @return Lista contenente la coppia di costituenti più frequente nel Corpus
+	 * @return Lista contenente la coppia di costituenti piï¿½ frequente nel Corpus
 	 */
 	public ArrayList getMoreFrequent(ArrayList data) {
 		System.out.println("DATA: "+data.size());
