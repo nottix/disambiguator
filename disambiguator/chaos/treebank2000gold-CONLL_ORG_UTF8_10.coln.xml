@@ -1,0 +1,1222 @@
+<TEXT language="it">
+<PP ID='0'><P>L&#39; Irs ha stimato un aumento tendenziale dello dello 0,2 % della della produzione media giornaliera ;</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='L&#39;' T='ARS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='L&#39;' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='Irs' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;irs&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='Irs' SS='3' SE='5' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='VerFin' MF='.mas.fem.plur.sing' head='3' potgov='4'><CSTS><SIMPLE_CONST ID='3' S='ha' T='VFT' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='avere' T='v.tran.aus' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='ha' SS='7' SE='8' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='stimato' T='VNP' MF='sing.part.pass.mas'><ALTER_LEMMAS><LEMMA ID='0' S='stimare' T='v.tran.sempl' MF='sing.part.pass.mas'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='stimato' SS='10' SE='16' POS='4'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Nom' MF='.mas.fem.plur.sing' head='5' potgov='6'><CSTS><SIMPLE_CONST ID='5' S='un' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='un' SS='18' SE='19' POS='5'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='6' S='aumento' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='aumento' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='aumento' SS='21' SE='27' POS='6'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Agg' MF='.mas.fem.plur.sing' head='7' potgov='7'><CSTS><SIMPLE_CONST ID='7' S='tendenziale' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='tendenziale' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='tendenziale' SS='29' SE='39' POS='7'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='?' MF='.mas.fem.plur.sing' head='8' potgov='8'><CSTS><SIMPLE_CONST ID='8' S='dello' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='dello' SS='41' SE='45' POS='8'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='?' MF='.mas.fem.plur.sing' head='9' potgov='9'><CSTS><SIMPLE_CONST ID='9' S='dello' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='dello' SS='47' SE='51' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Agg' MF='.mas.fem.plur.sing' head='10' potgov='10'><CSTS><SIMPLE_CONST ID='10' S='0,2' T='AGV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;0,2&#62;' T='agg.num_card' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='0,2' SS='53' SE='55' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='?' MF='.mas.fem.plur.sing' head='11' potgov='11'><CSTS><SIMPLE_CONST ID='11' S='%' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='%' T='special' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='%' SS='57' SE='57' POS='11'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='Prep' MF='.mas.fem.plur.sing' head='12' potgov='14'><CSTS><SIMPLE_CONST ID='12' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='della' SS='59' SE='63' POS='12'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='13' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='della' SS='65' SE='69' POS='13'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='14' S='produzione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='produzione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='produzione' SS='71' SE='80' POS='14'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='Agg' MF='.mas.fem.plur.sing' head='15' potgov='15'><CSTS><SIMPLE_CONST ID='15' S='media' T='AGS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='medio' T='agg.qualif' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='media' SS='82' SE='86' POS='15'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='Agg' MF='.mas.fem.plur.sing' head='16' potgov='16'><CSTS><SIMPLE_CONST ID='16' S='giornaliera' T='AGS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='giornaliero' T='agg.qualif' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='giornaliera' SS='88' SE='98' POS='16'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='?' MF='.mas.fem.plur.sing' head='17' potgov='17'><CSTS><SIMPLE_CONST ID='17' S=';' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=';' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S=';' SS='100' SE='100' POS='17'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='0' TO='2' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='3' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='3' TO='4' T='NP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='3' TO='9' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='9' TO='10' T='PP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='9' TO='11' T='PP_Adj' PLAUS='1.0'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='1'><P>rispetto a gennaio _ attesa una flessione dello dello 0,4 per cento .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Prep' MF='.mas.fem.plur.sing' head='2' potgov='3'><CSTS><COMPLEX_CONST ID='2' T='PSE' MF='.invariante' head='1' potgov='1'><CSTS><SIMPLE_CONST ID='1' S='rispetto' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='rispetto' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='rispetto' SS='0' SE='7' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='a' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='a' SS='9' SE='9' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<SIMPLE_CONST ID='3' S='gennaio' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='gennaio' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='gennaio' SS='11' SE='17' POS='3'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='VerFin' MF='.mas.fem.plur.sing' head='4' potgov='5'><CSTS><SIMPLE_CONST ID='4' S='_' T='VFI' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='_' SS='19' SE='19' POS='4'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='5' S='attesa' T='VNP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='attendere' T='v.tran.sempl' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='attesa' SS='21' SE='26' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Nom' MF='.mas.fem.plur.sing' head='6' potgov='7'><CSTS><SIMPLE_CONST ID='6' S='una' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='una' SS='28' SE='30' POS='6'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='7' S='flessione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='flessione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='flessione' SS='32' SE='40' POS='7'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='?' MF='.mas.fem.plur.sing' head='8' potgov='8'><CSTS><SIMPLE_CONST ID='8' S='dello' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='dello' SS='42' SE='46' POS='8'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='?' MF='.mas.fem.plur.sing' head='9' potgov='9'><CSTS><SIMPLE_CONST ID='9' S='dello' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='dello' SS='48' SE='52' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='Agg' MF='.mas.fem.plur.sing' head='10' potgov='10'><CSTS><SIMPLE_CONST ID='10' S='0,4' T='AGV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;0,4&#62;' T='agg.num_card' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='0,4' SS='54' SE='56' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Prep' MF='.mas.fem.plur.sing' head='11' potgov='12'><CSTS><SIMPLE_CONST ID='11' S='per' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='per' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='per' SS='58' SE='60' POS='11'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='12' S='cento' T='AGV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='cento' T='agg.num_card' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='cento' SS='62' SE='66' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='punt' MF='' head='13' potgov='13'><CSTS><SIMPLE_CONST ID='13' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='.' SS='68' SE='68' POS='13'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='0' TO='2' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='3' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='1' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='6' TO='7' T='Adj_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='3' TO='7' T='NP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='2' TO='7' T='V_PP' PLAUS='0.33333334'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='2'><P>Si ferma intanto la ripresina d&#39; autunno della della chimica .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='1'><CSTS><SIMPLE_CONST ID='1' S='Si' T='PR' MF='3.mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='si' T='pron.refl_impers' MF='3.mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='Si' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='VerFin' MF='.mas.fem.plur.sing' head='2' potgov='2'><CSTS><SIMPLE_CONST ID='2' S='ferma' T='VFT' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='fermare' T='v.tran.sempl' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='ferma' SS='3' SE='7' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Avv' MF='.mas.fem.plur.sing' head='3' potgov='3'><CSTS><SIMPLE_CONST ID='3' S='intanto' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='intanto' T='avv.tempo' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='intanto' SS='9' SE='15' POS='3'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Nom' MF='.mas.fem.plur.sing' head='4' potgov='5'><CSTS><SIMPLE_CONST ID='4' S='la' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='la' SS='17' SE='18' POS='4'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='5' S='ripresina' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='ripresa' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='ripresina' SS='20' SE='28' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Prep' MF='.mas.fem.plur.sing' head='6' potgov='7'><CSTS><SIMPLE_CONST ID='6' S='d&#39;' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='d&#39;' SS='30' SE='31' POS='6'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='7' S='autunno' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='autunno' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='autunno' SS='33' SE='39' POS='7'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='Prep' MF='.mas.fem.plur.sing' head='8' potgov='10'><CSTS><SIMPLE_CONST ID='8' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='della' SS='41' SE='45' POS='8'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='9' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='della' SS='47' SE='51' POS='9'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='10' S='chimica' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='chimico' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='chimica' SS='53' SE='59' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='punt' MF='' head='11' potgov='11'><CSTS><SIMPLE_CONST ID='11' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='.' SS='61' SE='61' POS='11'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='0' TO='2' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='4' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='3' T='V_Adv' PLAUS='1.0'></ICD>
+<ICD FROM='4' TO='5' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='5' TO='6' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='4' TO='6' T='NP_PP' PLAUS='0.5'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='3'><P>OTTIMISMO ALLA ALLA WTO , dove l&#39; importante intesa sulla sulla liberalizzazione del del mercato mondiale delle delle telecomunicazioni , un affare da 600 miliardi di dollari l&#39; anno , sembra ormai raggiunta .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='1'><CSTS><SIMPLE_CONST ID='1' S='OTTIMISMO' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='ottimismo' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='OTTIMISMO' SS='0' SE='8' POS='1'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Prep' MF='.mas.fem.plur.sing' head='2' potgov='4'><CSTS><SIMPLE_CONST ID='2' S='ALLA' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='ALLA' SS='10' SE='13' POS='2'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='3' S='ALLA' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='ALLA' SS='15' SE='18' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='WTO' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='wto' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='WTO' SS='20' SE='22' POS='4'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='?' MF='.mas.fem.plur.sing' head='5' potgov='5'><CSTS><SIMPLE_CONST ID='5' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S=',' SS='24' SE='24' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='NomRel' MF='.mas.fem.plur.sing' head='6' potgov='6'><CSTS><SIMPLE_CONST ID='6' S='dove' T='PRR' MF=''><ALTER_LEMMAS><LEMMA ID='0' S='dove' T='pron.relat' MF=''></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='dove' SS='26' SE='29' POS='6'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Nom' MF='.mas.fem.plur.sing' head='7' potgov='9'><CSTS><SIMPLE_CONST ID='7' S='l&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='l&#39;' SS='31' SE='32' POS='7'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='8' S='importante' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='importante' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='importante' SS='34' SE='43' POS='8'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='9' S='intesa' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='intesa' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='intesa' SS='45' SE='50' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='Prep' MF='.mas.fem.plur.sing' head='10' potgov='12'><CSTS><SIMPLE_CONST ID='10' S='sulla' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='su' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='sulla' SS='52' SE='56' POS='10'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='11' S='sulla' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='sulla' SS='58' SE='62' POS='11'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='12' S='liberalizzazione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='liberalizzazione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='liberalizzazione' SS='64' SE='79' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Prep' MF='.mas.fem.plur.sing' head='13' potgov='15'><CSTS><SIMPLE_CONST ID='13' S='del' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='del' SS='81' SE='83' POS='13'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='14' S='del' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='del' SS='85' SE='87' POS='14'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='15' S='mercato' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='mercato' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='mercato' SS='89' SE='95' POS='15'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='Agg' MF='.mas.fem.plur.sing' head='16' potgov='16'><CSTS><SIMPLE_CONST ID='16' S='mondiale' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='mondiale' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='mondiale' SS='97' SE='104' POS='16'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='Prep' MF='.mas.fem.plur.sing' head='17' potgov='19'><CSTS><SIMPLE_CONST ID='17' S='delle' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='delle' SS='106' SE='110' POS='17'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='18' S='delle' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='delle' SS='112' SE='116' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='telecomunicazioni' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='telecomunicazione' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='telecomunicazioni' SS='118' SE='134' POS='19'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='?' MF='.mas.fem.plur.sing' head='20' potgov='20'><CSTS><SIMPLE_CONST ID='20' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S=',' SS='136' SE='136' POS='20'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='Nom' MF='.mas.fem.plur.sing' head='21' potgov='22'><CSTS><SIMPLE_CONST ID='21' S='un' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='un' SS='138' SE='139' POS='21'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='22' S='affare' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='affare' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='21' S='affare' SS='141' SE='146' POS='22'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='Prep' MF='.mas.fem.plur.sing' head='23' potgov='25'><CSTS><SIMPLE_CONST ID='23' S='da' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='da' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='22' S='da' SS='148' SE='149' POS='23'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='24' S='600' T='AGV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;600&#62;' T='agg.num_card' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='23' S='600' SS='151' SE='153' POS='24'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='25' S='miliardi' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='miliardo' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='24' S='miliardi' SS='155' SE='162' POS='25'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='Prep' MF='.mas.fem.plur.sing' head='26' potgov='27'><CSTS><SIMPLE_CONST ID='26' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='25' S='di' SS='164' SE='165' POS='26'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='27' S='dollari' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='dollaro' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='26' S='dollari' SS='167' SE='173' POS='27'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='14' T='Nom' MF='.mas.fem.plur.sing' head='28' potgov='29'><CSTS><SIMPLE_CONST ID='28' S='l&#39;' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='27' S='l&#39;' SS='175' SE='176' POS='28'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='29' S='anno' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='anno' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='28' S='anno' SS='178' SE='181' POS='29'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='15' T='?' MF='.mas.fem.plur.sing' head='30' potgov='30'><CSTS><SIMPLE_CONST ID='30' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='29' S=',' SS='183' SE='183' POS='30'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='16' T='VerFin' MF='.mas.fem.plur.sing' head='31' potgov='31'><CSTS><SIMPLE_CONST ID='31' S='sembra' T='VFT' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='sembrare' T='v.tran.sempl' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='30' S='sembra' SS='185' SE='190' POS='31'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='17' T='Avv' MF='.mas.fem.plur.sing' head='32' potgov='32'><CSTS><SIMPLE_CONST ID='32' S='ormai' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='ormai' T='avv.tempo' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='31' S='ormai' SS='192' SE='196' POS='32'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='18' T='VerPart' MF='.mas.fem.plur.sing' head='33' potgov='33'><CSTS><SIMPLE_CONST ID='33' S='raggiunta' T='VNP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='raggiungere' T='v.tran.sempl' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='32' S='raggiunta' SS='198' SE='206' POS='33'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='19' T='punt' MF='' head='34' potgov='34'><CSTS><SIMPLE_CONST ID='34' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='33' S='.' SS='208' SE='208' POS='34'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='16' TO='4' T='V_PrRel' PLAUS='1.0'></ICD>
+<ICD FROM='16' TO='5' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='2' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='16' TO='6' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='5' TO='6' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='6' TO='7' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='5' TO='7' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='8' TO='9' T='Adj_PP' PLAUS='0.25'></ICD>
+<ICD FROM='7' TO='9' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='6' TO='9' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='5' TO='9' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='16' TO='12' T='V_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='11' TO='12' T='NP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='9' TO='12' T='PP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='7' TO='12' T='PP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='6' TO='12' T='PP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='5' TO='12' T='NP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='12' TO='13' T='PP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='11' TO='13' T='NP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='9' TO='13' T='PP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='7' TO='13' T='PP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='6' TO='13' T='PP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='5' TO='13' T='NP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='7' TO='8' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='6' TO='8' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='18' TO='17' T='V_Adv' PLAUS='0.5'></ICD>
+<ICD FROM='16' TO='17' T='V_Adv' PLAUS='0.5'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='4'><P>L&#39; annuncio _ atteso per oggi .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='L&#39;' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='L&#39;' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='annuncio' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='annuncio' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='annuncio' SS='3' SE='10' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='VerFin' MF='.mas.fem.plur.sing' head='3' potgov='4'><CSTS><SIMPLE_CONST ID='3' S='_' T='VFI' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='_' SS='12' SE='12' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='atteso' T='VNP' MF='sing.part.pass.mas'><ALTER_LEMMAS><LEMMA ID='0' S='attendere' T='v.tran.sempl' MF='sing.part.pass.mas'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='atteso' SS='14' SE='19' POS='4'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='?' MF='.mas.fem.plur.sing' head='5' potgov='5'><CSTS><SIMPLE_CONST ID='5' S='per' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='per' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='per' SS='21' SE='23' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Avv' MF='.mas.fem.plur.sing' head='6' potgov='6'><CSTS><SIMPLE_CONST ID='6' S='oggi' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='oggi' T='avv.tempo' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='oggi' SS='25' SE='28' POS='6'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='punt' MF='' head='7' potgov='7'><CSTS><SIMPLE_CONST ID='7' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='.' SS='30' SE='30' POS='7'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='0' TO='2' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='4' T='V_Adv' PLAUS='1.0'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='5'><P>UNA BRIGATA congiunta italo - sloveno - ungherese sara&#39; costituita per favorire l&#39; armonizzazione degli degli standard operativi di difesa .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='UNA' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='UNA' SS='0' SE='2' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='BRIGATA' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='brigata' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='BRIGATA' SS='4' SE='10' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Agg' MF='.mas.fem.plur.sing' head='3' potgov='3'><CSTS><SIMPLE_CONST ID='3' S='congiunta' T='AGS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='congiunto' T='agg.qualif' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='congiunta' SS='12' SE='20' POS='3'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Agg' MF='.mas.fem.plur.sing' head='4' potgov='4'><CSTS><SIMPLE_CONST ID='4' S='italo' T='AGP' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='italo' T='agg.qualif' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='italo' SS='22' SE='26' POS='4'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='?' MF='.mas.fem.plur.sing' head='5' potgov='5'><CSTS><SIMPLE_CONST ID='5' S='-' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='-' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='-' SS='28' SE='28' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Agg' MF='.mas.fem.plur.sing' head='6' potgov='6'><CSTS><SIMPLE_CONST ID='6' S='sloveno' T='AGS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='sloveno' T='agg.qualif' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='sloveno' SS='30' SE='36' POS='6'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='?' MF='.mas.fem.plur.sing' head='7' potgov='7'><CSTS><SIMPLE_CONST ID='7' S='-' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='-' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='-' SS='38' SE='38' POS='7'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Agg' MF='.mas.fem.plur.sing' head='8' potgov='8'><CSTS><SIMPLE_CONST ID='8' S='ungherese' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='ungherese' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='ungherese' SS='40' SE='48' POS='8'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='VerFin' MF='.mas.fem.plur.sing' head='9' potgov='10'><CSTS><SIMPLE_CONST ID='9' S='sara&#39;' T='VFI' MF='3.sing.ind.fut_semp'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='3.sing.ind.fut_semp'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='sara&#39;' SS='50' SE='54' POS='9'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='10' S='costituita' T='VNP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='costituire' T='v.tran.sempl' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='costituita' SS='56' SE='65' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='VerInf' MF='.mas.fem.plur.sing' head='11' potgov='12'><CSTS><SIMPLE_CONST ID='11' S='per' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='per' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='per' SS='67' SE='69' POS='11'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='12' S='favorire' T='VNT' MF='inf.pres'><ALTER_LEMMAS><LEMMA ID='0' S='favorire' T='v.tran.sempl' MF='inf.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='favorire' SS='71' SE='78' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='Nom' MF='.mas.fem.plur.sing' head='13' potgov='14'><CSTS><SIMPLE_CONST ID='13' S='l&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='l&#39;' SS='80' SE='81' POS='13'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='14' S='armonizzazione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='armonizzazione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='armonizzazione' SS='83' SE='96' POS='14'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='Prep' MF='.mas.fem.plur.sing' head='15' potgov='17'><CSTS><SIMPLE_CONST ID='15' S='degli' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='degli' SS='98' SE='102' POS='15'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='16' S='degli' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='degli' SS='104' SE='108' POS='16'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='17' S='standard' T='NCP' MF='mas.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='standard' T='nome.comune' MF='mas.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='standard' SS='110' SE='117' POS='17'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='Agg' MF='.mas.fem.plur.sing' head='18' potgov='18'><CSTS><SIMPLE_CONST ID='18' S='operativi' T='AGP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='operativo' T='agg.qualif' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='operativi' SS='119' SE='127' POS='18'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='Prep' MF='.mas.fem.plur.sing' head='19' potgov='20'><CSTS><SIMPLE_CONST ID='19' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='di' SS='129' SE='130' POS='19'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='20' S='difesa' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='difesa' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='difesa' SS='132' SE='137' POS='20'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='14' T='punt' MF='' head='21' potgov='21'><CSTS><SIMPLE_CONST ID='21' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='.' SS='139' SE='139' POS='21'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='9' TO='10' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='0' TO='8' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='8' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='2' T='NP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='3' T='NP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='8' TO='9' T='Sub' PLAUS='1.0'></ICD>
+<ICD FROM='10' TO='11' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='11' TO='12' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='10' TO='12' T='NP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='12' TO='13' T='Adj_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='11' TO='13' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='10' TO='13' T='NP_PP' PLAUS='0.33333334'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='6'><P>L&#39; idea _ emersa nella nella riunione alla alla Farnesina dei dei sottosegretari degli degli Esteri della della Trilaterale .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='L&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='L&#39;' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='idea' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='idea' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='idea' SS='3' SE='6' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='VerFin' MF='.mas.fem.plur.sing' head='3' potgov='4'><CSTS><SIMPLE_CONST ID='3' S='_' T='VFI' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='_' SS='8' SE='8' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='emersa' T='VIP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='emergere' T='v.intran.sempl' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='emersa' SS='10' SE='15' POS='4'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Prep' MF='.mas.fem.plur.sing' head='5' potgov='7'><CSTS><SIMPLE_CONST ID='5' S='nella' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='nella' SS='17' SE='21' POS='5'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='6' S='nella' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='nella' SS='23' SE='27' POS='6'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='7' S='riunione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='riunione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='riunione' SS='29' SE='36' POS='7'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Prep' MF='.mas.fem.plur.sing' head='8' potgov='10'><CSTS><SIMPLE_CONST ID='8' S='alla' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='alla' SS='38' SE='41' POS='8'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='9' S='alla' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='alla' SS='43' SE='46' POS='9'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='10' S='Farnesina' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;farnesina&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='Farnesina' SS='48' SE='56' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Prep' MF='.mas.fem.plur.sing' head='11' potgov='13'><CSTS><SIMPLE_CONST ID='11' S='dei' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='dei' SS='58' SE='60' POS='11'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='12' S='dei' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='dei' SS='62' SE='64' POS='12'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='13' S='sottosegretari' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='sottosegretario' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='sottosegretari' SS='66' SE='79' POS='13'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='Prep' MF='.mas.fem.plur.sing' head='14' potgov='16'><CSTS><SIMPLE_CONST ID='14' S='degli' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='degli' SS='81' SE='85' POS='14'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='15' S='degli' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='degli' SS='87' SE='91' POS='15'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='16' S='Esteri' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='estero' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='Esteri' SS='93' SE='98' POS='16'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Prep' MF='.mas.fem.plur.sing' head='17' potgov='19'><CSTS><SIMPLE_CONST ID='17' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='della' SS='100' SE='104' POS='17'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='18' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='della' SS='106' SE='110' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='Trilaterale' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;trilaterale&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='Trilaterale' SS='112' SE='122' POS='19'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='punt' MF='' head='20' potgov='20'><CSTS><SIMPLE_CONST ID='20' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='.' SS='124' SE='124' POS='20'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='0' TO='2' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='3' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='3' TO='4' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='2' TO='4' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='4' TO='5' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='3' TO='5' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='5' TO='6' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='4' TO='6' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='3' TO='6' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='6' TO='7' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='5' TO='7' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='4' TO='7' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='3' TO='7' T='PP_PP' PLAUS='0.25'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='7'><P>IL PRESIDENTE DELLA DELLA CONSULTA Renato Granata ha difeso ieri , nell&#39; nell&#39; annuale conferenza stampa della della Corte , le sentenze sui sui referendum , che non sono state frutto di scelte politiche ne&#39; di pressioni .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='IL' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='IL' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='PRESIDENTE' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='presidente' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='PRESIDENTE' SS='3' SE='12' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Prep' MF='.mas.fem.plur.sing' head='3' potgov='5'><CSTS><SIMPLE_CONST ID='3' S='DELLA' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='DELLA' SS='14' SE='18' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='DELLA' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='DELLA' SS='20' SE='24' POS='4'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='5' S='CONSULTA' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='consulta' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='CONSULTA' SS='26' SE='33' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Nom' MF='.mas.fem.plur.sing' head='7' potgov='7'><CSTS><COMPLEX_CONST ID='7' T='NPR' MF='.mas.fem.plur.sing' head='6' potgov='6'><CSTS><SIMPLE_CONST ID='6' S='Renato' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;renato&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='Renato' SS='35' SE='40' POS='6'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='7' S='Granata' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;granata&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='Granata' SS='42' SE='48' POS='7'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='VerFin' MF='.mas.fem.plur.sing' head='8' potgov='9'><CSTS><SIMPLE_CONST ID='8' S='ha' T='VFT' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='avere' T='v.tran.aus' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='ha' SS='50' SE='51' POS='8'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='9' S='difeso' T='VNP' MF='sing.part.pass.mas'><ALTER_LEMMAS><LEMMA ID='0' S='difendere' T='v.tran.sempl' MF='sing.part.pass.mas'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='difeso' SS='53' SE='58' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Avv' MF='.mas.fem.plur.sing' head='10' potgov='10'><CSTS><SIMPLE_CONST ID='10' S='ieri' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='ieri' T='avv.tempo' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='ieri' SS='60' SE='63' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='?' MF='.mas.fem.plur.sing' head='11' potgov='11'><CSTS><SIMPLE_CONST ID='11' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S=',' SS='65' SE='65' POS='11'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Prep' MF='.mas.fem.plur.sing' head='12' potgov='16'><CSTS><SIMPLE_CONST ID='12' S='nell&#39;' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='nell&#39;' SS='67' SE='71' POS='12'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='13' S='nell&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='nell&#39;' SS='73' SE='77' POS='13'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='14' S='annuale' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='annuale' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='annuale' SS='79' SE='85' POS='14'/></SPAN></SIMPLE_CONST>
+<COMPLEX_CONST ID='16' T='NCP' MF='.mas.fem.plur.sing' head='15' potgov='15'><CSTS><SIMPLE_CONST ID='15' S='conferenza' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='conferenza@stampa' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='conferenza' SS='87' SE='96' POS='15'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='16' S='stampa' T='NCP' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='conferenza@stampa' T='nome.comune' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='stampa' SS='98' SE='103' POS='16'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='Prep' MF='.mas.fem.plur.sing' head='17' potgov='19'><CSTS><SIMPLE_CONST ID='17' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='della' SS='105' SE='109' POS='17'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='18' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='della' SS='111' SE='115' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='Corte' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='corte' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='Corte' SS='117' SE='121' POS='19'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='?' MF='.mas.fem.plur.sing' head='20' potgov='20'><CSTS><SIMPLE_CONST ID='20' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S=',' SS='123' SE='123' POS='20'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='Nom' MF='.mas.fem.plur.sing' head='21' potgov='22'><CSTS><SIMPLE_CONST ID='21' S='le' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='le' SS='125' SE='126' POS='21'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='22' S='sentenze' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='sentenza' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='21' S='sentenze' SS='128' SE='135' POS='22'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='Prep' MF='.mas.fem.plur.sing' head='23' potgov='25'><CSTS><SIMPLE_CONST ID='23' S='sui' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='su' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='22' S='sui' SS='137' SE='139' POS='23'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='24' S='sui' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='23' S='sui' SS='141' SE='143' POS='24'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='25' S='referendum' T='NCP' MF='mas.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='referendum' T='nome.comune' MF='mas.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='24' S='referendum' SS='145' SE='154' POS='25'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='?' MF='.mas.fem.plur.sing' head='26' potgov='26'><CSTS><SIMPLE_CONST ID='26' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='25' S=',' SS='156' SE='156' POS='26'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='NomRel' MF='.mas.fem.plur.sing' head='27' potgov='27'><CSTS><SIMPLE_CONST ID='27' S='che' T='PRR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='che' T='pron.relat' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='26' S='che' SS='158' SE='160' POS='27'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='14' T='Avv' MF='.mas.fem.plur.sing' head='28' potgov='28'><CSTS><SIMPLE_CONST ID='28' S='non' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='non' T='avv.neg' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='27' S='non' SS='162' SE='164' POS='28'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='15' T='VerFin' MF='.mas.fem.plur.sing' head='29' potgov='30'><CSTS><SIMPLE_CONST ID='29' S='sono' T='VFI' MF='3.plur.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='3.plur.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='28' S='sono' SS='166' SE='169' POS='29'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='30' S='state' T='VIP' MF='plur.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.sempl' MF='plur.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='29' S='state' SS='171' SE='175' POS='30'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='16' T='Nom' MF='.mas.fem.plur.sing' head='31' potgov='31'><CSTS><SIMPLE_CONST ID='31' S='frutto' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='frutto' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='30' S='frutto' SS='177' SE='182' POS='31'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='17' T='Prep' MF='.mas.fem.plur.sing' head='32' potgov='33'><CSTS><SIMPLE_CONST ID='32' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='31' S='di' SS='184' SE='185' POS='32'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='33' S='scelte' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='scelta' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='32' S='scelte' SS='187' SE='192' POS='33'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='18' T='Agg' MF='.mas.fem.plur.sing' head='34' potgov='34'><CSTS><SIMPLE_CONST ID='34' S='politiche' T='AGP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='politico' T='agg.qualif' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='33' S='politiche' SS='194' SE='202' POS='34'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='19' T='CongCo' MF='.mas.fem.plur.sing' head='35' potgov='35'><CSTS><SIMPLE_CONST ID='35' S='ne&#39;' T='CO' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;ne&#39;&#62;' T='cong.coord' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='34' S='ne&#39;' SS='204' SE='206' POS='35'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='20' T='Prep' MF='.mas.fem.plur.sing' head='36' potgov='37'><CSTS><SIMPLE_CONST ID='36' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='35' S='di' SS='208' SE='209' POS='36'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='37' S='pressioni' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='pressione' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='36' S='pressioni' SS='211' SE='219' POS='37'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='21' T='punt' MF='' head='38' potgov='38'><CSTS><SIMPLE_CONST ID='38' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='37' S='.' SS='221' SE='221' POS='38'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='15' TO='13' T='V_PrRel' PLAUS='1.0'></ICD>
+<ICD FROM='0' TO='4' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='4' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='4' TO='10' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='2' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='4' TO='5' T='V_Adv' PLAUS='1.0'></ICD>
+<ICD FROM='4' TO='7' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='10' TO='11' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='4' TO='11' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='15' TO='16' T='V_NP' PLAUS='0.5'></ICD>
+<ICD FROM='4' TO='16' T='V_NP' PLAUS='0.5'></ICD>
+<ICD FROM='7' TO='8' T='PP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='15' TO='14' T='V_Adv' PLAUS='1.0'></ICD>
+<ICD FROM='16' TO='17' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='17' TO='18' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='16' TO='18' T='NP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='19' TO='20' T='COORD' PLAUS='0.5'></ICD>
+<ICD FROM='16' TO='20' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='18' TO='19' T='COORD2' PLAUS='1.0'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='8'><P>CHIESTE IN ALBANIA LE DIMISSIONI del del Governo Meksi incapace di fronteggiare la protesta per lo scandalo delle delle finanziarie pirata .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='VerPart' MF='.mas.fem.plur.sing' head='1' potgov='1'><CSTS><SIMPLE_CONST ID='1' S='CHIESTE' T='VNP' MF='plur.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='chiedere' T='v.tran.sempl' MF='plur.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='CHIESTE' SS='0' SE='6' POS='1'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Prep' MF='.mas.fem.plur.sing' head='2' potgov='3'><CSTS><SIMPLE_CONST ID='2' S='IN' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='IN' SS='8' SE='9' POS='2'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='3' S='ALBANIA' T='NPR' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='albania' T='nome.proprio' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='ALBANIA' SS='11' SE='17' POS='3'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Nom' MF='.mas.fem.plur.sing' head='4' potgov='5'><CSTS><SIMPLE_CONST ID='4' S='LE' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='LE' SS='19' SE='20' POS='4'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='5' S='DIMISSIONI' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='dimissione' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='DIMISSIONI' SS='22' SE='31' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Prep' MF='.mas.fem.plur.sing' head='6' potgov='8'><CSTS><SIMPLE_CONST ID='6' S='del' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='del' SS='33' SE='35' POS='6'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='7' S='del' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='del' SS='37' SE='39' POS='7'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='8' S='Governo' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='governo' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='Governo' SS='41' SE='47' POS='8'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Nom' MF='.mas.fem.plur.sing' head='9' potgov='9'><CSTS><SIMPLE_CONST ID='9' S='Meksi' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;meksi&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='Meksi' SS='49' SE='53' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='Agg' MF='.mas.fem.plur.sing' head='10' potgov='10'><CSTS><SIMPLE_CONST ID='10' S='incapace' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='incapace' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='incapace' SS='55' SE='62' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='VerInf' MF='.mas.fem.plur.sing' head='11' potgov='12'><CSTS><SIMPLE_CONST ID='11' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='di' SS='64' SE='65' POS='11'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='12' S='fronteggiare' T='VNT' MF='inf.pres'><ALTER_LEMMAS><LEMMA ID='0' S='fronteggiare' T='v.tran.sempl' MF='inf.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='fronteggiare' SS='67' SE='78' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='Nom' MF='.mas.fem.plur.sing' head='13' potgov='14'><CSTS><SIMPLE_CONST ID='13' S='la' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='la' SS='80' SE='81' POS='13'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='14' S='protesta' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='protesta' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='protesta' SS='83' SE='90' POS='14'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='Prep' MF='.mas.fem.plur.sing' head='15' potgov='17'><CSTS><SIMPLE_CONST ID='15' S='per' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='per' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='per' SS='92' SE='94' POS='15'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='16' S='lo' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='lo' SS='96' SE='97' POS='16'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='17' S='scandalo' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='scandalo' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='scandalo' SS='99' SE='106' POS='17'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='Prep' MF='.mas.fem.plur.sing' head='18' potgov='20'><CSTS><SIMPLE_CONST ID='18' S='delle' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='delle' SS='108' SE='112' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='delle' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='delle' SS='114' SE='118' POS='19'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='20' S='finanziarie' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='finanziaria' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='finanziarie' SS='120' SE='130' POS='20'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='Nom' MF='.mas.fem.plur.sing' head='21' potgov='21'><CSTS><SIMPLE_CONST ID='21' S='pirata' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='pirata' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='pirata' SS='132' SE='137' POS='21'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='punt' MF='' head='22' potgov='22'><CSTS><SIMPLE_CONST ID='22' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='21' S='.' SS='139' SE='139' POS='22'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='7' TO='8' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='3' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='2' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='5' T='V_NP' PLAUS='1.0'></ICD>
+<ICD FROM='8' TO='9' T='NP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='7' TO='9' T='V_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='5' TO='9' T='NP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='4' TO='9' T='PP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='3' TO='9' T='NP_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='1' TO='9' T='V_PP' PLAUS='0.16666667'></ICD>
+<ICD FROM='7' TO='11' T='V_NP' PLAUS='0.5'></ICD>
+<ICD FROM='1' TO='11' T='V_NP' PLAUS='0.5'></ICD>
+<ICD FROM='3' TO='4' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='9' TO='10' T='PP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='8' TO='10' T='NP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='5' TO='10' T='NP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='4' TO='10' T='PP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='3' TO='10' T='NP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='5' TO='6' T='NP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='4' TO='6' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='5' TO='7' T='NP_VPart' PLAUS='1.0'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='9'><P>La richiesta _ stata fatta da Gezim Zilja , leader a Valona del del Partito democratico del del presidente della della Repubblica , Sali Berisha .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='La' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='La' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='richiesta' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='richiesta' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='richiesta' SS='3' SE='11' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='VerFin' MF='.mas.fem.plur.sing' head='3' potgov='5'><CSTS><SIMPLE_CONST ID='3' S='_' T='VFI' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='_' SS='13' SE='13' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='stata' T='VIP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='stata' SS='15' SE='19' POS='4'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='5' S='fatta' T='VNP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='fare' T='v.tran.sempl' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='fatta' SS='21' SE='25' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Prep' MF='.mas.fem.plur.sing' head='6' potgov='8'><CSTS><SIMPLE_CONST ID='6' S='da' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='da' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='da' SS='27' SE='28' POS='6'/></SPAN></SIMPLE_CONST>
+<COMPLEX_CONST ID='8' T='NPR' MF='.mas.fem.plur.sing' head='7' potgov='7'><CSTS><SIMPLE_CONST ID='7' S='Gezim' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;gezim&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='Gezim' SS='30' SE='34' POS='7'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='8' S='Zilja' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;zilja&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='Zilja' SS='36' SE='40' POS='8'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='?' MF='.mas.fem.plur.sing' head='9' potgov='9'><CSTS><SIMPLE_CONST ID='9' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S=',' SS='42' SE='42' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Nom' MF='.mas.fem.plur.sing' head='10' potgov='10'><CSTS><SIMPLE_CONST ID='10' S='leader' T='NCP' MF='mas.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='leader' T='nome.comune' MF='mas.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='leader' SS='44' SE='49' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='Prep' MF='.mas.fem.plur.sing' head='11' potgov='12'><CSTS><SIMPLE_CONST ID='11' S='a' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='a' SS='51' SE='51' POS='11'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='12' S='Valona' T='NPR' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='valona' T='nome.proprio' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='Valona' SS='53' SE='58' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Prep' MF='.mas.fem.plur.sing' head='13' potgov='15'><CSTS><SIMPLE_CONST ID='13' S='del' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='del' SS='60' SE='62' POS='13'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='14' S='del' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='del' SS='64' SE='66' POS='14'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='15' S='Partito' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='partito' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='Partito' SS='68' SE='74' POS='15'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='Agg' MF='.mas.fem.plur.sing' head='16' potgov='16'><CSTS><SIMPLE_CONST ID='16' S='democratico' T='AGS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='democratico' T='agg.qualif' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='democratico' SS='76' SE='86' POS='16'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='Prep' MF='.mas.fem.plur.sing' head='17' potgov='19'><CSTS><SIMPLE_CONST ID='17' S='del' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='del' SS='88' SE='90' POS='17'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='18' S='del' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='del' SS='92' SE='94' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='presidente' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='presidente' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='presidente' SS='96' SE='105' POS='19'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='Prep' MF='.mas.fem.plur.sing' head='20' potgov='22'><CSTS><SIMPLE_CONST ID='20' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='della' SS='107' SE='111' POS='20'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='21' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='della' SS='113' SE='117' POS='21'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='22' S='Repubblica' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='repubblica' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='21' S='Repubblica' SS='119' SE='128' POS='22'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='?' MF='.mas.fem.plur.sing' head='23' potgov='23'><CSTS><SIMPLE_CONST ID='23' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='22' S=',' SS='130' SE='130' POS='23'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='Nom' MF='.mas.fem.plur.sing' head='25' potgov='25'><CSTS><COMPLEX_CONST ID='25' T='NPR' MF='.mas.fem.plur.sing' head='24' potgov='24'><CSTS><SIMPLE_CONST ID='24' S='Sali' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;sali&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='23' S='Sali' SS='132' SE='135' POS='24'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='25' S='Berisha' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;berisha&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='24' S='Berisha' SS='137' SE='143' POS='25'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='punt' MF='' head='26' potgov='26'><CSTS><SIMPLE_CONST ID='26' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='25' S='.' SS='145' SE='145' POS='26'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='0' TO='2' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='5' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='3' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='5' TO='6' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='2' TO='6' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='2' TO='12' T='V_NP' PLAUS='1.0'></ICD>
+<ICD FROM='6' TO='7' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='5' TO='7' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='8' TO='9' T='Adj_PP' PLAUS='0.25'></ICD>
+<ICD FROM='7' TO='9' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='6' TO='9' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='5' TO='9' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='9' TO='10' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='7' TO='10' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='6' TO='10' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='5' TO='10' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='7' TO='8' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='6' TO='8' T='PP_Adj' PLAUS='0.5'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='10'><P>Un piano di assistenza ( 50 - 100 milioni di dollari ) cerchera&#39; di attutire il crack delle delle piramidi .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='Un' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='Un' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='piano' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='piano' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='piano' SS='3' SE='7' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Prep' MF='.mas.fem.plur.sing' head='3' potgov='4'><CSTS><SIMPLE_CONST ID='3' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='di' SS='9' SE='10' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='assistenza' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='assistenza' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='assistenza' SS='12' SE='21' POS='4'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='?' MF='.mas.fem.plur.sing' head='5' potgov='5'><CSTS><SIMPLE_CONST ID='5' S='(' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='(' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='(' SS='23' SE='23' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Agg' MF='.mas.fem.plur.sing' head='6' potgov='6'><CSTS><SIMPLE_CONST ID='6' S='50' T='AGV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;50&#62;' T='agg.num_card' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='50' SS='25' SE='26' POS='6'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='?' MF='.mas.fem.plur.sing' head='7' potgov='7'><CSTS><SIMPLE_CONST ID='7' S='-' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='-' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='-' SS='28' SE='28' POS='7'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='Nom' MF='.mas.fem.plur.sing' head='8' potgov='9'><CSTS><SIMPLE_CONST ID='8' S='100' T='AGV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;100&#62;' T='agg.num_card' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='100' SS='30' SE='32' POS='8'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='9' S='milioni' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='milione' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='milioni' SS='34' SE='40' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Prep' MF='.mas.fem.plur.sing' head='10' potgov='11'><CSTS><SIMPLE_CONST ID='10' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='di' SS='42' SE='43' POS='10'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='11' S='dollari' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='dollaro' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='dollari' SS='45' SE='51' POS='11'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='?' MF='.mas.fem.plur.sing' head='12' potgov='12'><CSTS><SIMPLE_CONST ID='12' S=')' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=')' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S=')' SS='53' SE='53' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='VerFin' MF='.mas.fem.plur.sing' head='13' potgov='13'><CSTS><SIMPLE_CONST ID='13' S='cerchera&#39;' T='VFT' MF='3.sing.ind.fut_semp'><ALTER_LEMMAS><LEMMA ID='0' S='cercare' T='v.tran.sempl' MF='3.sing.ind.fut_semp'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='cerchera&#39;' SS='55' SE='63' POS='13'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='VerInf' MF='.mas.fem.plur.sing' head='14' potgov='15'><CSTS><SIMPLE_CONST ID='14' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='di' SS='65' SE='66' POS='14'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='15' S='attutire' T='VNT' MF='inf.pres'><ALTER_LEMMAS><LEMMA ID='0' S='attutire' T='v.tran.sempl' MF='inf.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='attutire' SS='68' SE='75' POS='15'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='Nom' MF='.mas.fem.plur.sing' head='16' potgov='17'><CSTS><SIMPLE_CONST ID='16' S='il' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='il' SS='77' SE='78' POS='16'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='17' S='crack' T='NCP' MF='mas.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='crack' T='nome.comune' MF='mas.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='crack' SS='80' SE='84' POS='17'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='Prep' MF='.mas.fem.plur.sing' head='18' potgov='20'><CSTS><SIMPLE_CONST ID='18' S='delle' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='delle' SS='86' SE='90' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='delle' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='delle' SS='92' SE='96' POS='19'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='20' S='piramidi' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='piramide' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='piramidi' SS='98' SE='105' POS='20'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='punt' MF='' head='21' potgov='21'><CSTS><SIMPLE_CONST ID='21' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='.' SS='107' SE='107' POS='21'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='10' TO='11' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='0' TO='9' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='9' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='2' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='6' TO='7' T='NP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='2' TO='7' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='1' TO='7' T='NP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='2' TO='4' T='PP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='9' TO='10' T='Sub' PLAUS='1.0'></ICD>
+<ICD FROM='11' TO='12' T='NP_PP' PLAUS='1.0'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='11'><P>La Banca mondiale in aiuto dell&#39; dell&#39; Albania .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='La' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='La' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='Banca' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='banca' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='Banca' SS='3' SE='7' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Agg' MF='.mas.fem.plur.sing' head='3' potgov='3'><CSTS><SIMPLE_CONST ID='3' S='mondiale' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='mondiale' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='mondiale' SS='9' SE='16' POS='3'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Prep' MF='.mas.fem.plur.sing' head='4' potgov='5'><CSTS><SIMPLE_CONST ID='4' S='in' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='in' SS='18' SE='19' POS='4'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='5' S='aiuto' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='aiuto' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='aiuto' SS='21' SE='25' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Prep' MF='.mas.fem.plur.sing' head='6' potgov='8'><CSTS><SIMPLE_CONST ID='6' S='dell&#39;' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='dell&#39;' SS='27' SE='31' POS='6'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='7' S='dell&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='dell&#39;' SS='33' SE='37' POS='7'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='8' S='Albania' T='NPR' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='albania' T='nome.proprio' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='Albania' SS='39' SE='45' POS='8'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='punt' MF='' head='9' potgov='9'><CSTS><SIMPLE_CONST ID='9' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='.' SS='47' SE='47' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='1' TO='2' T='NP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='3' T='Adj_PP' PLAUS='0.5'></ICD>
+<ICD FROM='1' TO='3' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='3' TO='4' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='1' TO='4' T='NP_PP' PLAUS='0.5'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='12'><P>I finanzieri d&#39; assalto piu&#39; fantasiosi dei dei Balcani forse dovranno cambiare mestiere .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='I' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='I' SS='0' SE='0' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='finanzieri' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='finanziere' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='finanzieri' SS='2' SE='11' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Prep' MF='.mas.fem.plur.sing' head='3' potgov='4'><CSTS><SIMPLE_CONST ID='3' S='d&#39;' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='d&#39;' SS='13' SE='14' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='assalto' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='assalto' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='assalto' SS='16' SE='22' POS='4'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Agg' MF='.mas.fem.plur.sing' head='5' potgov='6'><CSTS><SIMPLE_CONST ID='5' S='piu&#39;' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;piu&#39;&#62;' T='avv.compar' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='piu&#39;' SS='24' SE='27' POS='5'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='6' S='fantasiosi' T='AGP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='fantasioso' T='agg.qualif' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='fantasiosi' SS='29' SE='38' POS='6'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Prep' MF='.mas.fem.plur.sing' head='7' potgov='9'><CSTS><SIMPLE_CONST ID='7' S='dei' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='dei' SS='40' SE='42' POS='7'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='8' S='dei' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='dei' SS='44' SE='46' POS='8'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='9' S='Balcani' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;balcani&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='Balcani' SS='48' SE='54' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Avv' MF='.mas.fem.plur.sing' head='10' potgov='10'><CSTS><SIMPLE_CONST ID='10' S='forse' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='forse' T='avv.dubb' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='forse' SS='56' SE='60' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='VerFin' MF='.mas.fem.plur.sing' head='11' potgov='12'><CSTS><SIMPLE_CONST ID='11' S='dovranno' T='VFI' MF='3.plur.ind.fut_semp'><ALTER_LEMMAS><LEMMA ID='0' S='dovere' T='v.intran.mod' MF='3.plur.ind.fut_semp'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='dovranno' SS='62' SE='69' POS='11'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='12' S='cambiare' T='VNT' MF='inf.pres'><ALTER_LEMMAS><LEMMA ID='0' S='cambiare' T='v.tran.sempl' MF='inf.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='cambiare' SS='71' SE='78' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Nom' MF='.mas.fem.plur.sing' head='13' potgov='13'><CSTS><SIMPLE_CONST ID='13' S='mestiere' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='mestiere' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='mestiere' SS='80' SE='87' POS='13'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='punt' MF='' head='14' potgov='14'><CSTS><SIMPLE_CONST ID='14' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='.' SS='89' SE='89' POS='14'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='0' TO='6' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='6' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='6' TO='7' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='2' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='3' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='1' TO='3' T='NP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='3' TO='4' T='Adj_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='2' TO='4' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='1' TO='4' T='NP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='6' TO='5' T='V_Adv' PLAUS='1.0'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='13'><P>Le pressioni della della piazza , la rivolta nella nella " Repubblica indipendente di Valona " , i contrasti dentro a un Governo che annaspa nelle nelle lotte interne al al Partito democratico , accuse e sospetti di ogni genere sulle sulle collusioni tra politici e traffici illegali , costringono Tirana a venire a patti con la contabilita&#39; dei dei bilanci e le istituzioni internazionali .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='Le' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='Le' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='pressioni' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='pressione' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='pressioni' SS='3' SE='11' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Prep' MF='.mas.fem.plur.sing' head='3' potgov='5'><CSTS><SIMPLE_CONST ID='3' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='della' SS='13' SE='17' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='della' SS='19' SE='23' POS='4'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='5' S='piazza' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='piazza' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='piazza' SS='25' SE='30' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='?' MF='.mas.fem.plur.sing' head='6' potgov='6'><CSTS><SIMPLE_CONST ID='6' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S=',' SS='32' SE='32' POS='6'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Nom' MF='.mas.fem.plur.sing' head='7' potgov='8'><CSTS><SIMPLE_CONST ID='7' S='la' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='la' SS='34' SE='35' POS='7'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='8' S='rivolta' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='rivolta' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='rivolta' SS='37' SE='43' POS='8'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='?' MF='.mas.fem.plur.sing' head='9' potgov='9'><CSTS><SIMPLE_CONST ID='9' S='nella' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='nella' SS='45' SE='49' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='?' MF='.mas.fem.plur.sing' head='10' potgov='10'><CSTS><SIMPLE_CONST ID='10' S='nella' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='nella' SS='51' SE='55' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='?' MF='.mas.fem.plur.sing' head='11' potgov='11'><CSTS><SIMPLE_CONST ID='11' S='"' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='"' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='"' SS='57' SE='57' POS='11'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='Nom' MF='.mas.fem.plur.sing' head='12' potgov='12'><CSTS><SIMPLE_CONST ID='12' S='Repubblica' T='NPR' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='repubblica' T='nome.proprio' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='Repubblica' SS='59' SE='68' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='Agg' MF='.mas.fem.plur.sing' head='13' potgov='13'><CSTS><SIMPLE_CONST ID='13' S='indipendente' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='indipendente' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='indipendente' SS='70' SE='81' POS='13'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='Prep' MF='.mas.fem.plur.sing' head='14' potgov='15'><CSTS><SIMPLE_CONST ID='14' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='di' SS='83' SE='84' POS='14'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='15' S='Valona' T='NPR' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='valona' T='nome.proprio' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='Valona' SS='86' SE='91' POS='15'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='?' MF='.mas.fem.plur.sing' head='16' potgov='16'><CSTS><SIMPLE_CONST ID='16' S='"' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='"' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='"' SS='93' SE='93' POS='16'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='?' MF='.mas.fem.plur.sing' head='17' potgov='17'><CSTS><SIMPLE_CONST ID='17' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S=',' SS='95' SE='95' POS='17'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='Nom' MF='.mas.fem.plur.sing' head='18' potgov='19'><CSTS><SIMPLE_CONST ID='18' S='i' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='i' SS='97' SE='97' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='contrasti' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='contrasto' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='contrasti' SS='99' SE='107' POS='19'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='14' T='Prep' MF='.mas.fem.plur.sing' head='21' potgov='23'><CSTS><COMPLEX_CONST ID='21' T='PSE' MF='.invariante' head='20' potgov='20'><CSTS><SIMPLE_CONST ID='20' S='dentro' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='dentro' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='dentro' SS='109' SE='114' POS='20'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='21' S='a' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='a' SS='116' SE='116' POS='21'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<SIMPLE_CONST ID='22' S='un' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='21' S='un' SS='118' SE='119' POS='22'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='23' S='Governo' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='governo' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='22' S='Governo' SS='121' SE='127' POS='23'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='15' T='NomRel' MF='.mas.fem.plur.sing' head='24' potgov='24'><CSTS><SIMPLE_CONST ID='24' S='che' T='PRR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='che' T='pron.relat' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='23' S='che' SS='129' SE='131' POS='24'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='16' T='VerFin' MF='.mas.fem.plur.sing' head='25' potgov='25'><CSTS><SIMPLE_CONST ID='25' S='annaspa' T='VFI' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='annaspare' T='v.intran.sempl' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='24' S='annaspa' SS='133' SE='139' POS='25'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='17' T='Prep' MF='.mas.fem.plur.sing' head='26' potgov='28'><CSTS><SIMPLE_CONST ID='26' S='nelle' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='25' S='nelle' SS='141' SE='145' POS='26'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='27' S='nelle' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='26' S='nelle' SS='147' SE='151' POS='27'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='28' S='lotte' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='lotta' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='27' S='lotte' SS='153' SE='157' POS='28'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='18' T='Agg' MF='.mas.fem.plur.sing' head='29' potgov='29'><CSTS><SIMPLE_CONST ID='29' S='interne' T='AGP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='interno' T='agg.qualif' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='28' S='interne' SS='159' SE='165' POS='29'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='19' T='Prep' MF='.mas.fem.plur.sing' head='30' potgov='32'><CSTS><SIMPLE_CONST ID='30' S='al' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='29' S='al' SS='167' SE='168' POS='30'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='31' S='al' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='30' S='al' SS='170' SE='171' POS='31'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='32' S='Partito' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='partito' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='31' S='Partito' SS='173' SE='179' POS='32'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='20' T='Agg' MF='.mas.fem.plur.sing' head='33' potgov='33'><CSTS><SIMPLE_CONST ID='33' S='democratico' T='AGS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='democratico' T='agg.qualif' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='32' S='democratico' SS='181' SE='191' POS='33'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='21' T='?' MF='.mas.fem.plur.sing' head='34' potgov='34'><CSTS><SIMPLE_CONST ID='34' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='33' S=',' SS='193' SE='193' POS='34'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='22' T='Nom' MF='.mas.fem.plur.sing' head='35' potgov='35'><CSTS><SIMPLE_CONST ID='35' S='accuse' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='accusa' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='34' S='accuse' SS='195' SE='200' POS='35'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='23' T='CongCo' MF='.mas.fem.plur.sing' head='36' potgov='36'><CSTS><SIMPLE_CONST ID='36' S='e' T='CO' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='e' T='cong.coord' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='35' S='e' SS='202' SE='202' POS='36'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='24' T='Nom' MF='.mas.fem.plur.sing' head='37' potgov='37'><CSTS><SIMPLE_CONST ID='37' S='sospetti' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='sospetto' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='36' S='sospetti' SS='204' SE='211' POS='37'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='25' T='Prep' MF='.mas.fem.plur.sing' head='38' potgov='40'><CSTS><SIMPLE_CONST ID='38' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='37' S='di' SS='213' SE='214' POS='38'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='39' S='ogni' T='ADS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='ogni' T='agg.indef' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='38' S='ogni' SS='216' SE='219' POS='39'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='40' S='genere' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='genere' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='39' S='genere' SS='221' SE='226' POS='40'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='26' T='Prep' MF='.mas.fem.plur.sing' head='41' potgov='43'><CSTS><SIMPLE_CONST ID='41' S='sulle' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='su' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='40' S='sulle' SS='228' SE='232' POS='41'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='42' S='sulle' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='41' S='sulle' SS='234' SE='238' POS='42'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='43' S='collusioni' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='collusione' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='42' S='collusioni' SS='240' SE='249' POS='43'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='27' T='Prep' MF='.mas.fem.plur.sing' head='44' potgov='45'><CSTS><SIMPLE_CONST ID='44' S='tra' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='tra' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='43' S='tra' SS='251' SE='253' POS='44'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='45' S='politici' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='politico' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='44' S='politici' SS='255' SE='262' POS='45'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='28' T='CongCo' MF='.mas.fem.plur.sing' head='46' potgov='46'><CSTS><SIMPLE_CONST ID='46' S='e' T='CO' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='e' T='cong.coord' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='45' S='e' SS='264' SE='264' POS='46'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='29' T='Nom' MF='.mas.fem.plur.sing' head='47' potgov='47'><CSTS><SIMPLE_CONST ID='47' S='traffici' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='traffico' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='46' S='traffici' SS='266' SE='273' POS='47'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='30' T='Agg' MF='.mas.fem.plur.sing' head='48' potgov='48'><CSTS><SIMPLE_CONST ID='48' S='illegali' T='AGP' MF='mas.fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='illegale' T='agg.qualif' MF='mas.fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='47' S='illegali' SS='275' SE='282' POS='48'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='31' T='?' MF='.mas.fem.plur.sing' head='49' potgov='49'><CSTS><SIMPLE_CONST ID='49' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='48' S=',' SS='284' SE='284' POS='49'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='32' T='VerFin' MF='.mas.fem.plur.sing' head='50' potgov='50'><CSTS><SIMPLE_CONST ID='50' S='costringono' T='VFT' MF='3.plur.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='costringere' T='v.tran.sempl' MF='3.plur.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='49' S='costringono' SS='286' SE='296' POS='50'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='33' T='Nom' MF='.mas.fem.plur.sing' head='51' potgov='51'><CSTS><SIMPLE_CONST ID='51' S='Tirana' T='NPR' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='tirana' T='nome.proprio' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='50' S='Tirana' SS='298' SE='303' POS='51'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='34' T='VerInf' MF='.mas.fem.plur.sing' head='52' potgov='53'><CSTS><SIMPLE_CONST ID='52' S='a' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='51' S='a' SS='305' SE='305' POS='52'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='53' S='venire' T='VNI' MF='inf.pres'><ALTER_LEMMAS><LEMMA ID='0' S='venire' T='v.intran.sempl' MF='inf.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='52' S='venire' SS='307' SE='312' POS='53'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='35' T='Prep' MF='.mas.fem.plur.sing' head='54' potgov='55'><CSTS><SIMPLE_CONST ID='54' S='a' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='53' S='a' SS='314' SE='314' POS='54'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='55' S='patti' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='patto' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='54' S='patti' SS='316' SE='320' POS='55'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='36' T='Prep' MF='.mas.fem.plur.sing' head='56' potgov='58'><CSTS><SIMPLE_CONST ID='56' S='con' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='con' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='55' S='con' SS='322' SE='324' POS='56'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='57' S='la' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='56' S='la' SS='326' SE='327' POS='57'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='58' S='contabilita&#39;' T='NCP' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;contabilita&#39;&#62;' T='nome.comune' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='57' S='contabilita&#39;' SS='329' SE='340' POS='58'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='37' T='Prep' MF='.mas.fem.plur.sing' head='59' potgov='61'><CSTS><SIMPLE_CONST ID='59' S='dei' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='58' S='dei' SS='342' SE='344' POS='59'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='60' S='dei' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='59' S='dei' SS='346' SE='348' POS='60'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='61' S='bilanci' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='bilancio' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='60' S='bilanci' SS='350' SE='356' POS='61'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='38' T='CongCo' MF='.mas.fem.plur.sing' head='62' potgov='62'><CSTS><SIMPLE_CONST ID='62' S='e' T='CO' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='e' T='cong.coord' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='61' S='e' SS='358' SE='358' POS='62'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='39' T='Nom' MF='.mas.fem.plur.sing' head='63' potgov='64'><CSTS><SIMPLE_CONST ID='63' S='le' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='62' S='le' SS='360' SE='361' POS='63'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='64' S='istituzioni' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='istituzione' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='63' S='istituzioni' SS='363' SE='373' POS='64'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='40' T='Agg' MF='.mas.fem.plur.sing' head='65' potgov='65'><CSTS><SIMPLE_CONST ID='65' S='internazionali' T='AGP' MF='mas.fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='internazionale' T='agg.qualif' MF='mas.fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='64' S='internazionali' SS='375' SE='388' POS='65'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='41' T='punt' MF='' head='66' potgov='66'><CSTS><SIMPLE_CONST ID='66' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='65' S='.' SS='390' SE='390' POS='66'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='34' TO='35' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='34' TO='36' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='0' TO='32' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='32' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='32' TO='33' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='16' TO='15' T='V_PrRel' PLAUS='1.0'></ICD>
+<ICD FROM='16' TO='22' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='2' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='9' TO='10' T='Adj_PP' PLAUS='0.2'></ICD>
+<ICD FROM='8' TO='10' T='NP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='4' TO='10' T='NP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='2' TO='10' T='PP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='1' TO='10' T='NP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='32' TO='14' T='V_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='13' TO='14' T='NP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='10' TO='14' T='PP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='8' TO='14' T='NP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='4' TO='14' T='NP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='2' TO='14' T='PP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='1' TO='14' T='NP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='8' TO='9' T='NP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='16' TO='17' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='18' TO='19' T='Adj_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='17' TO='19' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='16' TO='19' T='V_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='23' TO='24' T='COORD' PLAUS='0.5'></ICD>
+<ICD FROM='16' TO='24' T='V_NP' PLAUS='0.5'></ICD>
+<ICD FROM='28' TO='29' T='COORD' PLAUS='0.5'></ICD>
+<ICD FROM='16' TO='29' T='V_NP' PLAUS='0.5'></ICD>
+<ICD FROM='17' TO='18' T='PP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='19' TO='20' T='PP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='22' TO='23' T='COORD2' PLAUS='1.0'></ICD>
+<ICD FROM='24' TO='25' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='32' TO='26' T='V_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='25' TO='26' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='24' TO='26' T='NP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='32' TO='27' T='V_PP' PLAUS='0.25'></ICD>
+<ICD FROM='26' TO='27' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='25' TO='27' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='24' TO='27' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='27' TO='28' T='COORD2' PLAUS='1.0'></ICD>
+<ICD FROM='29' TO='30' T='NP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='33' TO='34' T='NP_VPart' PLAUS='0.5'></ICD>
+<ICD FROM='32' TO='34' T='Sub' PLAUS='0.5'></ICD>
+<ICD FROM='38' TO='39' T='COORD' PLAUS='0.33333334'></ICD>
+<ICD FROM='34' TO='39' T='V_NP' PLAUS='0.33333334'></ICD>
+<ICD FROM='32' TO='39' T='V_NP' PLAUS='0.33333334'></ICD>
+<ICD FROM='36' TO='37' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='33' TO='37' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='37' TO='38' T='COORD2' PLAUS='1.0'></ICD>
+<ICD FROM='39' TO='40' T='NP_Adj' PLAUS='1.0'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='14'><P>Nella Nella capitale albanese sta arrivando una missione della della Banca mondiale con l&#39; obiettivo di mettere a punto un piano di assistenza tecnica e finanziaria destinato ad attutire il crack delle delle &#39; piramidi &#39; .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Prep' MF='.mas.fem.plur.sing' head='1' potgov='3'><CSTS><SIMPLE_CONST ID='1' S='Nella' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='Nella' SS='0' SE='4' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='Nella' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='Nella' SS='6' SE='10' POS='2'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='3' S='capitale' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='capitale' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='capitale' SS='12' SE='19' POS='3'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Agg' MF='.mas.fem.plur.sing' head='4' potgov='4'><CSTS><SIMPLE_CONST ID='4' S='albanese' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='albanese' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='albanese' SS='21' SE='28' POS='4'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='VerFin' MF='.mas.fem.plur.sing' head='5' potgov='6'><CSTS><SIMPLE_CONST ID='5' S='sta' T='VFI' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='stare' T='v.intran.aus' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='sta' SS='30' SE='32' POS='5'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='6' S='arrivando' T='VNI' MF='geru.pres'><ALTER_LEMMAS><LEMMA ID='0' S='arrivare' T='v.intran.sempl' MF='geru.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='arrivando' SS='34' SE='42' POS='6'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Nom' MF='.mas.fem.plur.sing' head='7' potgov='8'><CSTS><SIMPLE_CONST ID='7' S='una' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='una' SS='44' SE='46' POS='7'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='8' S='missione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='missione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='missione' SS='48' SE='55' POS='8'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Prep' MF='.mas.fem.plur.sing' head='9' potgov='11'><CSTS><SIMPLE_CONST ID='9' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='della' SS='57' SE='61' POS='9'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='10' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='della' SS='63' SE='67' POS='10'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='11' S='Banca' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='banca' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='Banca' SS='69' SE='73' POS='11'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='Agg' MF='.mas.fem.plur.sing' head='12' potgov='12'><CSTS><SIMPLE_CONST ID='12' S='mondiale' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='mondiale' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='mondiale' SS='75' SE='82' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Prep' MF='.mas.fem.plur.sing' head='13' potgov='15'><CSTS><SIMPLE_CONST ID='13' S='con' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='con' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='con' SS='84' SE='86' POS='13'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='14' S='l&#39;' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='l&#39;' SS='88' SE='89' POS='14'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='15' S='obiettivo' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='obiettivo' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='obiettivo' SS='91' SE='99' POS='15'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='VerInf' MF='.mas.fem.plur.sing' head='16' potgov='17'><CSTS><SIMPLE_CONST ID='16' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='di' SS='101' SE='102' POS='16'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='17' S='mettere' T='VNT' MF='inf.pres'><ALTER_LEMMAS><LEMMA ID='0' S='mettere' T='v.tran.sempl' MF='inf.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='mettere' SS='104' SE='110' POS='17'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='Prep' MF='.mas.fem.plur.sing' head='18' potgov='19'><CSTS><SIMPLE_CONST ID='18' S='a' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='a' SS='112' SE='112' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='punto' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='punto' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='punto' SS='114' SE='118' POS='19'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='Nom' MF='.mas.fem.plur.sing' head='20' potgov='21'><CSTS><SIMPLE_CONST ID='20' S='un' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='un' SS='120' SE='121' POS='20'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='21' S='piano' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='piano' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='piano' SS='123' SE='127' POS='21'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='Prep' MF='.mas.fem.plur.sing' head='22' potgov='23'><CSTS><SIMPLE_CONST ID='22' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='21' S='di' SS='129' SE='130' POS='22'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='23' S='assistenza' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='assistenza' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='22' S='assistenza' SS='132' SE='141' POS='23'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='Agg' MF='.mas.fem.plur.sing' head='24' potgov='24'><CSTS><SIMPLE_CONST ID='24' S='tecnica' T='AGS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='tecnico' T='agg.qualif' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='23' S='tecnica' SS='143' SE='149' POS='24'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='25' S='e' T='CO' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='e' T='cong.coord' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='24' S='e' SS='151' SE='151' POS='25'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='26' S='finanziaria' T='AGS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='finanziario' T='agg.qualif' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='25' S='finanziaria' SS='153' SE='163' POS='26'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='VerPart' MF='.mas.fem.plur.sing' head='27' potgov='27'><CSTS><SIMPLE_CONST ID='27' S='destinato' T='VNP' MF='sing.part.pass.mas'><ALTER_LEMMAS><LEMMA ID='0' S='destinare' T='v.tran.sempl' MF='sing.part.pass.mas'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='26' S='destinato' SS='165' SE='173' POS='27'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='14' T='VerInf' MF='.mas.fem.plur.sing' head='28' potgov='29'><CSTS><SIMPLE_CONST ID='28' S='ad' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='27' S='ad' SS='175' SE='176' POS='28'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='29' S='attutire' T='VNT' MF='inf.pres'><ALTER_LEMMAS><LEMMA ID='0' S='attutire' T='v.tran.sempl' MF='inf.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='28' S='attutire' SS='178' SE='185' POS='29'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='15' T='Nom' MF='.mas.fem.plur.sing' head='30' potgov='31'><CSTS><SIMPLE_CONST ID='30' S='il' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='29' S='il' SS='187' SE='188' POS='30'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='31' S='crack' T='NCP' MF='mas.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='crack' T='nome.comune' MF='mas.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='30' S='crack' SS='190' SE='194' POS='31'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='16' T='?' MF='.mas.fem.plur.sing' head='32' potgov='32'><CSTS><SIMPLE_CONST ID='32' S='delle' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='31' S='delle' SS='196' SE='200' POS='32'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='17' T='?' MF='.mas.fem.plur.sing' head='33' potgov='33'><CSTS><SIMPLE_CONST ID='33' S='delle' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='32' S='delle' SS='202' SE='206' POS='33'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='18' T='?' MF='.mas.fem.plur.sing' head='34' potgov='34'><CSTS><SIMPLE_CONST ID='34' S='&#39;' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#39;' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='33' S='&#39;' SS='208' SE='208' POS='34'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='19' T='Nom' MF='.mas.fem.plur.sing' head='35' potgov='35'><CSTS><SIMPLE_CONST ID='35' S='piramidi' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='piramide' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='34' S='piramidi' SS='210' SE='217' POS='35'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='20' T='?' MF='.mas.fem.plur.sing' head='36' potgov='36'><CSTS><SIMPLE_CONST ID='36' S='&#39;' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#39;' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='35' S='&#39;' SS='219' SE='219' POS='36'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='21' T='punt' MF='' head='37' potgov='37'><CSTS><SIMPLE_CONST ID='37' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='36' S='.' SS='221' SE='221' POS='37'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='14' TO='15' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='13' TO='19' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='8' TO='9' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='8' TO='10' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='0' TO='3' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='2' T='PP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='3' TO='1' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='3' TO='4' T='V_NP' PLAUS='1.0'></ICD>
+<ICD FROM='6' TO='7' T='Adj_PP' PLAUS='0.25'></ICD>
+<ICD FROM='5' TO='7' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='4' TO='7' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='3' TO='7' T='V_PP' PLAUS='0.25'></ICD>
+<ICD FROM='4' TO='5' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='5' TO='6' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='4' TO='6' T='NP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='10' TO='11' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='7' TO='11' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='5' TO='11' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='4' TO='11' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='11' TO='12' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='10' TO='12' T='NP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='11' TO='13' T='PP_VPart' PLAUS='1.0'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='15'><P>La decisione _ stata presa dopo una riunione a Washington tra le organizzazioni internazionali e i principali Paesi donatori .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='La' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='La' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='decisione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='decisione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='decisione' SS='3' SE='11' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='VerFin' MF='.mas.fem.plur.sing' head='3' potgov='5'><CSTS><SIMPLE_CONST ID='3' S='_' T='VFI' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='_' SS='13' SE='13' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='stata' T='VIP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='stata' SS='15' SE='19' POS='4'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='5' S='presa' T='VNP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='prendere' T='v.tran.sempl' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='presa' SS='21' SE='25' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Prep' MF='.mas.fem.plur.sing' head='6' potgov='8'><CSTS><SIMPLE_CONST ID='6' S='dopo' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='dopo' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='dopo' SS='27' SE='30' POS='6'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='7' S='una' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='una' SS='32' SE='34' POS='7'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='8' S='riunione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='riunione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='riunione' SS='36' SE='43' POS='8'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Prep' MF='.mas.fem.plur.sing' head='9' potgov='10'><CSTS><SIMPLE_CONST ID='9' S='a' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='a' SS='45' SE='45' POS='9'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='10' S='Washington' T='NPR' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='washington' T='nome.proprio' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='Washington' SS='47' SE='56' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Prep' MF='.mas.fem.plur.sing' head='11' potgov='13'><CSTS><SIMPLE_CONST ID='11' S='tra' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='tra' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='tra' SS='58' SE='60' POS='11'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='12' S='le' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='le' SS='62' SE='63' POS='12'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='13' S='organizzazioni' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='organizzazione' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='organizzazioni' SS='65' SE='78' POS='13'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='Agg' MF='.mas.fem.plur.sing' head='14' potgov='14'><CSTS><SIMPLE_CONST ID='14' S='internazionali' T='AGP' MF='mas.fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='internazionale' T='agg.qualif' MF='mas.fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='internazionali' SS='80' SE='93' POS='14'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='CongCo' MF='.mas.fem.plur.sing' head='15' potgov='15'><CSTS><SIMPLE_CONST ID='15' S='e' T='CO' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='e' T='cong.coord' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='e' SS='95' SE='95' POS='15'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='Nom' MF='.mas.fem.plur.sing' head='16' potgov='18'><CSTS><SIMPLE_CONST ID='16' S='i' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='i' SS='97' SE='97' POS='16'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='17' S='principali' T='AGP' MF='mas.fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='principale' T='agg.qualif' MF='mas.fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='principali' SS='99' SE='108' POS='17'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='18' S='Paesi' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='paese' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='Paesi' SS='110' SE='114' POS='18'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='Nom' MF='.mas.fem.plur.sing' head='19' potgov='19'><CSTS><SIMPLE_CONST ID='19' S='donatori' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='donatore' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='donatori' SS='116' SE='123' POS='19'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='punt' MF='' head='20' potgov='20'><CSTS><SIMPLE_CONST ID='20' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='.' SS='125' SE='125' POS='20'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='0' TO='2' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='4' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='2' TO='3' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='4' TO='5' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='2' TO='5' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='7' TO='8' T='COORD' PLAUS='0.5'></ICD>
+<ICD FROM='2' TO='8' T='V_NP' PLAUS='0.5'></ICD>
+<ICD FROM='5' TO='6' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='4' TO='6' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='6' TO='7' T='COORD2' PLAUS='1.0'></ICD>
+<ICD FROM='8' TO='9' T='NP_NP' PLAUS='1.0'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='16'><P>L&#39; iniziativa , appoggiata anche dagli dagli Usa , _ promossa dall&#39; dall&#39; Unione europea che il 24 febbraio in una riunione dei dei ministri degli degli Esteri avra&#39; in cima all&#39; all&#39; agenda la discussione della della crisi albanese .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='L&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='L&#39;' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='iniziativa' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='iniziativa' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='iniziativa' SS='3' SE='12' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='?' MF='.mas.fem.plur.sing' head='3' potgov='3'><CSTS><SIMPLE_CONST ID='3' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S=',' SS='14' SE='14' POS='3'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='VerPart' MF='.mas.fem.plur.sing' head='4' potgov='4'><CSTS><SIMPLE_CONST ID='4' S='appoggiata' T='VNP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='appoggiare' T='v.tran.sempl' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='appoggiata' SS='16' SE='25' POS='4'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Avv' MF='.mas.fem.plur.sing' head='5' potgov='5'><CSTS><SIMPLE_CONST ID='5' S='anche' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='anche' T='avv' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='anche' SS='27' SE='31' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Prep' MF='.mas.fem.plur.sing' head='6' potgov='8'><CSTS><SIMPLE_CONST ID='6' S='dagli' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='da' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='dagli' SS='33' SE='37' POS='6'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='7' S='dagli' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='dagli' SS='39' SE='43' POS='7'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='8' S='Usa' T='NPR' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='usa' T='nome.proprio' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='Usa' SS='45' SE='47' POS='8'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='?' MF='.mas.fem.plur.sing' head='9' potgov='9'><CSTS><SIMPLE_CONST ID='9' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S=',' SS='49' SE='49' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='VerFin' MF='.mas.fem.plur.sing' head='10' potgov='11'><CSTS><SIMPLE_CONST ID='10' S='_' T='VFI' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='_' SS='51' SE='51' POS='10'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='11' S='promossa' T='VNP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='promuovere' T='v.tran.sempl' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='promossa' SS='53' SE='60' POS='11'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='Prep' MF='.mas.fem.plur.sing' head='12' potgov='14'><CSTS><SIMPLE_CONST ID='12' S='dall&#39;' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='da' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='dall&#39;' SS='62' SE='66' POS='12'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='13' S='dall&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='dall&#39;' SS='68' SE='72' POS='13'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='14' S='Unione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='unione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='Unione' SS='74' SE='79' POS='14'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='NomRel' MF='.mas.fem.plur.sing' head='15' potgov='16'><CSTS><SIMPLE_CONST ID='15' S='europea' T='AGS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='europeo' T='agg.qualif' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='europea' SS='81' SE='87' POS='15'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='16' S='che' T='PRR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='che' T='pron.relat' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='che' SS='89' SE='91' POS='16'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='Nom' MF='.mas.fem.plur.sing' head='17' potgov='19'><CSTS><SIMPLE_CONST ID='17' S='il' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='il' SS='93' SE='94' POS='17'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='18' S='24' T='AGV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;24&#62;' T='agg.num_card' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='24' SS='96' SE='97' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='febbraio' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='febbraio' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='febbraio' SS='99' SE='106' POS='19'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='Prep' MF='.mas.fem.plur.sing' head='20' potgov='22'><CSTS><SIMPLE_CONST ID='20' S='in' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='in' SS='108' SE='109' POS='20'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='21' S='una' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='una' SS='111' SE='113' POS='21'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='22' S='riunione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='riunione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='21' S='riunione' SS='115' SE='122' POS='22'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='Prep' MF='.mas.fem.plur.sing' head='23' potgov='25'><CSTS><SIMPLE_CONST ID='23' S='dei' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='22' S='dei' SS='124' SE='126' POS='23'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='24' S='dei' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='23' S='dei' SS='128' SE='130' POS='24'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='25' S='ministri' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='ministro' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='24' S='ministri' SS='132' SE='139' POS='25'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='Prep' MF='.mas.fem.plur.sing' head='26' potgov='28'><CSTS><SIMPLE_CONST ID='26' S='degli' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='25' S='degli' SS='141' SE='145' POS='26'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='27' S='degli' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='26' S='degli' SS='147' SE='151' POS='27'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='28' S='Esteri' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='estero' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='27' S='Esteri' SS='153' SE='158' POS='28'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='14' T='VerFin' MF='.mas.fem.plur.sing' head='29' potgov='29'><CSTS><SIMPLE_CONST ID='29' S='avra&#39;' T='VFT' MF='3.sing.ind.fut_semp'><ALTER_LEMMAS><LEMMA ID='0' S='avere' T='v.tran.sempl' MF='3.sing.ind.fut_semp'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='28' S='avra&#39;' SS='160' SE='164' POS='29'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='15' T='Prep' MF='.mas.fem.plur.sing' head='32' potgov='34'><CSTS><COMPLEX_CONST ID='32' T='PSE' MF='.invariante' head='30' potgov='30'><CSTS><SIMPLE_CONST ID='30' S='in' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in@cima@a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='29' S='in' SS='166' SE='167' POS='30'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='31' S='cima' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in@cima@a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='30' S='cima' SS='169' SE='172' POS='31'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='32' S='all&#39;' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in@cima@a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='31' S='all&#39;' SS='174' SE='177' POS='32'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<SIMPLE_CONST ID='33' S='all&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='32' S='all&#39;' SS='179' SE='182' POS='33'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='34' S='agenda' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='agenda' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='33' S='agenda' SS='184' SE='189' POS='34'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='16' T='Nom' MF='.mas.fem.plur.sing' head='35' potgov='36'><CSTS><SIMPLE_CONST ID='35' S='la' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='34' S='la' SS='191' SE='192' POS='35'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='36' S='discussione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='discussione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='35' S='discussione' SS='194' SE='204' POS='36'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='17' T='Prep' MF='.mas.fem.plur.sing' head='37' potgov='39'><CSTS><SIMPLE_CONST ID='37' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='36' S='della' SS='206' SE='210' POS='37'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='38' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='37' S='della' SS='212' SE='216' POS='38'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='39' S='crisi' T='NCP' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='crisi' T='nome.comune' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='38' S='crisi' SS='218' SE='222' POS='39'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='18' T='Agg' MF='.mas.fem.plur.sing' head='40' potgov='40'><CSTS><SIMPLE_CONST ID='40' S='albanese' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='albanese' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='39' S='albanese' SS='224' SE='231' POS='40'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='19' T='punt' MF='' head='41' potgov='41'><CSTS><SIMPLE_CONST ID='41' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='40' S='.' SS='233' SE='233' POS='41'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='14' TO='9' T='V_PrRel' PLAUS='1.0'></ICD>
+<ICD FROM='14' TO='10' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='14' TO='16' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='0' TO='7' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='7' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='3' T='NP_VPart' PLAUS='1.0'></ICD>
+<ICD FROM='7' TO='5' T='V_PP' PLAUS='0.25'></ICD>
+<ICD FROM='4' TO='5' T='Adv_PP' PLAUS='0.25'></ICD>
+<ICD FROM='3' TO='5' T='V_PP' PLAUS='0.25'></ICD>
+<ICD FROM='1' TO='5' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='7' TO='4' T='V_Adv' PLAUS='0.5'></ICD>
+<ICD FROM='3' TO='4' T='V_Adv' PLAUS='0.5'></ICD>
+<ICD FROM='7' TO='8' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='14' TO='11' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='10' TO='11' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='11' TO='12' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='10' TO='12' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='12' TO='13' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='11' TO='13' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='10' TO='13' T='NP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='14' TO='15' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='16' TO='17' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='17' TO='18' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='16' TO='18' T='NP_Adj' PLAUS='0.5'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='17'><P>L&#39; intervento - tra i suoi sostenitori il ministro Lamberto Dini - sara&#39; mirato soprattutto ad attenuare gli effetti dei dei fallimenti sulla sulla massa piu&#39; povera della della popolazione .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='L&#39;' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='L&#39;' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='intervento' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='intervento' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='intervento' SS='3' SE='12' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='?' MF='.mas.fem.plur.sing' head='3' potgov='3'><CSTS><SIMPLE_CONST ID='3' S='-' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='-' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='-' SS='14' SE='14' POS='3'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='Prep' MF='.mas.fem.plur.sing' head='4' potgov='7'><CSTS><SIMPLE_CONST ID='4' S='tra' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='tra' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='tra' SS='16' SE='18' POS='4'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='5' S='i' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='i' SS='20' SE='20' POS='5'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='6' S='suoi' T='ADP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='suo' T='agg.posses' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='suoi' SS='22' SE='25' POS='6'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='7' S='sostenitori' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='sostenitore' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='sostenitori' SS='27' SE='37' POS='7'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Nom' MF='.mas.fem.plur.sing' head='8' potgov='9'><CSTS><SIMPLE_CONST ID='8' S='il' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='il' SS='39' SE='40' POS='8'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='9' S='ministro' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='ministro' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='ministro' SS='42' SE='49' POS='9'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Nom' MF='.mas.fem.plur.sing' head='11' potgov='11'><CSTS><COMPLEX_CONST ID='11' T='NPR' MF='.mas.fem.plur.sing' head='10' potgov='10'><CSTS><SIMPLE_CONST ID='10' S='Lamberto' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;lamberto&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='Lamberto' SS='51' SE='58' POS='10'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='11' S='Dini' T='NPR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;dini&#62;' T='nome.proprio' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='Dini' SS='60' SE='63' POS='11'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='?' MF='.mas.fem.plur.sing' head='12' potgov='12'><CSTS><SIMPLE_CONST ID='12' S='-' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='-' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='-' SS='65' SE='65' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='VerFin' MF='.mas.fem.plur.sing' head='13' potgov='14'><CSTS><SIMPLE_CONST ID='13' S='sara&#39;' T='VFI' MF='3.sing.ind.fut_semp'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.aus' MF='3.sing.ind.fut_semp'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='sara&#39;' SS='67' SE='71' POS='13'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='14' S='mirato' T='VIP' MF='sing.part.pass.mas'><ALTER_LEMMAS><LEMMA ID='0' S='mirare' T='v.intran.sempl' MF='sing.part.pass.mas'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='mirato' SS='73' SE='78' POS='14'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='Avv' MF='.mas.fem.plur.sing' head='15' potgov='15'><CSTS><SIMPLE_CONST ID='15' S='soprattutto' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='soprattutto' T='avv.quantita' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='soprattutto' SS='80' SE='90' POS='15'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='VerInf' MF='.mas.fem.plur.sing' head='16' potgov='17'><CSTS><SIMPLE_CONST ID='16' S='ad' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='ad' SS='92' SE='93' POS='16'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='17' S='attenuare' T='VNT' MF='inf.pres'><ALTER_LEMMAS><LEMMA ID='0' S='attenuare' T='v.tran.sempl' MF='inf.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='attenuare' SS='95' SE='103' POS='17'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='Nom' MF='.mas.fem.plur.sing' head='18' potgov='19'><CSTS><SIMPLE_CONST ID='18' S='gli' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='gli' SS='105' SE='107' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='effetti' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='effetto' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='effetti' SS='109' SE='115' POS='19'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='Prep' MF='.mas.fem.plur.sing' head='20' potgov='22'><CSTS><SIMPLE_CONST ID='20' S='dei' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='dei' SS='117' SE='119' POS='20'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='21' S='dei' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='dei' SS='121' SE='123' POS='21'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='22' S='fallimenti' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='fallimento' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='21' S='fallimenti' SS='125' SE='134' POS='22'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='Prep' MF='.mas.fem.plur.sing' head='23' potgov='25'><CSTS><SIMPLE_CONST ID='23' S='sulla' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='su' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='22' S='sulla' SS='136' SE='140' POS='23'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='24' S='sulla' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='23' S='sulla' SS='142' SE='146' POS='24'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='25' S='massa' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='massa' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='24' S='massa' SS='148' SE='152' POS='25'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='Agg' MF='.mas.fem.plur.sing' head='26' potgov='27'><CSTS><SIMPLE_CONST ID='26' S='piu&#39;' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;piu&#39;&#62;' T='avv.compar' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='25' S='piu&#39;' SS='154' SE='157' POS='26'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='27' S='povera' T='AGS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='povero' T='agg.qualif' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='26' S='povera' SS='159' SE='164' POS='27'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='14' T='Prep' MF='.mas.fem.plur.sing' head='28' potgov='30'><CSTS><SIMPLE_CONST ID='28' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='27' S='della' SS='166' SE='170' POS='28'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='29' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='28' S='della' SS='172' SE='176' POS='29'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='30' S='popolazione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='popolazione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='29' S='popolazione' SS='178' SE='188' POS='30'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='15' T='punt' MF='' head='31' potgov='31'><CSTS><SIMPLE_CONST ID='31' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='30' S='.' SS='190' SE='190' POS='31'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='9' TO='10' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='0' TO='7' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='7' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='7' TO='3' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='1' TO='3' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='4' TO='5' T='NP_NP' PLAUS='1.0'></ICD>
+<ICD FROM='9' TO='8' T='V_Adv' PLAUS='0.5'></ICD>
+<ICD FROM='7' TO='8' T='V_Adv' PLAUS='0.5'></ICD>
+<ICD FROM='7' TO='9' T='Sub' PLAUS='1.0'></ICD>
+<ICD FROM='11' TO='12' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='10' TO='12' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='9' TO='12' T='V_PP' PLAUS='0.25'></ICD>
+<ICD FROM='7' TO='12' T='V_PP' PLAUS='0.25'></ICD>
+<ICD FROM='10' TO='11' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='13' TO='14' T='Adj_PP' PLAUS='0.25'></ICD>
+<ICD FROM='12' TO='14' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='11' TO='14' T='PP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='10' TO='14' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='12' TO='13' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='11' TO='13' T='PP_Adj' PLAUS='0.5'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='18'><P>Non c&#39; _ ancora una valutazione precisa sull&#39; sull&#39; entita&#39; del del piano ma nei nei corridoi della della diplomazia internazionale si pensa a un programma da 50 - 100 milioni di dollari , rivolto soprattutto a ossigenare le riserve della della Banca centrale impegnata nella nella difesa del del lek .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Avv' MF='.mas.fem.plur.sing' head='1' potgov='1'><CSTS><SIMPLE_CONST ID='1' S='Non' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='non' T='avv.neg' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='Non' SS='0' SE='2' POS='1'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Nom' MF='.mas.fem.plur.sing' head='2' potgov='2'><CSTS><SIMPLE_CONST ID='2' S='c&#39;' T='PR' MF='mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='ci' T='pron.luogo' MF='mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='c&#39;' SS='4' SE='5' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='VerFin' MF='.mas.fem.plur.sing' head='3' potgov='3'><CSTS><SIMPLE_CONST ID='3' S='_' T='VFI' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.sempl' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='_' SS='7' SE='7' POS='3'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Avv' MF='.mas.fem.plur.sing' head='4' potgov='4'><CSTS><SIMPLE_CONST ID='4' S='ancora' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='ancora' T='avv.tempo' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='ancora' SS='9' SE='14' POS='4'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='Nom' MF='.mas.fem.plur.sing' head='5' potgov='6'><CSTS><SIMPLE_CONST ID='5' S='una' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='una' SS='16' SE='18' POS='5'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='6' S='valutazione' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='valutazione' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='valutazione' SS='20' SE='30' POS='6'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='Agg' MF='.mas.fem.plur.sing' head='7' potgov='7'><CSTS><SIMPLE_CONST ID='7' S='precisa' T='AGS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='preciso' T='agg.qualif' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='precisa' SS='32' SE='38' POS='7'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Prep' MF='.mas.fem.plur.sing' head='8' potgov='10'><CSTS><SIMPLE_CONST ID='8' S='sull&#39;' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='su' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='sull&#39;' SS='40' SE='44' POS='8'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='9' S='sull&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='sull&#39;' SS='46' SE='50' POS='9'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='10' S='entita&#39;' T='NCP' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;entita&#39;&#62;' T='nome.comune' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='entita&#39;' SS='52' SE='58' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='Prep' MF='.mas.fem.plur.sing' head='11' potgov='13'><CSTS><SIMPLE_CONST ID='11' S='del' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='del' SS='60' SE='62' POS='11'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='12' S='del' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='del' SS='64' SE='66' POS='12'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='13' S='piano' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='piano' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='piano' SS='68' SE='72' POS='13'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='CongCo' MF='.mas.fem.plur.sing' head='14' potgov='14'><CSTS><SIMPLE_CONST ID='14' S='ma' T='CO' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='ma' T='cong.coord' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='ma' SS='74' SE='75' POS='14'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='Prep' MF='.mas.fem.plur.sing' head='15' potgov='17'><CSTS><SIMPLE_CONST ID='15' S='nei' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='nei' SS='77' SE='79' POS='15'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='16' S='nei' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='nei' SS='81' SE='83' POS='16'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='17' S='corridoi' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='corridoio' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='corridoi' SS='85' SE='92' POS='17'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='Prep' MF='.mas.fem.plur.sing' head='18' potgov='20'><CSTS><SIMPLE_CONST ID='18' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='della' SS='94' SE='98' POS='18'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='19' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='della' SS='100' SE='104' POS='19'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='20' S='diplomazia' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='diplomazia' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='diplomazia' SS='106' SE='115' POS='20'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='Agg' MF='.mas.fem.plur.sing' head='21' potgov='21'><CSTS><SIMPLE_CONST ID='21' S='internazionale' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='internazionale' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='internazionale' SS='117' SE='130' POS='21'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='Nom' MF='.mas.fem.plur.sing' head='22' potgov='22'><CSTS><SIMPLE_CONST ID='22' S='si' T='PR' MF='3.mas.fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='si' T='pron.refl_impers' MF='3.mas.fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='21' S='si' SS='132' SE='133' POS='22'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='14' T='VerFin' MF='.mas.fem.plur.sing' head='23' potgov='23'><CSTS><SIMPLE_CONST ID='23' S='pensa' T='VFI' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='pensare' T='v.intran.sempl' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='22' S='pensa' SS='135' SE='139' POS='23'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='15' T='Prep' MF='.mas.fem.plur.sing' head='24' potgov='26'><CSTS><SIMPLE_CONST ID='24' S='a' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='23' S='a' SS='141' SE='141' POS='24'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='25' S='un' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='24' S='un' SS='143' SE='144' POS='25'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='26' S='programma' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='programma' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='25' S='programma' SS='146' SE='154' POS='26'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='16' T='Prep' MF='.mas.fem.plur.sing' head='27' potgov='28'><CSTS><SIMPLE_CONST ID='27' S='da' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='da' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='26' S='da' SS='156' SE='157' POS='27'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='28' S='50' T='AGV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;50&#62;' T='agg.num_card' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='27' S='50' SS='159' SE='160' POS='28'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='17' T='?' MF='.mas.fem.plur.sing' head='29' potgov='29'><CSTS><SIMPLE_CONST ID='29' S='-' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='-' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='28' S='-' SS='162' SE='162' POS='29'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='18' T='Nom' MF='.mas.fem.plur.sing' head='30' potgov='31'><CSTS><SIMPLE_CONST ID='30' S='100' T='AGV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;100&#62;' T='agg.num_card' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='29' S='100' SS='164' SE='166' POS='30'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='31' S='milioni' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='milione' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='30' S='milioni' SS='168' SE='174' POS='31'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='19' T='Prep' MF='.mas.fem.plur.sing' head='32' potgov='33'><CSTS><SIMPLE_CONST ID='32' S='di' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='31' S='di' SS='176' SE='177' POS='32'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='33' S='dollari' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='dollaro' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='32' S='dollari' SS='179' SE='185' POS='33'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='20' T='?' MF='.mas.fem.plur.sing' head='34' potgov='34'><CSTS><SIMPLE_CONST ID='34' S=',' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S=',' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='33' S=',' SS='187' SE='187' POS='34'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='21' T='VerPart' MF='.mas.fem.plur.sing' head='35' potgov='35'><CSTS><SIMPLE_CONST ID='35' S='rivolto' T='VNP' MF='sing.part.pass.mas'><ALTER_LEMMAS><LEMMA ID='0' S='rivolgere' T='v.tran.sempl' MF='sing.part.pass.mas'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='34' S='rivolto' SS='189' SE='195' POS='35'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='22' T='Avv' MF='.mas.fem.plur.sing' head='36' potgov='36'><CSTS><SIMPLE_CONST ID='36' S='soprattutto' T='AVV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='soprattutto' T='avv.quantita' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='35' S='soprattutto' SS='197' SE='207' POS='36'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='23' T='VerInf' MF='.mas.fem.plur.sing' head='37' potgov='38'><CSTS><SIMPLE_CONST ID='37' S='a' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='a' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='36' S='a' SS='209' SE='209' POS='37'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='38' S='ossigenare' T='VNT' MF='inf.pres'><ALTER_LEMMAS><LEMMA ID='0' S='ossigenare' T='v.tran.sempl' MF='inf.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='37' S='ossigenare' SS='211' SE='220' POS='38'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='24' T='Nom' MF='.mas.fem.plur.sing' head='39' potgov='40'><CSTS><SIMPLE_CONST ID='39' S='le' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='38' S='le' SS='222' SE='223' POS='39'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='40' S='riserve' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='riserva' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='39' S='riserve' SS='225' SE='231' POS='40'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='25' T='Prep' MF='.mas.fem.plur.sing' head='41' potgov='43'><CSTS><SIMPLE_CONST ID='41' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='40' S='della' SS='233' SE='237' POS='41'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='42' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='41' S='della' SS='239' SE='243' POS='42'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='43' S='Banca' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='banca' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='42' S='Banca' SS='245' SE='249' POS='43'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='26' T='Agg' MF='.mas.fem.plur.sing' head='44' potgov='44'><CSTS><SIMPLE_CONST ID='44' S='centrale' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='centrale' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='43' S='centrale' SS='251' SE='258' POS='44'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='27' T='VerPart' MF='.mas.fem.plur.sing' head='45' potgov='45'><CSTS><SIMPLE_CONST ID='45' S='impegnata' T='VNP' MF='sing.part.pass.fem'><ALTER_LEMMAS><LEMMA ID='0' S='impegnare' T='v.tran.sempl' MF='sing.part.pass.fem'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='44' S='impegnata' SS='260' SE='268' POS='45'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='28' T='Prep' MF='.mas.fem.plur.sing' head='46' potgov='48'><CSTS><SIMPLE_CONST ID='46' S='nella' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='45' S='nella' SS='270' SE='274' POS='46'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='47' S='nella' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='46' S='nella' SS='276' SE='280' POS='47'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='48' S='difesa' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='difesa' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='47' S='difesa' SS='282' SE='287' POS='48'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='29' T='Prep' MF='.mas.fem.plur.sing' head='49' potgov='51'><CSTS><SIMPLE_CONST ID='49' S='del' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='48' S='del' SS='289' SE='291' POS='49'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='50' S='del' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='49' S='del' SS='293' SE='295' POS='50'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='51' S='lek' T='NCP' MF='mas.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='lek' T='nome.comune' MF='mas.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='50' S='lek' SS='297' SE='299' POS='51'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='30' T='punt' MF='' head='52' potgov='52'><CSTS><SIMPLE_CONST ID='52' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='51' S='.' SS='301' SE='301' POS='52'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='27' TO='28' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='23' TO='24' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='14' TO='9' T='V_CC' PLAUS='1.0'></ICD>
+<ICD FROM='14' TO='13' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='14' TO='15' T='V_PP' PLAUS='1.0'></ICD>
+<ICD FROM='0' TO='3' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='3' TO='2' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='3' TO='1' T='V_Adv' PLAUS='1.0'></ICD>
+<ICD FROM='14' TO='4' T='V_Adv' PLAUS='0.5'></ICD>
+<ICD FROM='3' TO='4' T='V_Adv' PLAUS='0.5'></ICD>
+<ICD FROM='3' TO='5' T='V_NP' PLAUS='1.0'></ICD>
+<ICD FROM='14' TO='7' T='V_PP' PLAUS='0.25'></ICD>
+<ICD FROM='6' TO='7' T='Adj_PP' PLAUS='0.25'></ICD>
+<ICD FROM='5' TO='7' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='3' TO='7' T='V_PP' PLAUS='0.25'></ICD>
+<ICD FROM='14' TO='18' T='V_NP' PLAUS='0.5'></ICD>
+<ICD FROM='3' TO='18' T='V_NP' PLAUS='0.5'></ICD>
+<ICD FROM='5' TO='6' T='NP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='7' TO='8' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='5' TO='8' T='NP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='14' TO='10' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='9' TO='10' T='COORD' PLAUS='0.5'></ICD>
+<ICD FROM='10' TO='11' T='PP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='11' TO='12' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='10' TO='12' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='15' TO='16' T='PP_PP' PLAUS='0.5'></ICD>
+<ICD FROM='14' TO='16' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='27' TO='22' T='V_Adv' PLAUS='0.25'></ICD>
+<ICD FROM='23' TO='22' T='V_Adv' PLAUS='0.25'></ICD>
+<ICD FROM='21' TO='22' T='V_Adv' PLAUS='0.25'></ICD>
+<ICD FROM='14' TO='22' T='V_Adv' PLAUS='0.25'></ICD>
+<ICD FROM='18' TO='19' T='NP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='16' TO='19' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='15' TO='19' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='24' TO='25' T='NP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='19' TO='25' T='PP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='18' TO='25' T='NP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='16' TO='25' T='PP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='15' TO='25' T='PP_PP' PLAUS='0.2'></ICD>
+<ICD FROM='28' TO='29' T='PP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='25' TO='29' T='PP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='24' TO='29' T='NP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='19' TO='29' T='PP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='18' TO='29' T='NP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='16' TO='29' T='PP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='15' TO='29' T='PP_PP' PLAUS='0.14285715'></ICD>
+<ICD FROM='19' TO='21' T='PP_VPart' PLAUS='1.0'></ICD>
+<ICD FROM='25' TO='26' T='PP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='24' TO='26' T='NP_Adj' PLAUS='0.5'></ICD>
+<ICD FROM='25' TO='27' T='PP_VPart' PLAUS='1.0'></ICD>
+</ICDS></XDG>
+</XDGS></PP><PP ID='19'><P>Il crollo della della moneta - nelle nelle ultime settimane ha perso il 30 % sul sul dollaro - sarebbe il tocco finale per aprire un&#39; altra voragine nei nei conti dell&#39; dell&#39; Albania .</P><XDGS><XDG><CSTS><COMPLEX_CONST ID='1' T='Nom' MF='.mas.fem.plur.sing' head='1' potgov='2'><CSTS><SIMPLE_CONST ID='1' S='Il' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='0' S='Il' SS='0' SE='1' POS='1'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='2' S='crollo' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='crollo' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='1' S='crollo' SS='3' SE='8' POS='2'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='2' T='Prep' MF='.mas.fem.plur.sing' head='3' potgov='5'><CSTS><SIMPLE_CONST ID='3' S='della' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='2' S='della' SS='10' SE='14' POS='3'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='4' S='della' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='3' S='della' SS='16' SE='20' POS='4'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='5' S='moneta' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='moneta' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='4' S='moneta' SS='22' SE='27' POS='5'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='3' T='?' MF='.mas.fem.plur.sing' head='6' potgov='6'><CSTS><SIMPLE_CONST ID='6' S='-' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='-' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='5' S='-' SS='29' SE='29' POS='6'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='4' T='Prep' MF='.mas.fem.plur.sing' head='7' potgov='10'><CSTS><SIMPLE_CONST ID='7' S='nelle' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='6' S='nelle' SS='31' SE='35' POS='7'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='8' S='nelle' T='ARP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='7' S='nelle' SS='37' SE='41' POS='8'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='9' S='ultime' T='AGV' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='ultimo' T='agg.num_ord' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='8' S='ultime' SS='43' SE='48' POS='9'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='10' S='settimane' T='NCP' MF='fem.plur'><ALTER_LEMMAS><LEMMA ID='0' S='settimana' T='nome.comune' MF='fem.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='9' S='settimane' SS='50' SE='58' POS='10'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='5' T='VerFin' MF='.mas.fem.plur.sing' head='11' potgov='12'><CSTS><SIMPLE_CONST ID='11' S='ha' T='VFT' MF='3.sing.ind.pres'><ALTER_LEMMAS><LEMMA ID='0' S='avere' T='v.tran.aus' MF='3.sing.ind.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='10' S='ha' SS='60' SE='61' POS='11'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='12' S='perso' T='VNP' MF='sing.part.pass.mas'><ALTER_LEMMAS><LEMMA ID='0' S='perdere' T='v.tran.sempl' MF='sing.part.pass.mas'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='11' S='perso' SS='63' SE='67' POS='12'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='6' T='?' MF='.mas.fem.plur.sing' head='13' potgov='13'><CSTS><SIMPLE_CONST ID='13' S='il' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='12' S='il' SS='69' SE='70' POS='13'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='7' T='Agg' MF='.mas.fem.plur.sing' head='14' potgov='14'><CSTS><SIMPLE_CONST ID='14' S='30' T='AGV' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='&#62;30&#62;' T='agg.num_card' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='13' S='30' SS='72' SE='73' POS='14'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='8' T='?' MF='.mas.fem.plur.sing' head='15' potgov='15'><CSTS><SIMPLE_CONST ID='15' S='%' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='%' T='special' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='14' S='%' SS='75' SE='75' POS='15'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='9' T='Prep' MF='.mas.fem.plur.sing' head='16' potgov='18'><CSTS><SIMPLE_CONST ID='16' S='sul' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='su' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='15' S='sul' SS='77' SE='79' POS='16'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='17' S='sul' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='16' S='sul' SS='81' SE='83' POS='17'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='18' S='dollaro' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='dollaro' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='17' S='dollaro' SS='85' SE='91' POS='18'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='10' T='?' MF='.mas.fem.plur.sing' head='19' potgov='19'><CSTS><SIMPLE_CONST ID='19' S='-' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='-' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='18' S='-' SS='93' SE='93' POS='19'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='11' T='VerFin' MF='.mas.fem.plur.sing' head='20' potgov='20'><CSTS><SIMPLE_CONST ID='20' S='sarebbe' T='VFI' MF='3.sing.cond.pres'><ALTER_LEMMAS><LEMMA ID='0' S='essere' T='v.intran.sempl' MF='3.sing.cond.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='19' S='sarebbe' SS='95' SE='101' POS='20'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='12' T='Nom' MF='.mas.fem.plur.sing' head='21' potgov='22'><CSTS><SIMPLE_CONST ID='21' S='il' T='ARS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='20' S='il' SS='103' SE='104' POS='21'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='22' S='tocco' T='NCS' MF='mas.sing'><ALTER_LEMMAS><LEMMA ID='0' S='tocco' T='nome.comune' MF='mas.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='21' S='tocco' SS='106' SE='110' POS='22'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='13' T='Agg' MF='.mas.fem.plur.sing' head='23' potgov='23'><CSTS><SIMPLE_CONST ID='23' S='finale' T='AGS' MF='mas.fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='finale' T='agg.qualif' MF='mas.fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='22' S='finale' SS='112' SE='117' POS='23'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='14' T='VerInf' MF='.mas.fem.plur.sing' head='24' potgov='25'><CSTS><SIMPLE_CONST ID='24' S='per' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='per' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='23' S='per' SS='119' SE='121' POS='24'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='25' S='aprire' T='VNT' MF='inf.pres'><ALTER_LEMMAS><LEMMA ID='0' S='aprire' T='v.tran.sempl' MF='inf.pres'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='24' S='aprire' SS='123' SE='128' POS='25'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='15' T='Nom' MF='.mas.fem.plur.sing' head='26' potgov='28'><CSTS><SIMPLE_CONST ID='26' S='un&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='un' T='art.indef' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='25' S='un&#39;' SS='130' SE='132' POS='26'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='27' S='altra' T='AGV' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='altro' T='agg.deitt' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='26' S='altra' SS='134' SE='138' POS='27'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='28' S='voragine' T='NCS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='voragine' T='nome.comune' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='27' S='voragine' SS='140' SE='147' POS='28'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='16' T='Prep' MF='.mas.fem.plur.sing' head='29' potgov='31'><CSTS><SIMPLE_CONST ID='29' S='nei' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='in' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='28' S='nei' SS='149' SE='151' POS='29'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='30' S='nei' T='ARP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='29' S='nei' SS='153' SE='155' POS='30'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='31' S='conti' T='NCP' MF='mas.plur'><ALTER_LEMMAS><LEMMA ID='0' S='conto' T='nome.comune' MF='mas.plur'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='30' S='conti' SS='157' SE='161' POS='31'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='17' T='Prep' MF='.mas.fem.plur.sing' head='32' potgov='34'><CSTS><SIMPLE_CONST ID='32' S='dell&#39;' T='PSE' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='di' T='prep.sempl' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='31' S='dell&#39;' SS='163' SE='167' POS='32'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='33' S='dell&#39;' T='ARS' MF='fem.sing'><ALTER_LEMMAS><LEMMA ID='0' S='il' T='art.determ' MF='fem.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='32' S='dell&#39;' SS='169' SE='173' POS='33'/></SPAN></SIMPLE_CONST>
+<SIMPLE_CONST ID='34' S='Albania' T='NPR' MF='fem.plur.sing'><ALTER_LEMMAS><LEMMA ID='0' S='albania' T='nome.proprio' MF='fem.plur.sing'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='33' S='Albania' SS='175' SE='181' POS='34'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+<COMPLEX_CONST ID='18' T='punt' MF='' head='35' potgov='35'><CSTS><SIMPLE_CONST ID='35' S='.' T='?' MF='invariante'><ALTER_LEMMAS><LEMMA ID='0' S='.' T='punct' MF='invariante'></LEMMA></ALTER_LEMMAS><SPAN><TOKEN ID='34' S='.' SS='183' SE='183' POS='35'/></SPAN></SIMPLE_CONST>
+</CSTS></COMPLEX_CONST>
+</CSTS><ICDS><ICD FROM='14' TO='15' T='V_Obj' PLAUS='1.0'></ICD>
+<ICD FROM='0' TO='11' T='Sentence' PLAUS='1.0'></ICD>
+<ICD FROM='5' TO='1' T='V_Sog' PLAUS='1.0'></ICD>
+<ICD FROM='1' TO='2' T='NP_PP' PLAUS='1.0'></ICD>
+<ICD FROM='5' TO='4' T='V_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='2' TO='4' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='1' TO='4' T='NP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='11' TO='9' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='5' TO='9' T='V_PP' PLAUS='0.5'></ICD>
+<ICD FROM='11' TO='12' T='V_NP' PLAUS='1.0'></ICD>
+<ICD FROM='15' TO='16' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='14' TO='16' T='V_PP' PLAUS='0.25'></ICD>
+<ICD FROM='12' TO='16' T='NP_PP' PLAUS='0.25'></ICD>
+<ICD FROM='11' TO='16' T='V_PP' PLAUS='0.25'></ICD>
+<ICD FROM='12' TO='13' T='NP_Adj' PLAUS='1.0'></ICD>
+<ICD FROM='12' TO='14' T='NP_VPart' PLAUS='1.0'></ICD>
+<ICD FROM='16' TO='17' T='PP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='15' TO='17' T='NP_PP' PLAUS='0.33333334'></ICD>
+<ICD FROM='12' TO='17' T='NP_PP' PLAUS='0.33333334'></ICD>
+</ICDS></XDG>
+</XDGS></PP></TEXT>
