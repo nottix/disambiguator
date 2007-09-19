@@ -6,36 +6,23 @@ import java.util.Properties;
 
 public class DBUtil{
 	
-	private Properties property = null;
-	Connection c=null;
-	
-	public DBUtil() throws IOException, ClassNotFoundException, Exception{
+	private static Properties property = null;
+	private static Connection c=null;
 		
-		try{
-			
-		
-		File ff = new File(System.getProperty("user.dir")+"/conf/sql-ds.properties");
-		
-		FileInputStream f;
-		f = new FileInputStream (ff);
-
-		property = new Properties();
-		property.load(f);
-		f.close();
-		}
-		catch(Exception e){
-			e.printStackTrace();
-		}
-	
-	}	
-	
-	public Connection startTransaction()
+	public static Connection startTransaction()
 	{
 		try
 		{
-		
-		Class.forName(property.getProperty("jdbcDriver"));
-		c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
+			File ff = new File(System.getProperty("user.dir")+"/conf/sql-ds.properties");
+			
+			FileInputStream f;
+			f = new FileInputStream (ff);
+			property = new Properties();
+			property.load(f);
+			f.close();
+	
+			Class.forName(property.getProperty("jdbcDriver"));
+			c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
 		}
 		catch(Exception e)
 		{
@@ -44,7 +31,7 @@ public class DBUtil{
 		return c;
 	}
 	
-	public void close() 
+	public static void close() 
 	{
 		if(c!= null)
 		{
