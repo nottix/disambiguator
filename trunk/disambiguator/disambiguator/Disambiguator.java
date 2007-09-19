@@ -11,12 +11,13 @@ import java.sql.*;
 
 public class Disambiguator extends DependencyProcessor {
 	
-	ArrayList constList = new ArrayList();
-	ArrayList completeList = new ArrayList();
-	ArrayList icdList = new ArrayList();
+	private ArrayList constList = new ArrayList();
+	private ArrayList completeList = new ArrayList();
+	private ArrayList icdList = new ArrayList();
+	private Connection connection;
 	
 	public void initialize() throws ProcessorException {
-		
+		connection = DBUtil.startTransaction();
 	}
 	
 	public void initialize(URL LinguisticResource) throws ProcessorException {
@@ -56,6 +57,8 @@ public class Disambiguator extends DependencyProcessor {
 					constList.add(0, surface);
 					constList.add(1, surfaceTo);
 					constList.add(2, (Icd)icdList.get(h));
+					constList.add(3, ((Icd)icdList.get(h)).getFrom().getType());
+					constList.add(4, ((Icd)icdList.get(h)).getTo().getType());
 					completeList.add(constList.clone());
 					retIcds.add((Icd)icdList.get(h));
 				}
@@ -66,6 +69,8 @@ public class Disambiguator extends DependencyProcessor {
 						constList.add(0, ((Icd)icdList.get(l)).getFrom().getSurface());
 						constList.add(1, ((Icd)icdList.get(l)).getTo().getSurface());
 						constList.add(2, (Icd)icdList.get(l));
+						constList.add(3, ((Icd)icdList.get(h)).getFrom().getType());
+						constList.add(4, ((Icd)icdList.get(h)).getTo().getType());
 						retIcds.add((Icd)icdList.get(l));
 						//System.out.println("BEFORE: "+((Icd)icdList.get(l)).getFrom().getSurface()+((Icd)icdList.get(l)).getTo().getSurface());
 						completeList.add(constList.clone());
@@ -135,18 +140,19 @@ public class Disambiguator extends DependencyProcessor {
 		int max = 0;
 		int indexMax = 0;
 		try {
-			DBUtil dbutil = new DBUtil();
 			for(int i=0; i<data.size(); i++) {
 				constList = (ArrayList)data.get(i);
 				query = "SELECT COUNT(i.idfrase) FROM icd i WHERE ((i.fromcs = ?) OR" +
 					" (i.tocs = ?)) AND" +
-					"((i.fromcs = ?) OR (i.tocs = ?))";
-				//System.out.println(query);
-				PreparedStatement ps = dbutil.startTransaction().prepareStatement(query);
+					"((i.fromcs = ?) OR (i.tocs = ?)) AND ((i.fromct = ?) OR (i.toct = ?))";
+				System.out.println(query);
+				PreparedStatement ps = connection.prepareStatement(query);
 				ps.setString(1, (String)constList.get(0));
 				ps.setString(2, (String)constList.get(0));
 				ps.setString(3, (String)constList.get(1));
 				ps.setString(4, (String)constList.get(1));
+				ps.setString(5, (String)constList.get(3));
+				ps.setString(6, (String)constList.get(3));
 				ResultSet rs = ps.executeQuery();
 				if(rs.next()) {
 					freq[i] = rs.getInt(1);
@@ -162,15 +168,19 @@ public class Disambiguator extends DependencyProcessor {
 			}
 			int found=0;
 			for(int i=0; i<freq.length; i++) {
-				if(freq[i]==indexMax)
+				if(freq[i]==indexMax) {
 					found++;
+				}
 			}
-			if(found>1)
+			if(found>1 || found==0)
 				retList.clear();
 			else {
+				System.out.println("found: "+indexMax);
 				retList.add(0, (String)((ArrayList)data.get(indexMax)).get(0));
 				retList.add(1, (String)((ArrayList)data.get(indexMax)).get(1));
 				retList.add(2, ((ArrayList)data.get(indexMax)).get(2));
+				retList.add(3, (String)((ArrayList)data.get(indexMax)).get(3));
+				retList.add(4, (String)((ArrayList)data.get(indexMax)).get(4));
 			}
 			
 		}
@@ -200,8 +210,10 @@ public class Disambiguator extends DependencyProcessor {
 	public static void main(String[] args) {
 		try {
 			Disambiguator disamb = new Disambiguator();
+			disamb.initialize();
 			String chaos_home = System.getenv("CHAOS_HOME");
-			Text t = dbClass.load_new(new File(chaos_home+"//chaos//treebank2000gold-CONLL_ORG_UTF8_0.coln.xml"));
+			Text t = dbClass.load_new(new File(chaos_home+"//chaos//treebank2000gold-CONLL_ORG_UTF8_2.coln.xml"));
+			System.out.println("File aperto: "+chaos_home+"//chaos//treebank2000gold-CONLL_ORG_UTF8_2.coln.xml");
 			//t.save(new File("C:\\ChaosParser\\Chaos2\\treebank2000gold-CONLL_ORG_UTF8_0.coln_test.xml"), AvailableOutputFormat.valueOf("xml"), true);
 			/*FileOutputStream out = new FileOutputStream(new File("C:\\ChaosParser\\Chaos2\\treebank2000gold-CONLL_ORG_UTF8_0_test.coln.xml"));
 			out.write(t.toXML().getBytes());
@@ -223,7 +235,8 @@ public class Disambiguator extends DependencyProcessor {
 				}
 			}
 			//BufferedWriter out = new BufferedWriter(new FileWriter(new File("C:\\ChaosParser\\Chaos2\\treebank2000gold-CONLL_ORG_UTF8_0.coln.xml")));
-			FileOutputStream out2 = new FileOutputStream(new File(chaos_home+"//chaos2//treebank2000gold-CONLL_ORG_UTF8_0.coln.xml"));
+			FileOutputStream out2 = new FileOutputStream(new File(chaos_home+"//chaos2//treebank2000gold-CONLL_ORG_UTF8_2.coln.xml"));
+			System.out.println("File scritto: "+chaos_home+"//chaos2//treebank2000gold-CONLL_ORG_UTF8_2.coln.xml");
 			out2.write(t.toXML().getBytes());
 			out2.close();
 			//t.save(new File("C:\\ChaosParser\\Chaos2\\treebank2000gold-CONLL_ORG_UTF8_0.coln.xml"), AvailableOutputFormat.valueOf("xml"), true);

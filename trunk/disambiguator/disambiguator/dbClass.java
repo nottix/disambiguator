@@ -12,6 +12,7 @@ import java.sql.*;
 
 
 public class dbClass {
+	private static Connection connection;
 	
 	public static Text load_new(File text_file) throws Exception {
         Text text = null;
@@ -60,7 +61,6 @@ public class dbClass {
 		String tempFrom, tempTo;
 		try
 		{
-			DBUtil dbutil = new DBUtil();
 			String dir = "c:\\ChaosParser\\AI_train";
 			File [] files = (new File(dir)).listFiles(); //I docs vengono presi in ordine lessicografico, cambiare la lettura facendoli prendere in ordine????
 			for (int z=0; z < 3; z++) { //70 � il 70% dei file contenuti nella directory AI_train che verranno utilizzati per il train
@@ -70,13 +70,12 @@ public class dbClass {
 
 			    for(int i =0; i < texts.size(); i++)
 			    {
-			       PreparedStatement ps = dbutil.startTransaction().prepareStatement("INSERT into frase(idfrase, frase) VALUES (?,?)");
+			       PreparedStatement ps = connection.prepareStatement("INSERT into frase(idfrase, frase) VALUES (?,?)");
 			       ps.setInt(1, ((Paragraph)texts.get(i)).getId());
 			       ps.setString(2, ((Paragraph)texts.get(i)).getSurface());
 			       ps.executeUpdate();
 			       ResultSet rs = ps.getGeneratedKeys();
 			       rs.next();
-			       ps.close();
 			       	       
 			       Vector xdgs = ((Paragraph)texts.get(i)).getXdgs();
 			       for(int x=0; x < xdgs.size(); x++) {
@@ -91,7 +90,7 @@ public class dbClass {
 			    		   		"'"+consList.getElementAt(j).getHead().getId()+"', " +
 			    		   		"'"+consList.getElementAt(j).getGov().getId()+"', " +
 			    		   		"'"+rs.getInt(1)+"')";
-				    	   ps2 = dbutil.startTransaction().prepareStatement(query2);
+				    	   ps2 = connection.prepareStatement(query2);
 				    	   //ps2.setInt(1, consList.getElementAt(j).getId());
 				    	   ps2.setString(1, consList.getElementAt(j).getSurface());
 				    	   /*ps2.setString(3, consList.getElementAt(j).getType());
@@ -108,13 +107,15 @@ public class dbClass {
 			    		   if(((Icd)icdList.get(k)).getFrom()!=null && ((Icd)icdList.get(k)).getTo()!=null) {
 			    			   tempFrom = ((Icd)icdList.get(k)).getFrom().getSurface();
 			    			   tempTo = ((Icd)icdList.get(k)).getTo().getSurface();
-			    			   query = "INSERT into icd (fromc, toc, fromcs, tocs, typeicd, idfrase) VALUES ('"+((Icd)icdList.get(k)).getFromId()+"'" +
+			    			   query = "INSERT into icd (fromc, toc, fromcs, tocs, fromct, toct, typeicd, idfrase) VALUES ('"+((Icd)icdList.get(k)).getFromId()+"'" +
 			    			   ",'"+((Icd)icdList.get(k)).getToId()+
-			    			   "', ?, ?, '"+((Icd)icdList.get(k)).getType()+"'" +
+			    			   "', ?, ?, ?, ?, '"+((Icd)icdList.get(k)).getType()+"'" +
 			    			   ", '"+rs.getInt(1)+"')";
-			    			   ps3 = dbutil.startTransaction().prepareStatement(query);
+			    			   ps3 = connection.prepareStatement(query);
 			    			   ps3.setString(1, tempFrom);
 			    			   ps3.setString(2, tempTo);
+			    			   ps3.setString(3, ((Icd)icdList.get(k)).getFrom().getType());
+			    			   ps3.setString(4, ((Icd)icdList.get(k)).getTo().getType());
 			    			   System.out.println(query);
 			    			   ps3.executeUpdate();
 			    			   ps3.close();
@@ -122,10 +123,10 @@ public class dbClass {
 			    	   }
 			       }
 			       rs.close();
+			       ps.close();
 			    }
 			  
 			}	
-			dbutil.close();
 		}
 		catch(Exception e)
 		{
@@ -142,6 +143,8 @@ public class dbClass {
 
 	public static void main(String[] args)
 	{
+		connection = DBUtil.startTransaction();
 		addToDB();
+		DBUtil.close();
 	}
 }
