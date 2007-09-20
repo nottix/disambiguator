@@ -19,7 +19,7 @@ public class Evaluator {
 	
 	private static String chaos_home = System.getenv("CHAOS_HOME");
 	private static String dir1 = chaos_home+"//AI_train";
-	private static String dir2 = chaos_home+"//chaos2";
+	private static String dir2 = chaos_home+"//chaos";
 
 	public static Text load_new(File text_file) throws Exception {
         Text text = null;
