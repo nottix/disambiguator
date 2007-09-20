@@ -17,8 +17,9 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 public class Evaluator {
 	
-	private static String dir1 = System.getProperty("user.dir")+"/AI_train";
-	private static String dir2 = System.getProperty("user.dir")+"/chaos";
+	private static String chaos_home = System.getenv("CHAOS_HOME");
+	private static String dir1 = chaos_home+"//AI_train";
+	private static String dir2 = chaos_home+"//chaos2";
 
 	public static Text load_new(File text_file) throws Exception {
         Text text = null;
@@ -64,7 +65,7 @@ public class Evaluator {
 		{
 			File [] files = (new File(dir1)).listFiles(); //I docs vengono presi in ordine lessicografico, cambiare la lettura facendoli prendere in ordine????
 			File[] files2 = (new File(dir2)).listFiles();
-			for (int z=0; z < files.length; z++) { //70 è il 70% dei file contenuti nella directory AI_train che verranno utilizzati per il train
+			for (int z=0; z < files.length*0.3; z++) { //70 è il 70% dei file contenuti nella directory AI_train che verranno utilizzati per il train
 				train =load_new(files[z]);
 				Vector<Paragraph> par = train.getParagraphs();
 				for(int l = 0; l < par.size(); l++)
@@ -77,7 +78,7 @@ public class Evaluator {
 					}
 				}
 			}	
-				for(int i = 0; i < files.length; i++ )
+				for(int i = 0; i < files.length*0.3; i++ )
 				{
 					chaos = load_new(files[i]);
 					Vector<Paragraph> parchaos = train.getParagraphs();
@@ -120,7 +121,7 @@ public class Evaluator {
 		{
 			File [] files = (new File(dir1)).listFiles(); //I docs vengono presi in ordine lessicografico, cambiare la lettura facendoli prendere in ordine????
 			File[] files2 = (new File(dir2)).listFiles();
-			for (int z=0; z < files.length; z++) { //70 è il 70% dei file contenuti nella directory AI_train che verranno utilizzati per il train
+			for (int z=0; z < files.length*0.3; z++) { //70 è il 70% dei file contenuti nella directory AI_train che verranno utilizzati per il train
 				train =load_new(files[z]);
 				Vector<Paragraph> par = train.getParagraphs();
 				for(int l = 0; l < par.size(); l++)
@@ -134,7 +135,7 @@ public class Evaluator {
 					}
 				}
 			}	
-				for(int i = 0; i < files.length; i++ )
+				for(int i = 0; i < files.length*0.3; i++ )
 				{
 					chaos = load_new(files[i]);
 					Vector<Paragraph> parchaos = train.getParagraphs();
@@ -180,8 +181,8 @@ public class Evaluator {
 	public static void main(String[] args)
 	{
 		double a = calcPrecision();
-		double b = calcRecall();
-		double c = calcFMeasure();
-		System.out.println(a+" "+b+" "+c);
+		//double b = calcRecall();
+		//double c = calcFMeasure();
+		System.out.println(a);
 	}
 }
