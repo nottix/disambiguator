@@ -63,7 +63,7 @@ public class dbClass {
 		{
 			String dir = "c:\\ChaosParser\\AI_train";
 			File [] files = (new File(dir)).listFiles(); //I docs vengono presi in ordine lessicografico, cambiare la lettura facendoli prendere in ordine????
-			for (int z=0; z < 3; z++) { //70 � il 70% dei file contenuti nella directory AI_train che verranno utilizzati per il train
+			for (int z=0; z < files.length*0.7; z++) { //70 � il 70% dei file contenuti nella directory AI_train che verranno utilizzati per il train
 				System.out.println("Caricamento file: "+files[z].getName());
 				t =load_new(files[z]);
 				texts = t.getParagraphs(); 
