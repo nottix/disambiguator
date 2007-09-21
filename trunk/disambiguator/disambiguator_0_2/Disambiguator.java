@@ -157,13 +157,13 @@ public class Disambiguator extends DependencyProcessor {
 	 * @return Lista contenente la coppia di costituenti pi� frequente nel Corpus
 	 */
 	public IcdList getMoreFrequent(IcdList data) {
-		Icd icd;
+		//Icd icd;
 		ArrayList queryResult = new ArrayList();
 		//System.out.println("DATA: "+data.size());
 		IcdList retList = new IcdList();
-		String query;
-		try {
-			for(int i=0; i<data.size(); i++) {
+		//String query;
+		//try {
+			/*for(int i=0; i<data.size(); i++) {
 				icd = data.getIcd(i);
 				query = "SELECT COUNT(i.idfrase) FROM icd i WHERE ((i.fromcs = ?) OR" +
 					" (i.tocs = ?)) AND " +
@@ -185,7 +185,8 @@ public class Disambiguator extends DependencyProcessor {
 				}
 				rs.close();
 				ps.close();
-			}
+			}*/
+			DBUtil.queryFrequentSurType(data, queryResult);
 			int index = getMax(queryResult);
 			if(index>=0) {
 				retList.addElement(data.getIcd(index));
@@ -193,10 +194,10 @@ public class Disambiguator extends DependencyProcessor {
 			else {
 				retList = null;
 			}
-		}
-		catch(Exception e) {
-			e.printStackTrace();
-		}
+		//}
+		//catch(Exception e) {
+		//	e.printStackTrace();
+		//}
 		
 		return retList;
 	}
@@ -287,14 +288,14 @@ public class Disambiguator extends DependencyProcessor {
 	}
 	
 	public IcdList getFrequentRel(IcdList data) {
-		IcdList ret = new IcdList();
-		ArrayList out = new ArrayList();
-		String fromConstType;
+		IcdList retList = new IcdList();
+		ArrayList queryResult = new ArrayList();
+		/*String fromConstType;
 		String toConstType;
-		String query;
+		String query;*/
 		
-		try {
-			for(int i=0; i<data.size(); i++) {
+		//try {
+			/*for(int i=0; i<data.size(); i++) {
 				fromConstType=data.getIcd(i).getFrom().getType();
 				toConstType=data.getIcd(i).getTo().getType();
 				query="SELECT COUNT(i.idfrase) FROM icd i WHERE (i.fromct=? AND i.toct=?) OR (i.toct=? AND i.fromct=?)";
@@ -311,30 +312,30 @@ public class Disambiguator extends DependencyProcessor {
 				}
 				rs.close();
 				ps.close();
-			}
-			int index=getMax(out);
+			}*/
+		DBUtil.queryFrequentRel(data, queryResult);
+			int index=getMax(queryResult);
 			if(index>=0) {
-				ret.addElement(data.getIcd(index));
+				retList.addElement(data.getIcd(index));
 				System.out.println("Index: "+index);
-				printAllIcds(ret);
+				printAllIcds(retList);
 			}
 			else
-				ret = null;
-		}
+				retList = null;
+		/*}
 		catch(Exception e) {
 			e.printStackTrace();
-		}
-		return ret;
+		}*/
+		return retList;
 	}
 	
 	public IcdList getFrequentRelDis(IcdList data) {
-		ArrayList out= new ArrayList();
-		IcdList ret = new IcdList();
-		String fromConstType;
+		ArrayList queryResult= new ArrayList();
+		IcdList retList = new IcdList();
+		/*String fromConstType;
 		String toConstType;
-		String query;
-	
-		try{
+		String query;*/
+		/*try{
 			for(int i=0; i<data.size();i++){
 			
 				fromConstType=data.getIcd(i).getFrom().getType();
@@ -352,19 +353,20 @@ public class Disambiguator extends DependencyProcessor {
 				rs.close();
 				ps1.close();
 			}
-			
-			int index=getMin(out);
+			*/
+		DBUtil.queryFrequentRelDis(data, queryResult);
+			int index=getMin(queryResult);
 			if(index>=0) {
-				ret.addElement(data.getIcd(index));
+				retList.addElement(data.getIcd(index));
 			}
 			else
-				ret = null;
-		}
+				retList = null;
+		/*}
 		catch(Exception e){
 				e.printStackTrace();		
-		}
+		}*/
 		
-		return ret;
+		return retList;
 	}
 	
 	public double calcDepProb(Object arr[],Object arr2[],String type) {
@@ -395,7 +397,7 @@ public class Disambiguator extends DependencyProcessor {
 			for(int ii=0; ii<2; ii++) {
 				if(list[ii].isDirectory())
 					continue;
-			Text t = dbClass.load_new(list[ii]);
+			Text t = DBLoader.load_new(list[ii]);
 			System.out.println("File aperto: "+list[ii].getName());
 			//t.save(new File("C:\\ChaosParser\\Chaos2\\treebank2000gold-CONLL_ORG_UTF8_0.coln_test.xml"), AvailableOutputFormat.valueOf("xml"), true);
 			/*FileOutputStream out = new FileOutputStream(new File("C:\\ChaosParser\\Chaos2\\treebank2000gold-CONLL_ORG_UTF8_0_test.coln.xml"));
