@@ -34,6 +34,7 @@ public class Disambiguator extends DependencyProcessor {
 		IcdList retIcds = new IcdList();
 		IcdList icdDisambigued = new IcdList();
 		IcdList ret = null;
+		IcdList zeroIcdList;
 		Icd icd;
 		completeList.clear();
 		icdList.clear();
@@ -43,14 +44,21 @@ public class Disambiguator extends DependencyProcessor {
 				//System.out.println("cicle: "+i+", icd: "+icd.getPlausibilityAsString());
 				if( (icd.getPlausibility() < 1) && (!icdList.contains(icd)) )
 				{
+					
 					icdList.addElement(icd); //Contiene tutti gli icd minori di 1 che sono nella frase.
 					//System.out.println("completeList: "+icd.getFrom().getSurface()+":"+icd.getFromId()+", "+icd.getTo().getSurface()+":"+icd.getToId());
 				}
 			}
+			/*if(!icdList.getIcdsWithSourceId(0).isEmpty()) {
+				zeroIcdList = icdList.getIcdsWithTarget( icdList.getIcdsWithSourceId(0).getIcd(0).getFrom() );
+				icdList = icdList.subtract(zeroIcdList);
+			}*/
 			//System.out.println("Fine cicli");
 			//printAllIcds(icdList);
 			for(int h=0; h<icdList.size(); h++) {
 				//System.out.println("h: "+h);
+				//if(icdList.getIcd(h).getFrom()==null)
+				//	continue;
 				String surface = icdList.getIcd(h).getFrom().getSurface();
 				String surfaceTo = icdList.getIcd(h).getTo().getSurface();
 				if( !retIcds.isIn(icdList.getIcd(h)) ) {
@@ -92,14 +100,23 @@ public class Disambiguator extends DependencyProcessor {
 						}
 					}
 				}
+				
+				if(!icdDisambigued.isEmpty()) {
+					completeList = completeList.subtract(icdDisambigued); //icd ambigui
+					icds = icds.subtract(completeList); // icd totali meno icd ambigui
+					icds.addAll(icdDisambigued); // icd totali piu' icd disambiguati
+					icdDisambigued.clear();
+				}
 				completeList.clear();
 			}
 			//System.out.println("FINE, completeList.size(): "+completeList.size());
 
 			//printAllIcds(icdDisambigued);
-			retIcds = retIcds.subtract(icdDisambigued); //icd ambigui
-			icds = icds.subtract(retIcds); // icd totali meno icd ambigui
-			icds.addAll(icdDisambigued); // icd totali piu' icd disambiguati
+			/*if(!icdDisambigued.isEmpty()) {
+				retIcds = retIcds.subtract(icdDisambigued); //icd ambigui
+				icds = icds.subtract(retIcds); // icd totali meno icd ambigui
+				icds.addAll(icdDisambigued); // icd totali piu' icd disambiguati
+			}*/
 			//printAllIcds(icds);
 			inputXdg.setSetOfIcds(icds);
 		}
@@ -111,7 +128,7 @@ public class Disambiguator extends DependencyProcessor {
 	
 	public void printAllIcds(IcdList data) {
 		for(int i=0; i<data.size(); i++) {
-			if(data.getIcd(i).getFrom()!=null)
+			if(data.getIcd(i).getFromId()!=0)
 				System.out.println("Icd: "+i+", fromsur: "+data.getIcd(i).getFrom().getSurface()+":"+data.getIcd(i).getFromId()+", tosur: "+data.getIcd(i).getTo().getSurface()+":"+data.getIcd(i).getToId()+", plaus: "+data.getIcd(i).getPlausibility());
 		}
 	}
@@ -121,8 +138,12 @@ public class Disambiguator extends DependencyProcessor {
 			//System.out.println("i: "+(Integer)data.get(i));
 			for(int j=0; j<data.size(); j++) {
 				//System.out.println("j: "+(Integer)data.get(j));
-				if(j==i)
-					continue;
+				if(j==i) {
+					if(j==(data.size())-1)
+						return i;
+					else
+						continue;
+				}
 				if( ((Integer)data.get(i)).compareTo((Integer)data.get(j)) > 0 ) {
 					if(j==(data.size()-1))
 						return i;
@@ -138,8 +159,12 @@ public class Disambiguator extends DependencyProcessor {
 	public int getMin(ArrayList data) {
 		for(int i=0; i<data.size(); i++) {
 			for(int j=0; j<data.size(); j++) {
-				if(j==i)
-					continue;
+				if(j==i) {
+					if(j==(data.size())-1)
+						return i;
+					else
+						continue;
+				}
 				if( ((Integer)data.get(i)).compareTo((Integer)data.get(j)) < 0 ) {
 					if(j==(data.size()-1))
 						return i;
@@ -313,15 +338,17 @@ public class Disambiguator extends DependencyProcessor {
 				rs.close();
 				ps.close();
 			}*/
+		System.out.println("DATA SIZE: "+data.size());
 		DBUtil.queryFrequentRel(data, queryResult);
 			int index=getMax(queryResult);
 			if(index>=0) {
 				retList.addElement(data.getIcd(index));
-				System.out.println("Index: "+index);
+				System.out.println("Index max: "+index);
 				printAllIcds(retList);
 			}
 			else
 				retList = null;
+			System.out.println("DATA SIZE FINE");
 		/*}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -369,22 +396,6 @@ public class Disambiguator extends DependencyProcessor {
 		return retList;
 	}
 	
-	public double calcDepProb(Object arr[],Object arr2[],String type) {
-		double prob = 0.0;
-		double temp = 0;
-		double temp2 = 0;
-		for(int k=0; k<arr.length;k++) {
-			for(int l=0; l<arr2.length; l++) {
-				if(k!=l /*&&*/ )
-					temp++;
-				else if(k!=l /*&&*/ )
-					temp2++;
-			}
-		}		
-		prob = temp / temp2;
-		return prob;
-	}
-	
 	public static void main(String[] args) {
 		try {
 			Disambiguator disamb = new Disambiguator();
@@ -394,7 +405,7 @@ public class Disambiguator extends DependencyProcessor {
 			File file = new File(chaos_home+"//chaos");
 			File[] list = file.listFiles();
 			System.out.println(list[0].getAbsolutePath());
-			for(int ii=0; ii<2; ii++) {
+			for(int ii=(int)Math.round(list.length*0.70); ii<list.length-20; ii++) {
 				if(list[ii].isDirectory())
 					continue;
 			Text t = DBLoader.load_new(list[ii]);
