@@ -11,7 +11,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.sql.*;
 
 
-public class dbClass {
+public class DBLoader {
 	private static Connection connection;
 	
 	public static Text load_new(File text_file) throws Exception {
