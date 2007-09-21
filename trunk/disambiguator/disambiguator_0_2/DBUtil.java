@@ -59,11 +59,14 @@ public class DBUtil{
 		try {
 			for(int i=0; i<data.size(); i++) {
 				icd = data.getIcd(i);
-				query = "SELECT COUNT(i.idfrase) FROM icd i WHERE ((i.fromcs = ?) OR" +
+				//if(icd.getFrom()==null)
+				//	continue;
+				query = "SELECT COUNT(*) FROM icd i WHERE ((i.fromcs = ?) OR" +
 					" (i.tocs = ?)) AND " +
 					"((i.fromcs = ?) OR (i.tocs = ?)) AND (((i.fromct = ?) AND (i.toct = ?)) OR ((i.fromct = ?) AND (i.toct = ?)))";
 				//System.out.println(query);
 				ps1 = c.prepareStatement(query);
+				//System.out.println("ID: "+data.getIcd(i).getFromId());
 				ps1.setString(1, icd.getFrom().getSurface());
 				ps1.setString(2, icd.getFrom().getSurface());
 				ps1.setString(3, icd.getTo().getSurface());
@@ -89,9 +92,12 @@ public class DBUtil{
 	public static void queryFrequentRel(IcdList data, ArrayList queryResult) {
 		try {
 			for(int i=0; i<data.size(); i++) {
+				//if(data.getIcd(i).getFrom()==null)
+				//	continue;
+				//System.out.println("ID: "+data.getIcd(i).getFromId());
 				fromConstType=data.getIcd(i).getFrom().getType();
 				toConstType=data.getIcd(i).getTo().getType();
-				query="SELECT COUNT(i.idfrase) FROM icd i WHERE (i.fromct=? AND i.toct=?) OR (i.toct=? AND i.fromct=?)";
+				query="SELECT COUNT(*) FROM icd i WHERE (i.fromct=? AND i.toct=?) OR (i.toct=? AND i.fromct=?)";
 				
 				ps1 = c.prepareStatement(query);
 				ps1.setString(1, fromConstType);
@@ -100,7 +106,7 @@ public class DBUtil{
 				ps1.setString(4, toConstType);
 				rs1 = ps1.executeQuery();
 				if(rs1.next()) {
-					System.out.println("Int: "+rs1.getInt(1));
+					System.out.println("FromType: "+fromConstType+", ToType: "+toConstType+", Int: "+rs1.getInt(1));
 					queryResult.add(new Integer(rs1.getInt(1)));
 				}
 				rs1.close();
@@ -115,6 +121,9 @@ public class DBUtil{
 	public static void queryFrequentRelDis(IcdList data, ArrayList queryResult) {
 		try{
 			for(int i=0; i<data.size();i++){
+				//if(data.getIcd(i).getFrom()==null)
+				//	continue;
+				//System.out.println("ID: "+data.getIcd(i).getFromId());
 				fromConstType=data.getIcd(i).getFrom().getType();
 				toConstType=data.getIcd(i).getTo().getType();
 				query = "SELECT MIN(ABS(i.fromct-i.toct)) FROM icd i WHERE i.toct = ? AND i.fromct = ?";
