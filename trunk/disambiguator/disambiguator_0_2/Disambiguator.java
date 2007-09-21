@@ -40,17 +40,17 @@ public class Disambiguator extends DependencyProcessor {
 		try {
 			for(int i=0; i< icds.size(); i++) {
 				icd = icds.getIcd(i);
-				System.out.println("cicle: "+i+", icd: "+icd.getPlausibilityAsString());
+				//System.out.println("cicle: "+i+", icd: "+icd.getPlausibilityAsString());
 				if( (icd.getPlausibility() < 1) && (!icdList.contains(icd)) )
 				{
 					icdList.addElement(icd); //Contiene tutti gli icd minori di 1 che sono nella frase.
-					System.out.println("completeList: "+icd.getFrom().getSurface()+":"+icd.getFromId()+", "+icd.getTo().getSurface()+":"+icd.getToId());
+					//System.out.println("completeList: "+icd.getFrom().getSurface()+":"+icd.getFromId()+", "+icd.getTo().getSurface()+":"+icd.getToId());
 				}
 			}
-			System.out.println("Fine cicli");
-			printAllIcds(icdList);
+			//System.out.println("Fine cicli");
+			//printAllIcds(icdList);
 			for(int h=0; h<icdList.size(); h++) {
-				System.out.println("h: "+h);
+				//System.out.println("h: "+h);
 				String surface = icdList.getIcd(h).getFrom().getSurface();
 				String surfaceTo = icdList.getIcd(h).getTo().getSurface();
 				if( !retIcds.isIn(icdList.getIcd(h)) ) {
@@ -66,7 +66,7 @@ public class Disambiguator extends DependencyProcessor {
 					}
 					
 				}
-				printAllIcds(completeList);
+				//printAllIcds(completeList);
 				
 				ret = getMoreFrequent(completeList); //Primo caso
 				//ret = new ArrayList();
@@ -82,16 +82,23 @@ public class Disambiguator extends DependencyProcessor {
 						icdDisambigued.addElement(ret.getIcd(0));
 					}
 					else {
-						//Altro caso
+						ret = getFrequentRel(completeList); //Terzo caso
+						if(ret!=null) {
+							ret.getIcd(0).setPlausibility(1);
+							icdDisambigued.addElement(ret.getIcd(0));
+						}
+						else {
+							//Altro caso
+						}
 					}
 				}
 				completeList.clear();
 			}
-			System.out.println("FINE, completeList.size(): "+completeList.size());
+			//System.out.println("FINE, completeList.size(): "+completeList.size());
 
 			//printAllIcds(icdDisambigued);
-			retIcds.subtract(icdDisambigued); //icd ambigui
-			icds.subtract(retIcds); // icd totali meno icd ambigui
+			retIcds = retIcds.subtract(icdDisambigued); //icd ambigui
+			icds = icds.subtract(retIcds); // icd totali meno icd ambigui
 			icds.addAll(icdDisambigued); // icd totali piu' icd disambiguati
 			//printAllIcds(icds);
 			inputXdg.setSetOfIcds(icds);
@@ -111,7 +118,11 @@ public class Disambiguator extends DependencyProcessor {
 	
 	public int getMax(ArrayList data) {
 		for(int i=0; i<data.size(); i++) {
+			//System.out.println("i: "+(Integer)data.get(i));
 			for(int j=0; j<data.size(); j++) {
+				//System.out.println("j: "+(Integer)data.get(j));
+				if(j==i)
+					continue;
 				if( ((Integer)data.get(i)).compareTo((Integer)data.get(j)) > 0 ) {
 					if(j==(data.size()-1))
 						return i;
@@ -127,6 +138,8 @@ public class Disambiguator extends DependencyProcessor {
 	public int getMin(ArrayList data) {
 		for(int i=0; i<data.size(); i++) {
 			for(int j=0; j<data.size(); j++) {
+				if(j==i)
+					continue;
 				if( ((Integer)data.get(i)).compareTo((Integer)data.get(j)) < 0 ) {
 					if(j==(data.size()-1))
 						return i;
@@ -272,7 +285,49 @@ public class Disambiguator extends DependencyProcessor {
 		
 		return out;
 	}
-	public IcdList getFrequentRelDis(IcdList data){
+	
+	public IcdList getFrequentRel(IcdList data) {
+		IcdList ret = new IcdList();
+		ArrayList out = new ArrayList();
+		String fromConstType;
+		String toConstType;
+		String query;
+		
+		try {
+			for(int i=0; i<data.size(); i++) {
+				fromConstType=data.getIcd(i).getFrom().getType();
+				toConstType=data.getIcd(i).getTo().getType();
+				query="SELECT COUNT(i.idfrase) FROM icd i WHERE (i.fromct=? AND i.toct=?) OR (i.toct=? AND i.fromct=?)";
+				
+				PreparedStatement ps = connection.prepareStatement(query);
+				ps.setString(1, fromConstType);
+				ps.setString(2, toConstType);
+				ps.setString(3, fromConstType);
+				ps.setString(4, toConstType);
+				ResultSet rs = ps.executeQuery();
+				if(rs.next()) {
+					System.out.println("Int: "+rs.getInt(1));
+					out.add(new Integer(rs.getInt(1)));
+				}
+				rs.close();
+				ps.close();
+			}
+			int index=getMax(out);
+			if(index>=0) {
+				ret.addElement(data.getIcd(index));
+				System.out.println("Index: "+index);
+				printAllIcds(ret);
+			}
+			else
+				ret = null;
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return ret;
+	}
+	
+	public IcdList getFrequentRelDis(IcdList data) {
 		ArrayList out= new ArrayList();
 		IcdList ret = new IcdList();
 		String fromConstType;
