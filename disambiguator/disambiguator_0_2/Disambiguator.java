@@ -49,10 +49,18 @@ public class Disambiguator extends DependencyProcessor {
 					//System.out.println("completeList: "+icd.getFrom().getSurface()+":"+icd.getFromId()+", "+icd.getTo().getSurface()+":"+icd.getToId());
 				}
 			}
-			/*if(!icdList.getIcdsWithSourceId(0).isEmpty()) {
-				zeroIcdList = icdList.getIcdsWithTarget( icdList.getIcdsWithSourceId(0).getIcd(0).getFrom() );
+			if(!icdList.getIcdsWithSourceId(0).isEmpty()) {
+				zeroIcdList = icdList.getIcdsWithSourceId(0);
+				int toId = zeroIcdList.getIcd(0).getTo().getId();
+				for(int i=0; i<icdList.size(); i++) {
+					if( (icdList.getIcd(i).getToId()==toId) && (!zeroIcdList.isIn(icdList.getIcd(i))) ) {
+						zeroIcdList.addElement(icdList.getIcd(i));
+					}
+				}
+				//zeroIcdList = icdList.getIcdsWithTarget( icdList.getIcdsWithSourceId(0).getIcd(0).getFrom() );
 				icdList = icdList.subtract(zeroIcdList);
-			}*/
+				System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+			}
 			//System.out.println("Fine cicli");
 			//printAllIcds(icdList);
 			for(int h=0; h<icdList.size(); h++) {
@@ -405,7 +413,7 @@ public class Disambiguator extends DependencyProcessor {
 			File file = new File(chaos_home+"//chaos");
 			File[] list = file.listFiles();
 			System.out.println(list[0].getAbsolutePath());
-			for(int ii=(int)Math.round(list.length*0.70); ii<list.length-20; ii++) {
+			for(int ii=(int)Math.round(list.length*0.70)+6; ii<list.length-20; ii++) {
 				if(list[ii].isDirectory())
 					continue;
 			Text t = DBLoader.load_new(list[ii]);
