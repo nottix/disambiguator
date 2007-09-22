@@ -1,3 +1,12 @@
+/**
+ * Progetto di Intelligenza Artificiale 2006/2007
+ * 
+ * Disambiguatore sintattico:
+ * Utilizza algoritmi di disambiguazione stocastici e randomici
+ * 
+ * @author Simone Notargiacomo, Lorenzo Tavernese, Ibrahim Khalili
+ */
+
 package disambiguator_0_2;
 
 import chaos.XDG.*;
@@ -9,25 +18,58 @@ import java.util.*;
 import java.net.*;
 import java.sql.*;
 
+/**
+ * Classe principale del modulo di Disambiguazione.
+ * Può essere integrato nel parser Chaos per disambiguare
+ * singolarmente un XDG
+ * 
+ * @version 0.2
+ * @author Simone Notargiacomo, Lorenzo Tavernese, Ibrahim Khalili
+ */
 public class Disambiguator extends DependencyProcessor {
 	
+	/* Lista degli ICD ambigui con lo stesso ID di destinazione, all'interno di una frase */
 	private IcdList completeList = new IcdList();
+	/* Contiene tutti gli ICD con plausibilità minore di 1 che sono in una frase */
 	private IcdList icdList = new IcdList();
-	private Connection connection;
+	/* Array contenente i risultati di una query */
+	private ArrayList queryResult;
+	/* Lista contenente l'ICD scelto tra quelli ambigui */
+	private IcdList retList;
+	public long[] statistics = new long[5];
 	
+	/**
+	 * Metodo utilizzato per l'inizializzazione del modulo di disambiguazione,
+	 * ovvero avvia la connessione al DB relazionale ed inizializza gli oggetti principali della classe.
+	 */
 	public void initialize() throws ProcessorException {
-		connection = DBUtil.startTransaction();
+		DBUtil.startTransaction();
+		completeList = new IcdList();
+		icdList = new IcdList();
 	}
 	
+	/**
+	 * Equivale ad initialize()
+	 */
 	public void initialize(URL LinguisticResource) throws ProcessorException {
 		initialize();
 	}
 	
+	/**
+	 * Metodo utilizzato per la chiusura della connessione al DB.
+	 */
 	public void finalize() throws ProcessorException {
-		
+		DBUtil.close();
 	}
 	
-	//Prende l'XDG di input e cerca di disambiguarne il contenuto
+	/**
+	 * Disambigua l'XDG che gli viene passato come parametro in ingresso, ovvero
+	 * filtra tutti gli ICD ambigui di un XDG e li sottopone agli algoritmi
+	 * di disambiguazione.
+	 * 
+	 * @param inputXdg: XDG da disambiguazre
+	 * @return XDG disambiguato
+	 */
 	public XDG run(XDG inputXdg) throws ProcessorException {
 		IcdList icds = inputXdg.getSetOfIcds();
 		IcdList retIcds = new IcdList();
@@ -35,14 +77,25 @@ public class Disambiguator extends DependencyProcessor {
 		IcdList ret = null;
 		IcdList zeroIcdList;
 		Icd icd;
+		String fromSur;
+		String toSur;
 		completeList.clear();
 		icdList.clear();
 		try {
+			/* 
+			 * Questo ciclo for prende tutti gli ICD che hanno
+			 * plausibilità minore di 1 e li inserisce in icdList.
+			 */
 			for(int i=0; i< icds.size(); i++) {
 				icd = icds.getIcd(i);
 				if( (icd.getPlausibility() < 1) && (!icdList.contains(icd)) )
-					icdList.addElement(icd); //Contiene tutti gli icd minori di 1 che sono nella frase.
+					icdList.addElement(icd);
 			}
+			
+			/*
+			 * Questa condizione if scarta tutti gli ICD che hanno
+			 * ID sorgente uguale a 0. 
+			 */
 			if(!icdList.getIcdsWithSourceId(0).isEmpty()) {
 				zeroIcdList = icdList.getIcdsWithSourceId(0);
 				int toId = zeroIcdList.getIcd(0).getTo().getId();
@@ -53,15 +106,22 @@ public class Disambiguator extends DependencyProcessor {
 				}
 				icdList = icdList.subtract(zeroIcdList);
 			}
+			
+			/*
+			 * Questo ciclo for è il più importante del metodo, infatti
+			 * si occupa di sottoporre agli algoritmi di disambiguazione
+			 * tutti gli ICD ambigui con lo stesso ID destinazione.
+			 * Esegue tale operazione per tutti gli ICD ambigui di una frase.
+			 */
 			for(int h=0; h<icdList.size(); h++) {
-				String surface = icdList.getIcd(h).getFrom().getSurface();
-				String surfaceTo = icdList.getIcd(h).getTo().getSurface();
+				fromSur = icdList.getIcd(h).getFrom().getSurface();
+				toSur = icdList.getIcd(h).getTo().getSurface();
 				if( !retIcds.isIn(icdList.getIcd(h)) ) {
 					completeList.addElement(icdList.getIcd(h));
-					retIcds.addElement(icdList.getIcd(h)); //Archi già fatti
+					retIcds.addElement(icdList.getIcd(h)); //Archi già aggiungi alla lista
 				}
 				for(int l=0; l<icdList.size(); l++) {
-					if(icdList.getIcd(l).getTo().getSurface().equals(surfaceTo) &&
+					if(icdList.getIcd(l).getTo().getSurface().equals(toSur) &&
 							!retIcds.isIn(icdList.getIcd(l)) ) {
 						retIcds.addElement(icdList.getIcd(l));
 						completeList.addElement(icdList.get(l));
@@ -69,33 +129,51 @@ public class Disambiguator extends DependencyProcessor {
 					
 				}
 				
-				ret = getMoreFrequent(completeList); //Primo caso
+				/*
+				 * Da questo punto iniziano i cinque algoritmi di disambiguazione.
+				 * Si sottopone la lista degli ICD ambigui ad ogni algoritmo in sequenza,
+				 * in modo che se uno degli algoritmi ritorna un risultato si può passare direttamente
+				 * al set di ICD ambigui successivo, ovvero con lo stesso ID destinazione.
+				 */
+				ret = getFrequentSurType(completeList); //Primo algoritmo
 				if(ret!=null) {
+					/*
+					 * Se il primo algoritmo di disambiguazione ritorna un risultato
+					 * valido, viene impostata la plausibilità dell'ICD disambiguato ad 1. 
+					 */
+					statistics[0]++;
 					ret.get(0).setPlausibility(1);
-					icdDisambigued.addElement(ret.getIcd(0));
+					icdDisambigued.addElement(ret.getIcd(0)); //Si aggiunge l'ICD alla lista degli ICD disambiguati
 				}
 				else {
-					ret = getFrequentSurRelDis(completeList); //Secondo caso
+					ret = getFrequentSurRel(completeList); //Secondo algoritmo
 					if(ret!=null) {
+						statistics[1]++;
 						ret.getIcd(0).setPlausibility(1);
 						icdDisambigued.addElement(ret.getIcd(0));
 					}
 					else {
-						ret = getFrequentRelDis(completeList); //Terzo caso
-						
+						ret = getFrequentRelDis(completeList); //Terzo algoritmo
 						if(ret!=null) {
+							statistics[2]++;
 							ret.getIcd(0).setPlausibility(1);
 							icdDisambigued.addElement(ret.getIcd(0));
 						}
 						else {
-							ret = getFrequentRel(completeList); //Quarto caso
+							ret = getFrequentRel(completeList); //Quarto algoritmo
 							if(ret!=null) {
+								statistics[3]++;
 								ret.getIcd(0).setPlausibility(1);
 								icdDisambigued.addElement(ret.getIcd(0));
 							}
 							else {
+								/*
+								 * Questo è l'ultimo algoritmo che equivale alla semplice scelta casuale
+								 * dell'ICD.
+								 */
 								Random rand = new Random();
 								if(completeList.size()!=0) {
+									statistics[4]++;
 									icdDisambigued.addElement(completeList.getIcd(rand.nextInt(completeList.size())));
 								}
 							}
@@ -103,6 +181,9 @@ public class Disambiguator extends DependencyProcessor {
 					}
 				}
 				
+				/*
+				 * Con questo if si eliminano gli ICD ambigui dalla frase e si lasciano quelli disambiguati.
+				 */
 				if(!icdDisambigued.isEmpty()) {
 					completeList = completeList.subtract(icdDisambigued); //icd ambigui
 					icds = icds.subtract(completeList); // icd totali meno icd ambigui
@@ -112,6 +193,9 @@ public class Disambiguator extends DependencyProcessor {
 				completeList.clear();
 			}
 
+			/*
+			 * Imposta il nuovo set di ICD nell'XDG da ritornare in uscita.
+			 */
 			inputXdg.setSetOfIcds(icds);
 		}
 		catch(Exception e) {
@@ -120,6 +204,9 @@ public class Disambiguator extends DependencyProcessor {
 		return inputXdg;
 	}
 	
+	/**
+	 * @param data: Lista di ICD da stampare a schermo
+	 */
 	public void printAllIcds(IcdList data) {
 		for(int i=0; i<data.size(); i++) {
 			if(data.getIcd(i).getFromId()!=0)
@@ -127,6 +214,10 @@ public class Disambiguator extends DependencyProcessor {
 		}
 	}
 	
+	/**
+	 * @param data: Lista di Integer
+	 * @return Il valore massimo della lista
+	 */
 	public int getMax(ArrayList data) {
 		for(int i=0; i<data.size(); i++) {
 			for(int j=0; j<data.size(); j++) {
@@ -148,6 +239,10 @@ public class Disambiguator extends DependencyProcessor {
 		return -1;
 	}
 	
+	/**
+	 * @param data: Lista di Integer
+	 * @return Il valore minimo della lista
+	 */
 	public int getMin(ArrayList data) {
 		for(int i=0; i<data.size(); i++) {
 			for(int j=0; j<data.size(); j++) {
@@ -170,12 +265,14 @@ public class Disambiguator extends DependencyProcessor {
 	}
 	
 	/**
-	 * @param data: Lista di coppie di costituenti da ricercare nel Corpus
-	 * @return Lista contenente la coppia di costituenti piï¿½ frequente nel Corpus
+	 * 
+	 * 
+	 * @param data: Lista contenente gli ICD di coppie di costituenti da ricercare nel Corpus
+	 * @return Lista contenente l'ICD della coppia di costituenti più frequente nel Corpus
 	 */
-	public IcdList getMoreFrequent(IcdList data) {
-		ArrayList queryResult = new ArrayList();
-		IcdList retList = new IcdList();
+	public IcdList getFrequentSurType(IcdList data) {
+		queryResult = new ArrayList();
+		retList = new IcdList();
 		DBUtil.queryFrequentSurType(data, queryResult);
 		
 		int index = getMax(queryResult);
@@ -188,57 +285,24 @@ public class Disambiguator extends DependencyProcessor {
 		return retList;
 	}
 	
-	public IcdList getFrequentSurRelDis(IcdList data) {
-		ArrayList queryResult = new ArrayList();
-		IcdList retList = new IcdList();
-		String fromSur;
-		String fromType;
-		String toSur;
-		String toType;
-		String query;
-		try {
-			for(int i=0; i<data.size(); i++) {
-				fromSur = data.getIcd(i).getFrom().getSurface(); //costituente from
-				fromType = data.getIcd(i).getFrom().getType();
-				toSur = data.getIcd(i).getTo().getSurface();
-				toType = data.getIcd(i).getTo().getType();
-				
-				query = "SELECT COUNT(*) FROM icd i WHERE " +
-						"(i.fromcs = ? OR i.tocs = ?) AND " +
-						"((i.fromct = ? AND i.toct = ?) OR (i.fromct = ? AND i.toct = ?))";
-				PreparedStatement ps1 = connection.prepareStatement(query);
-				ps1.setString(1, fromSur);
-				ps1.setString(2, fromSur);
-				ps1.setString(3, fromType);
-				ps1.setString(4, toType);
-				ps1.setString(5, toType);
-				ps1.setString(6, fromType);
-				ResultSet rs1 = ps1.executeQuery();
-				if(rs1.next())
-					queryResult.add(new Integer(rs1.getInt(1)));
-				rs1.close();
-				ps1.close();
-			}
-			
-			int index=getMax(queryResult);
-			if(index>=0) {
-				retList.addElement(data.getIcd(index));
-				System.out.println("Index max: "+index);
-				printAllIcds(retList);
-			}
-			else
-				retList = null;
+	public IcdList getFrequentSurRel(IcdList data) {
+		queryResult = new ArrayList();
+		retList = new IcdList();
+		DBUtil.queryFrequentSurRel(data, queryResult);
+		int index=getMax(queryResult);
+		if(index>=0) {
+			retList.addElement(data.getIcd(index));
+			System.out.println("Index max: "+index);
+			printAllIcds(retList);
 		}
-		catch(Exception e) {
-			e.printStackTrace();
-		}
-		
+		else
+			retList = null;
 		return retList;
 	}
 	
 	public IcdList getFrequentRel(IcdList data) {
-		IcdList retList = new IcdList();
-		ArrayList queryResult = new ArrayList();
+		retList = new IcdList();
+		queryResult = new ArrayList();
 		System.out.println("DATA SIZE: "+data.size());
 		DBUtil.queryFrequentRel(data, queryResult);
 		int index=getMax(queryResult);
@@ -254,8 +318,8 @@ public class Disambiguator extends DependencyProcessor {
 	}
 	
 	public IcdList getFrequentRelDis(IcdList data) {
-		ArrayList queryResult= new ArrayList();
-		IcdList retList = new IcdList();
+		queryResult= new ArrayList();
+		retList = new IcdList();
 		DBUtil.queryFrequentRelDis(data, queryResult);
 		
 		int index=getMin(queryResult);
@@ -268,39 +332,44 @@ public class Disambiguator extends DependencyProcessor {
 	
 	public static void main(String[] args) {
 		try {
-			Disambiguator disamb = new Disambiguator();
-			disamb.initialize();
 			String chaos_home = System.getenv("CHAOS_HOME");
-			File file = new File(chaos_home+"//chaos");
-			File[] list = file.listFiles();
-			for(int ii=(int)Math.round(list.length*0.70); ii<list.length; ii++) {
-				if(list[ii].isDirectory())
+			Text text;
+			Vector paragraphs;
+			Paragraph parVet;
+			Vector xdgs;
+			Disambiguator disambiguator = new Disambiguator();
+			disambiguator.initialize(); //Inizializzazione del Disambiguatore
+			File[] list = (new File(chaos_home+"//chaos")).listFiles();
+			for(int j=(int)Math.round(list.length*0.70); j<list.length; j++) {
+				if(list[j].isDirectory())
 					continue;
-				Text t = DBLoader.load_new(list[ii]);
-				System.out.println("File aperto: "+list[ii].getName());
-				Vector p = t.getParagraphs();
-				for(int i=0; i<p.size(); i++) {
-					Paragraph vet = (Paragraph)p.get(i);
-					Vector xdgs = vet.getXdgs();
-					for(int tt=0; tt<xdgs.size(); tt++) {
+				text = DBLoader.load_new(list[j]);
+				System.out.println("File aperto: "+list[j].getName());
+				paragraphs = text.getParagraphs();
+				for(int i=0; i<paragraphs.size(); i++) {
+					parVet = (Paragraph)paragraphs.get(i);
+					xdgs = parVet.getXdgs();
+					for(int t=0; t<xdgs.size(); t++) {
 						XDG xdg = new XDG(); 
-						xdg.setSetOfConstituents(((XDG)xdgs.elementAt(tt)).getSetOfConstituents());
-						xdg.setSetOfIcds(((XDG)xdgs.elementAt(tt)).getSetOfIcds());
-						System.out.println("PRIMA--->>>> "+xdg.getSetOfIcds().size());
-						xdg = disamb.run(xdg);
-						System.out.println("DOPO--->>>> "+xdg.getSetOfIcds().size());
-						xdgs.setElementAt(xdg,tt);
+						xdg.setSetOfConstituents(((XDG)xdgs.elementAt(t)).getSetOfConstituents());
+						xdg.setSetOfIcds(((XDG)xdgs.elementAt(t)).getSetOfIcds());
+						System.out.println("Icd prima della disambiguazione: "+xdg.getSetOfIcds().size());
+						xdg = disambiguator.run(xdg);
+						System.out.println("Icd dopo la disambiguazione: "+xdg.getSetOfIcds().size());
+						xdgs.setElementAt(xdg,t);
 					}
 				}
 				/*FileOutputStream out2 = new FileOutputStream(new File(chaos_home+"//chaos2//"+list[ii].getName()));
 				System.out.println("File scritto: "+chaos_home+"//chaos2//"+list[ii].getName());
 				out2.write(t.toXML().getBytes());
 				out2.close();*/
-				t.save(new File(chaos_home+"//chaos2//"+list[ii].getName()), AvailableOutputFormat.valueOf("xml"), true);
-				DBUtil.close();
-				System.out.println("Disambiguazione completata");
+				text.save(new File(chaos_home+"//chaos2//"+list[j].getName()), AvailableOutputFormat.valueOf("xml"), true);
+				System.out.println("File scritto: "+chaos_home+"//chaos2//"+list[j].getName());
 			}
-			
+			disambiguator.finalize();
+			System.out.println("Statistiche: Primo: "+disambiguator.statistics[0]+", Secondo: "+disambiguator.statistics[1]+"," +
+					" Terzo: "+disambiguator.statistics[2]+", Quarto: "+disambiguator.statistics[3]+", Quinto: "+disambiguator.statistics[4]);
+			System.out.println("Disambiguazione completata");
 		}
 		catch(Exception e) {
 			e.printStackTrace();

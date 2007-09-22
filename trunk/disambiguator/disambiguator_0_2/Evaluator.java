@@ -61,15 +61,23 @@ public class Evaluator {
 			
 			File [] files = (new File(dir)).listFiles(); //I docs vengono presi in ordine lessicografico, cambiare la lettura facendoli prendere in ordine????
 			for (int z=(int)Math.round(files.length*0.7); z < files.length; z++) { //70 è il 70% dei file contenuti nella directory AI_train che verranno utilizzati per il train
-				System.out.println("File in caricamento: "+files[z].getAbsolutePath());
+				System.out.println("File: "+files[z].getAbsolutePath());
 				t =load_new(files[z]);
 				Vector<Paragraph> par = t.getParagraphs();
 				for(int l = 0; l < par.size(); l++)
 				{
-					Vector<XDG> xdg = par.get(l).getXdgs();
-					for(int w=0; w < xdg.size(); w++ )
+					
+					//Vector<XDG> xdg = par.get(l).getXdgs();
+					//for(int w=0; w < xdg.size(); w++ )
+					for(int w=0; w < par.get(l).getXdgs().size(); w++)
 					{
-						 list1 = xdg.get(w).getSetOfIcds();
+						//System.out.println("l: "+l+" XDG "+((XDG)par.get(l).getXdgs().get(w)).toXML());
+						
+						//System.out.println("///////////////////////////////////");
+						//System.out.println("l: "+l+" XDG "+((XDG)par.get(l).getXdgs().get(w)).getSetOfIcds());
+						list1 = ((XDG)(par.get(l).getXdgs()).get(w)).getSetOfIcds();
+						
+						// list1 = xdg.get(w).getSetOfIcds();
 						 vl.add(list1);
 					}
 				}
@@ -144,6 +152,7 @@ public class Evaluator {
 		double num = 0;
 		double den = 0;
 		double precTot = 0.0;
+		double cont = 0;
 		try
 		{
 			
@@ -151,15 +160,18 @@ public class Evaluator {
 				{
 				num = intersection(vl,vl2,i);
 				den = vl2.get(i).size();	
-				if(num==0 || den==0)
+				if(den == 0.0 || den == 0)
+				{
+					cont++;
 					continue;
-				System.out.println("num: "+num+" den "+den);
+				}
+				//System.out.println("num: "+num+" den "+den);
 					precision += num/den;
-					System.out.println("precision "+precision);
+					//System.out.println("precision "+precision);
 					
 				}
 				
-				 precTot = precision/vl.size();
+				 precTot = precision/(vl.size()-cont);
 				 System.out.println("vlSize "+vl.size()+" precTot "+precTot);
 		}
 		catch(Exception e)
@@ -174,16 +186,19 @@ public class Evaluator {
 		double recall = 0.0;
 		double recTot = 0.0;
 		double den = 0.0;
-		double num;
+		double cont = 0;
 		for(int i=0; i < vl.size(); i++)
 		{
-		num = intersection(vl,vl2,i);
+		double num = intersection(vl,vl2,i);
 		den = vl.get(i).size();
-		if(num==0 || den==0)
+		if(den == 0.0 || den == 0)
+		{
+			cont++;
 			continue;
+		}
 		recall += num/den;
 		}
-		recTot = recall/vl.size();
+		recTot = recall/(vl.size()-cont);
 		 System.out.println("vlSize "+vl.size()+" precTot "+recTot);
 		 return recTot;
 	}
@@ -271,7 +286,6 @@ public class Evaluator {
 		Vector<IcdList> vl2 = load(dir2);
 		double a = calcPrecision2(vl,vl2);
 		double b = calcRecall2(vl,vl2);
-		
 		//double b = calcRecall();
 		//double c = calcFMeasure();
 		System.out.println(a+" "+b/*+" "+c*/);
