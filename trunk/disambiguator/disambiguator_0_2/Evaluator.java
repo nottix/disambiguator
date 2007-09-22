@@ -19,7 +19,7 @@ public class Evaluator {
 	
 	private static String chaos_home = System.getenv("CHAOS_HOME");
 	private static String dir1 = chaos_home+"//AI_train";
-	private static String dir2 = chaos_home+"//chaos";
+	private static String dir2 = chaos_home+"//Chaos2";
 
 	public static Text load_new(File text_file) throws Exception {
         Text text = null;
@@ -51,7 +51,38 @@ public class Evaluator {
         return text;
     }
 	
-	public static double calcPrecision()
+	public static Vector<IcdList> load(String dir)
+	{
+		IcdList list1 = null;
+		Vector<IcdList> vl = new Vector<IcdList>();
+		Text t = null;
+		try
+		{
+			
+			File [] files = (new File(dir)).listFiles(); //I docs vengono presi in ordine lessicografico, cambiare la lettura facendoli prendere in ordine????
+			for (int z=(int)Math.round(files.length*0.7); z < files.length; z++) { //70 è il 70% dei file contenuti nella directory AI_train che verranno utilizzati per il train
+				System.out.println("File in caricamento: "+files[z].getAbsolutePath());
+				t =load_new(files[z]);
+				Vector<Paragraph> par = t.getParagraphs();
+				for(int l = 0; l < par.size(); l++)
+				{
+					Vector<XDG> xdg = par.get(l).getXdgs();
+					for(int w=0; w < xdg.size(); w++ )
+					{
+						 list1 = xdg.get(w).getSetOfIcds();
+						 vl.add(list1);
+					}
+				}
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return vl;
+	}
+	
+	/*public static double calcPrecision()
 	{
 		double precision = 0.0;
 		Text train = null;
@@ -105,6 +136,72 @@ public class Evaluator {
 			e.printStackTrace();
 		}
 		return precision;
+	}*/
+	
+	public static double calcPrecision2(Vector<IcdList> vl, Vector<IcdList> vl2)
+	{
+		double precision = 0.0;
+		double num = 0;
+		double den = 0;
+		double precTot = 0.0;
+		try
+		{
+			
+				for(int i=0; i < vl.size(); i++)
+				{
+				num = intersection(vl,vl2,i);
+				den = vl2.get(i).size();	
+				if(num==0 || den==0)
+					continue;
+				System.out.println("num: "+num+" den "+den);
+					precision += num/den;
+					System.out.println("precision "+precision);
+					
+				}
+				
+				 precTot = precision/vl.size();
+				 System.out.println("vlSize "+vl.size()+" precTot "+precTot);
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return precTot;
+	}
+	
+	public static double calcRecall2(Vector<IcdList> vl, Vector<IcdList> vl2)
+	{
+		double recall = 0.0;
+		double recTot = 0.0;
+		double den = 0.0;
+		double num;
+		for(int i=0; i < vl.size(); i++)
+		{
+		num = intersection(vl,vl2,i);
+		den = vl.get(i).size();
+		if(num==0 || den==0)
+			continue;
+		recall += num/den;
+		}
+		recTot = recall/vl.size();
+		 System.out.println("vlSize "+vl.size()+" precTot "+recTot);
+		 return recTot;
+	}
+	
+	public static int intersection(Vector<IcdList> v, Vector<IcdList> v2)
+	{
+		int count = 0;
+		for(int i=0; i < v.size(); i++)
+		{
+				count += (v.get(i).intersectionWith(v2.get(i))).size();
+		}
+		return count;
+	}
+	
+	public static int intersection(Vector<IcdList> v, Vector<IcdList> v2, int i)
+	{
+		int count = (v.get(i).intersectionWith(v2.get(i))).size();
+		return count;
 	}
 	
 	public static double calcRecall()
@@ -162,27 +259,21 @@ public class Evaluator {
 		return recall;
 	}
 	
-	public static double calcFMeasure()
+	/*public static double calcFMeasure()
 	{
 		double f_measure = (2*calcPrecision()*calcRecall())/(calcPrecision()+calcRecall());
 		return f_measure;
-	}
-	
-	public static int intersection(Vector<IcdList> v, Vector<IcdList> v2)
-	{
-		int count = 0;
-		for(int i=0; i < v.size(); i++)
-		{
-				count += (v.get(i).intersectionWith(v2.get(i))).size();
-		}
-		return count;
-	}
+	}*/
 	
 	public static void main(String[] args)
 	{
-		double a = calcPrecision();
+		Vector<IcdList> vl = load(dir1);
+		Vector<IcdList> vl2 = load(dir2);
+		double a = calcPrecision2(vl,vl2);
+		double b = calcRecall2(vl,vl2);
+		
 		//double b = calcRecall();
 		//double c = calcFMeasure();
-		System.out.println(a);
+		System.out.println(a+" "+b/*+" "+c*/);
 	}
 }
