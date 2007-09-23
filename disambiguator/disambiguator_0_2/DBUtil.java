@@ -61,18 +61,21 @@ public class DBUtil{
 		try {
 			for(int i=0; i<data.size(); i++) {
 				icd = data.getIcd(i);
-				query = "SELECT COUNT(*) FROM icd i WHERE ((i.fromcs = ?) OR" +
-					" (i.tocs = ?)) AND " +
-					"((i.fromcs = ?) OR (i.tocs = ?)) AND (((i.fromct = ?) AND (i.toct = ?)) OR ((i.fromct = ?) AND (i.toct = ?)))";
+				query = "SELECT COUNT(*) FROM icd i WHERE (i.fromcs = ?) AND" +
+					" (i.tocs = ?)" +
+					" AND (i.fromct = ?) AND (i.toct = ?)";
+//				query = "SELECT COUNT(*) FROM icd i WHERE ((i.fromcs = ?) OR" +
+//				" (i.tocs = ?)) AND " +
+//				"((i.fromcs = ?) OR (i.tocs = ?)) AND (((i.fromct = ?) AND (i.toct = ?)) OR ((i.fromct = ?) AND (i.toct = ?)))";
 				ps1 = c.prepareStatement(query);
 				ps1.setString(1, icd.getFrom().getSurface());
-				ps1.setString(2, icd.getFrom().getSurface());
-				ps1.setString(3, icd.getTo().getSurface());
-				ps1.setString(4, icd.getTo().getSurface());
-				ps1.setString(5, icd.getFrom().getType());
-				ps1.setString(6, icd.getTo().getType());
-				ps1.setString(7, icd.getTo().getType());
-				ps1.setString(8, icd.getFrom().getType());
+				ps1.setString(2, icd.getTo().getSurface());
+				ps1.setString(3, icd.getFrom().getType());
+				ps1.setString(4, icd.getTo().getType());
+//				ps1.setString(5, icd.getFrom().getType());
+//				ps1.setString(6, icd.getTo().getType());
+//				ps1.setString(7, icd.getTo().getType());
+//				ps1.setString(8, icd.getFrom().getType());
 				rs1 = ps1.executeQuery();
 				if(rs1.next())
 					queryResult.add(new Integer(rs1.getInt(1)));
@@ -91,6 +94,7 @@ public class DBUtil{
 				fromConstType=data.getIcd(i).getFrom().getType();
 				toConstType=data.getIcd(i).getTo().getType();
 				query="SELECT COUNT(*) FROM icd i WHERE (i.fromct=? AND i.toct=?) OR (i.toct=? AND i.fromct=?)";
+//				query="SELECT COUNT(*) FROM icd i WHERE (i.fromct=? AND i.toct=?)";
 				
 				ps1 = c.prepareStatement(query);
 				ps1.setString(1, fromConstType);
@@ -116,11 +120,17 @@ public class DBUtil{
 			for(int i=0; i<data.size();i++){
 				fromConstType=data.getIcd(i).getFrom().getType();
 				toConstType=data.getIcd(i).getTo().getType();
-				query = "SELECT MIN(ABS(i.fromct-i.toct)) FROM icd i WHERE i.toct = ? AND i.fromct = ?";
+				query = "SELECT MIN(ABS(i.fromc-i.toc)) FROM icd i WHERE (i.toct = ? AND i.fromct = ?) OR " +
+						"(i.toct = ? AND i.fromct = ?)";
+//				query = "SELECT MIN(ABS(i.fromc-i.toc)) FROM icd i WHERE (i.toct = ? AND i.fromct = ?)";
+//				query = "SELECT COUNT(*) FROM icd i WHERE (i.toct = ? AND i.fromct = ?) OR " +
+//				"(i.toct = ? AND i.fromct = ?)";
 			
 				ps1 = c.prepareStatement(query);
 				ps1.setString(1, toConstType);
 				ps1.setString(2, fromConstType);
+				ps1.setString(3, fromConstType);
+				ps1.setString(4, toConstType);
 				rs1 = ps1.executeQuery();
 				
 				if(rs1.next()) {
@@ -143,16 +153,26 @@ public class DBUtil{
 				toConstSur = data.getIcd(i).getTo().getSurface();
 				toConstType = data.getIcd(i).getTo().getType();
 				
+//				query = "SELECT COUNT(*) FROM icd i WHERE " +
+//						"(i.fromcs = ? OR i.tocs = ?) AND " +
+//						"((i.fromct = ? AND i.toct = ?) OR (i.fromct = ? AND i.toct = ?))";
 				query = "SELECT COUNT(*) FROM icd i WHERE " +
-						"(i.fromcs = ? OR i.tocs = ?) AND " +
-						"((i.fromct = ? AND i.toct = ?) OR (i.fromct = ? AND i.toct = ?))";
+				"((i.fromcs = ?) AND (i.fromct = ? AND i.toct = ?)) OR " +
+				"((i.tocs = ?) AND (i.fromct = ? AND i.toct = ?))";
+				
 				ps1 = c.prepareStatement(query);
 				ps1.setString(1, fromConstSur);
-				ps1.setString(2, fromConstSur);
-				ps1.setString(3, fromConstType);
-				ps1.setString(4, toConstType);
-				ps1.setString(5, toConstType);
-				ps1.setString(6, fromConstType);
+				ps1.setString(2, fromConstType);
+				ps1.setString(3, toConstType);
+				ps1.setString(4, toConstSur);
+				ps1.setString(5, fromConstType);
+				ps1.setString(6, toConstType);
+//				ps1.setString(1, fromConstSur);
+//				ps1.setString(2, fromConstSur);
+//				ps1.setString(3, fromConstType);
+//				ps1.setString(4, toConstType);
+//				ps1.setString(5, toConstType);
+//				ps1.setString(6, fromConstType);
 				ResultSet rs1 = ps1.executeQuery();
 				if(rs1.next())
 					queryResult.add(new Integer(rs1.getInt(1)));

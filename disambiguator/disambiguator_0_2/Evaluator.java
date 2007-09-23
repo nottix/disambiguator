@@ -280,14 +280,17 @@ public class Evaluator {
 		return f_measure;
 	}*/
 	
+	public static double calcFMeasure(double precision, double recall) {
+		return (2*precision*recall)/(precision+recall);
+	}
+	
 	public static void main(String[] args)
 	{
 		Vector<IcdList> vl = load(dir1);
 		Vector<IcdList> vl2 = load(dir2);
 		double a = calcPrecision2(vl,vl2);
 		double b = calcRecall2(vl,vl2);
-		//double b = calcRecall();
-		//double c = calcFMeasure();
-		System.out.println(a+" "+b/*+" "+c*/);
+		double c = calcFMeasure(a, b);
+		System.out.println("Precision: "+a+", Recall: "+b+", F-Measure: "+c);
 	}
 }
