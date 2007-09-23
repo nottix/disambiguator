@@ -42,7 +42,6 @@ public class Disambiguator extends DependencyProcessor {
 	private IcdList ret;
 	private IcdList zeroIcdList;
 	private Icd icd;
-	private String fromSur;
 	private String toSur;
 	private int index;
 	public long[] statistics = new long[5];
@@ -122,7 +121,7 @@ public class Disambiguator extends DependencyProcessor {
 			 * Esegue tale operazione per tutti gli ICD ambigui di una frase.
 			 */
 			for(int h=0; h<icdList.size(); h++) {
-				fromSur = icdList.getIcd(h).getFrom().getSurface();
+				//fromSur = icdList.getIcd(h).getFrom().getSurface();
 				toSur = icdList.getIcd(h).getTo().getSurface();
 				if( !retIcds.isIn(icdList.getIcd(h)) ) {
 					completeList.addElement(icdList.getIcd(h));
@@ -146,6 +145,10 @@ public class Disambiguator extends DependencyProcessor {
 				int start=1;
 				switch(start) {
 					case 1:
+						/*
+						 * Se il primo algoritmo di disambiguazione ritorna un risultato
+						 * valido, viene impostata la plausibilità dell'ICD disambiguato ad 1. 
+						 */
 						ret = getFrequentSurType(completeList); //Primo algoritmo
 						if(ret!=null)
 							break;
@@ -162,6 +165,10 @@ public class Disambiguator extends DependencyProcessor {
 						if(ret!=null)
 							break;
 					case 5:
+						/*
+						 * Questo è l'ultimo algoritmo che equivale alla semplice scelta casuale
+						 * dell'ICD.
+						 */
 						if(completeList.size()!=0) {
 							statistics[4]++;
 							ret = new IcdList();
@@ -173,55 +180,6 @@ public class Disambiguator extends DependencyProcessor {
 				}
 				if(ret!=null)
 					icdDisambigued.addElement(ret.getIcd(0)); //Si aggiunge l'ICD alla lista degli ICD disambiguati
-				
-//				/*
-//				 * Da questo punto iniziano i cinque algoritmi di disambiguazione.
-//				 * Si sottopone la lista degli ICD ambigui ad ogni algoritmo in sequenza,
-//				 * in modo che se uno degli algoritmi ritorna un risultato si può passare direttamente
-//				 * al set di ICD ambigui successivo, ovvero con lo stesso ID destinazione.
-//				 */
-//				ret = getFrequentSurType(completeList); //Primo algoritmo
-//				if(ret!=null) {
-//					/*
-//					 * Se il primo algoritmo di disambiguazione ritorna un risultato
-//					 * valido, viene impostata la plausibilità dell'ICD disambiguato ad 1. 
-//					 */
-//					statistics[0]++;
-//					icdDisambigued.addElement(ret.getIcd(0)); //Si aggiunge l'ICD alla lista degli ICD disambiguati
-//				}
-//				else {
-//					ret = getFrequentSurRel(completeList); //Secondo algoritmo
-//					if(ret!=null) {
-//						statistics[1]++;
-//						icdDisambigued.addElement(ret.getIcd(0));
-//					}
-//					else {
-//						ret = getFrequentRelDis(completeList); //Terzo algoritmo
-//						if(ret!=null) {
-//							statistics[2]++;
-//							icdDisambigued.addElement(ret.getIcd(0));
-//						}
-//						else {
-//							ret = getFrequentRel(completeList); //Quarto algoritmo
-//							if(ret!=null) {
-//								statistics[3]++;
-//								icdDisambigued.addElement(ret.getIcd(0));
-//							}
-//							else {
-//								/*
-//								 * Questo è l'ultimo algoritmo che equivale alla semplice scelta casuale
-//								 * dell'ICD.
-//								 */
-//								Random rand = new Random();
-//								if(completeList.size()!=0) {
-//									statistics[4]++;
-//									ret.getIcd(0).setPlausibility(1);
-//									icdDisambigued.addElement(completeList.getIcd(rand.nextInt(completeList.size())));
-//								}
-//							}
-//						}
-//					}
-//				}
 				
 				/*
 				 * Con questo if si eliminano gli ICD ambigui dalla frase e si lasciano quelli disambiguati.
@@ -313,7 +271,7 @@ public class Disambiguator extends DependencyProcessor {
 	 * @return Lista contenente l'ICD della coppia di costituenti più frequente nel Corpus
 	 */
 	public IcdList getFrequentSurType(IcdList data) {
-		ArrayList queryResult = new ArrayList();
+		queryResult = new ArrayList();
 		IcdList resultIcd = new IcdList();
 		DBUtil.queryFrequentSurType(data, queryResult);
 		
@@ -330,7 +288,7 @@ public class Disambiguator extends DependencyProcessor {
 	}
 	
 	public IcdList getFrequentSurRel(IcdList data) {
-		ArrayList queryResult = new ArrayList();
+		queryResult = new ArrayList();
 		IcdList resultIcd = new IcdList();
 		DBUtil.queryFrequentSurRel(data, queryResult);
 		index=getMax(queryResult);
@@ -346,7 +304,7 @@ public class Disambiguator extends DependencyProcessor {
 	}
 	
 	public IcdList getFrequentRel(IcdList data) {
-		ArrayList queryResult = new ArrayList();
+		queryResult = new ArrayList();
 		IcdList resultIcd = new IcdList();
 		DBUtil.queryFrequentRel(data, queryResult);
 		index=getMax(queryResult);
@@ -362,7 +320,7 @@ public class Disambiguator extends DependencyProcessor {
 	}
 	
 	public IcdList getFrequentRelDis(IcdList data) {
-		ArrayList queryResult = new ArrayList();
+		queryResult = new ArrayList();
 		IcdList resultIcd = new IcdList();
 		DBUtil.queryFrequentRelDis(data, queryResult);
 		index=getMin(queryResult);

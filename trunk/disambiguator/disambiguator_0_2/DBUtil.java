@@ -9,6 +9,10 @@ import chaos.XDG.*;
 public class DBUtil{
 	
 	private static Properties property = null;
+	private static String corpusTrainDir;
+	private static String corpusChaosDir;
+	private static String corpusOutputDir;
+	private static double percentualeTrain;
 	private static Connection c=null;
 	
 	private static Icd icd;
@@ -20,11 +24,27 @@ public class DBUtil{
 	private static PreparedStatement ps1;
 	private static ResultSet rs1;
 		
+	public static String getCorpusTrainDir() {
+		return corpusTrainDir;
+	}
+	
+	public static String getCorpusChaosDir() {
+		return corpusTrainDir;
+	}
+	
+	public static String getCorpusOutputDir() {
+		return corpusTrainDir;
+	}
+	
+	public static double getPercentualeTrain() {
+		return percentualeTrain;
+	}
+	
 	public static Connection startTransaction()
 	{
 		try
 		{
-			File ff = new File(System.getProperty("user.dir")+"/conf/sql-ds.properties");
+			File ff = new File(System.getProperty("user.dir")+"/conf/configuration.properties");
 			
 			FileInputStream f;
 			f = new FileInputStream (ff);
@@ -34,6 +54,11 @@ public class DBUtil{
 	
 			Class.forName(property.getProperty("jdbcDriver"));
 			c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
+			
+			corpusTrainDir = property.getProperty("corpusTrainDir");
+			corpusChaosDir = property.getProperty("corpusChaosDir");
+			corpusOutputDir = property.getProperty("corpusOutputDir");
+			percentualeTrain = Double.valueOf(property.getProperty("percentualeTrain")).doubleValue();
 		}
 		catch(Exception e)
 		{
@@ -181,6 +206,28 @@ public class DBUtil{
 			}
 		}
 		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void queryAddToDB(IcdList data) {
+		try {
+			for(int k=0; k < data.size(); k++) {
+				if( data.getIcd(k).getFrom()!=null && data.getIcd(k).getTo()!=null ) {
+				   query = "INSERT into icd (fromc, toc, fromcs, tocs, fromct, toct) VALUES ('"+data.getIcd(k).getFromId()+"'" +
+				   ",'"+data.getIcd(k).getToId()+
+				   "', ?, ?, ?, ?)";
+				   ps1 = c.prepareStatement(query);
+				   ps1.setString(1, data.getIcd(k).getFrom().getSurface());
+				   ps1.setString(2, data.getIcd(k).getTo().getSurface());
+				   ps1.setString(3, data.getIcd(k).getFrom().getType());
+				   ps1.setString(4, data.getIcd(k).getTo().getType());
+				   ps1.execute();
+				   ps1.close();
+				}
+			}
+		}
+		catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
