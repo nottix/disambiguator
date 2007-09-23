@@ -192,8 +192,8 @@ public class DBUtil{
 				toConstSur = data.getIcd(i).getTo().getSurface();
 				toConstType = data.getIcd(i).getTo().getType();
 				query = "SELECT COUNT(*) FROM icd i WHERE " +
-				"((i.fromcs = ?) AND (i.fromct = ? AND i.toct = ?)) OR " +
-				"((i.tocs = ?) AND (i.fromct = ? AND i.toct = ?))";
+					"((i.fromcs = ?) AND (i.fromct = ? AND i.toct = ?)) OR " +
+					"((i.tocs = ?) AND (i.fromct = ? AND i.toct = ?))";
 				
 				ps1 = c.prepareStatement(query);
 				ps1.setString(1, fromConstSur);

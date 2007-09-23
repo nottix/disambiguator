@@ -76,7 +76,7 @@ public class Disambiguator extends DependencyProcessor {
 	 * filtra tutti gli ICD ambigui di un XDG e li sottopone agli algoritmi
 	 * di disambiguazione.
 	 * 
-	 * @param inputXdg: XDG da disambiguazre
+	 * @param inputXdg XDG da disambiguazre
 	 * @return XDG disambiguato
 	 */
 	public XDG run(XDG inputXdg) throws ProcessorException {
@@ -204,7 +204,7 @@ public class Disambiguator extends DependencyProcessor {
 	}
 	
 	/**
-	 * @param data: Lista di ICD da stampare a schermo
+	 * @param data Lista di ICD da stampare a schermo
 	 */
 	public void printAllIcds(IcdList data) {
 		for(int i=0; i<data.size(); i++) {
@@ -214,7 +214,7 @@ public class Disambiguator extends DependencyProcessor {
 	}
 	
 	/**
-	 * @param data: Lista di Integer
+	 * @param data Lista di Integer
 	 * @return Il valore massimo della lista
 	 */
 	public int getMax(ArrayList data) {
@@ -239,7 +239,7 @@ public class Disambiguator extends DependencyProcessor {
 	}
 	
 	/**
-	 * @param data: Lista di Integer
+	 * @param data Lista di Integer
 	 * @return Il valore minimo della lista
 	 */
 	public int getMin(ArrayList data) {
@@ -264,28 +264,52 @@ public class Disambiguator extends DependencyProcessor {
 	}
 	
 	/**
+	 * Questo metodo implementa il primo algoritmo stocastico.
+	 * Ricerca nel corpus di training tutte le occorrenze delle coppie di 
+	 * costituenti (surface e type) facenti parte degli ICD ambigui passati in ingresso.
 	 * 
-	 * 
-	 * @param data: Lista contenente gli ICD di coppie di costituenti da ricercare nel Corpus
-	 * @return Lista contenente l'ICD della coppia di costituenti più frequente nel Corpus
+	 * @param data Lista contenente gli ICD ambigui
+	 * @return Lista contenente l'ICD scelto tra quelli ambigui
 	 */
 	public IcdList getFrequentSurType(IcdList data) {
 		queryResult = new ArrayList();
 		IcdList resultIcd = new IcdList();
+		
+		//Effettua una query al DB per ogni coppia di costituenti passata in ingresso
 		DBUtil.queryFrequentSurType(data, queryResult);
 		
+		//Ritorna il valore massimo assoluto contenuto nella lista queryResult
 		index = getMax(queryResult);
 		if(index>=0) {
+			//Assegna plausibilità 1 all'ICD disambiguato
 			data.getIcd(index).setPlausibility(1);
+			//Aggiunge l'ICD disambiguato alla lista resultIcd e la ritorna in uscita
 			resultIcd.addElement(data.getIcd(index));
 			statistics[0]++;
 		}
 		else {
+			/*
+			 * Se non viene trovato un massimo assoluto il metodo ritorna null
+			 * in modo che si possa passare all'algoritmo successivo e tentare
+			 * la disambiguazione
+			 */
 			resultIcd = null;
 		}
 		return resultIcd;
 	}
 	
+	/**
+	 * Questo metodo implementa il secondo algoritmo stocastico.
+	 * Ricerca nel corpus di training tutte le occorrenze degli ICD
+	 * che hanno:
+	 * <fromConstSurface, fromConstType> e <toConstType> oppure
+	 * <toConstSurface, toConstType> e <fromConstType>
+	 * uguali a quelli degli ICD ambigui. 
+	 * Dopo avere eseguito le query al DB sceglie l'ICD più frequente.
+	 * 
+	 * @param data Lista contenente gli ICD ambigui
+	 * @return Lista contenente l'ICD scelto tra quelli ambigui
+	 */
 	public IcdList getFrequentSurRel(IcdList data) {
 		queryResult = new ArrayList();
 		IcdList resultIcd = new IcdList();
@@ -302,6 +326,17 @@ public class Disambiguator extends DependencyProcessor {
 		return resultIcd;
 	}
 	
+	/**
+	 * Questo metodo implementa il quarto algoritmo stocastico.
+	 * Ricerca nel corpus di training tutte le occorrenze degli ICD
+	 * che hanno:
+	 * <fromConstType> e <toConstType> (e viceversa)
+	 * uguali a quelli degli ICD ambigui. 
+	 * Dopo avere eseguito le query al DB sceglie l'ICD più frequente.
+	 * 
+	 * @param data Lista contenente gli ICD ambigui
+	 * @return Lista contenente l'ICD scelto tra quelli ambigui
+	 */
 	public IcdList getFrequentRel(IcdList data) {
 		queryResult = new ArrayList();
 		IcdList resultIcd = new IcdList();
@@ -318,6 +353,18 @@ public class Disambiguator extends DependencyProcessor {
 		return resultIcd;
 	}
 	
+	/**
+	 * Questo metodo implementa il terzo algoritmo stocastico.
+	 * <<<<NON VALIDO>>>>
+	 * Ricerca nel corpus di training tutte le occorrenze degli ICD
+	 * che hanno:
+	 * <fromConstType> e <toConstType> (e viceversa)
+	 * uguali a quelli degli ICD ambigui. 
+	 * Dopo avere eseguito le query al DB sceglie l'ICD più frequente.
+	 * 
+	 * @param data Lista contenente gli ICD ambigui
+	 * @return Lista contenente l'ICD scelto tra quelli ambigui
+	 */
 	public IcdList getFrequentRelDis(IcdList data) {
 		queryResult = new ArrayList();
 		IcdList resultIcd = new IcdList();
