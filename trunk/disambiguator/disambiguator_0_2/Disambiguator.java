@@ -4,7 +4,7 @@
  * Disambiguatore sintattico:
  * Utilizza algoritmi di disambiguazione stocastici e randomici
  * 
- * @author Simone Notargiacomo, Lorenzo Tavernese, Ibrahim Khalili
+ * @author Simone Notargiacomo, Lorenzo Tavernese
  */
 
 package disambiguator_0_2;
@@ -17,7 +17,6 @@ import java.io.*;
 import java.util.Date;
 import java.util.*;
 import java.net.*;
-import java.sql.*;
 
 /**
  * Classe principale del modulo di Disambiguazione.
@@ -25,7 +24,7 @@ import java.sql.*;
  * singolarmente un XDG
  * 
  * @version 0.2
- * @author Simone Notargiacomo, Lorenzo Tavernese, Ibrahim Khalili
+ * @author Simone Notargiacomo, Lorenzo Tavernese
  */
 public class Disambiguator extends DependencyProcessor {
 	
@@ -336,7 +335,6 @@ public class Disambiguator extends DependencyProcessor {
 	
 	public static void main(String[] args) {
 		try {
-			String chaos_home = System.getenv("CHAOS_HOME");
 			Text text;
 			Vector paragraphs;
 			Paragraph parVet;
@@ -344,8 +342,8 @@ public class Disambiguator extends DependencyProcessor {
 			Disambiguator disambiguator = new Disambiguator();
 			disambiguator.initialize(); //Inizializzazione del Disambiguatore
 			long start = System.currentTimeMillis();
-			File[] list = (new File(chaos_home+"//chaos")).listFiles();
-			for(int j=(int)Math.round(list.length*0.70); j<list.length; j++) {
+			File[] list = (new File(DBUtil.getCorpusChaosDir())).listFiles();
+			for(int j=(int)Math.round(list.length*DBUtil.getPercentualeTrain()); j<list.length; j++) {
 				if(list[j].isDirectory())
 					continue;
 				text = DBLoader.load_new(list[j]);
@@ -364,14 +362,10 @@ public class Disambiguator extends DependencyProcessor {
 						xdgs.setElementAt(xdg,t);
 					}
 				}
-				/*FileOutputStream out2 = new FileOutputStream(new File(chaos_home+"//chaos2//"+list[ii].getName()));
-				System.out.println("File scritto: "+chaos_home+"//chaos2//"+list[ii].getName());
-				out2.write(t.toXML().getBytes());
-				out2.close();*/
-				text.save(new File(chaos_home+"//chaos2//"+list[j].getName()), AvailableOutputFormat.valueOf("xml"), true);
-				System.out.println("File scritto: "+chaos_home+"//chaos2//"+list[j].getName());
+				text.save(new File(DBUtil.getCorpusOutputDir()+list[j].getName()), AvailableOutputFormat.valueOf("xml"), true);
+				System.out.println("File scritto: "+DBUtil.getCorpusOutputDir()+list[j].getName());
 			}
-			disambiguator.finalize();
+			disambiguator.finalize(); //Rilascio risorse del disambiguatore
 			Date date = new Date(System.currentTimeMillis()-start);
 			System.out.println("Tempo impiegato: "+date.getMinutes()+" minuti e "+date.getSeconds()+" secondi");
 			System.out.println("Statistiche: Primo: "+disambiguator.statistics[0]+", Secondo: "+disambiguator.statistics[1]+"," +
