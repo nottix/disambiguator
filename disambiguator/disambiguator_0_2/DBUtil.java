@@ -1,3 +1,12 @@
+/**
+ * Progetto di Intelligenza Artificiale 2006/2007
+ * 
+ * Disambiguatore sintattico:
+ * Utilizza algoritmi di disambiguazione stocastici e randomici
+ * 
+ * @author Simone Notargiacomo, Lorenzo Tavernese
+ */
+
 package disambiguator_0_2;
 
 import java.io.*;
@@ -6,6 +15,12 @@ import java.sql.*;
 import java.util.Properties;
 import chaos.XDG.*;
 
+/**
+ * Classe statica che consente la gestione delle query al DB.
+ * 
+ * @version 0.2
+ * @author Simone Notargiacomo, Lorenzo Tavernese
+ */
 public class DBUtil{
 	
 	private static Properties property = null;
@@ -25,25 +40,43 @@ public class DBUtil{
 	private static ResultSet rs1;
 		
 	public static String getCorpusTrainDir() {
+		if(property==null)
+			loadProperty();
 		return corpusTrainDir;
 	}
 	
 	public static String getCorpusChaosDir() {
-		return corpusTrainDir;
+		if(property==null)
+			loadProperty();
+		return corpusChaosDir;
 	}
 	
 	public static String getCorpusOutputDir() {
-		return corpusTrainDir;
+		if(property==null)
+			loadProperty();
+		return corpusOutputDir;
 	}
 	
 	public static double getPercentualeTrain() {
+		if(property==null)
+			loadProperty();
 		return percentualeTrain;
 	}
 	
-	public static Connection startTransaction()
-	{
-		try
-		{
+	public static Connection startTransaction() {
+		try {
+			loadProperty();
+			Class.forName(property.getProperty("jdbcDriver"));
+			c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return c;
+	}
+	
+	public static void loadProperty() {
+		try {
 			File ff = new File(System.getProperty("user.dir")+"/conf/configuration.properties");
 			
 			FileInputStream f;
@@ -51,24 +84,18 @@ public class DBUtil{
 			property = new Properties();
 			property.load(f);
 			f.close();
-	
-			Class.forName(property.getProperty("jdbcDriver"));
-			c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
 			
 			corpusTrainDir = property.getProperty("corpusTrainDir");
 			corpusChaosDir = property.getProperty("corpusChaosDir");
 			corpusOutputDir = property.getProperty("corpusOutputDir");
 			percentualeTrain = Double.valueOf(property.getProperty("percentualeTrain")).doubleValue();
-		}
-		catch(Exception e)
-		{
+		} 
+		catch (Exception e) {
 			e.printStackTrace();
 		}
-		return c;
 	}
 	
-	public static void close() 
-	{
+	public static void close() {
 		if(c!= null)
 		{
 			try
@@ -89,18 +116,11 @@ public class DBUtil{
 				query = "SELECT COUNT(*) FROM icd i WHERE (i.fromcs = ?) AND" +
 					" (i.tocs = ?)" +
 					" AND (i.fromct = ?) AND (i.toct = ?)";
-//				query = "SELECT COUNT(*) FROM icd i WHERE ((i.fromcs = ?) OR" +
-//				" (i.tocs = ?)) AND " +
-//				"((i.fromcs = ?) OR (i.tocs = ?)) AND (((i.fromct = ?) AND (i.toct = ?)) OR ((i.fromct = ?) AND (i.toct = ?)))";
 				ps1 = c.prepareStatement(query);
 				ps1.setString(1, icd.getFrom().getSurface());
 				ps1.setString(2, icd.getTo().getSurface());
 				ps1.setString(3, icd.getFrom().getType());
 				ps1.setString(4, icd.getTo().getType());
-//				ps1.setString(5, icd.getFrom().getType());
-//				ps1.setString(6, icd.getTo().getType());
-//				ps1.setString(7, icd.getTo().getType());
-//				ps1.setString(8, icd.getFrom().getType());
 				rs1 = ps1.executeQuery();
 				if(rs1.next())
 					queryResult.add(new Integer(rs1.getInt(1)));
@@ -119,8 +139,6 @@ public class DBUtil{
 				fromConstType=data.getIcd(i).getFrom().getType();
 				toConstType=data.getIcd(i).getTo().getType();
 				query="SELECT COUNT(*) FROM icd i WHERE (i.fromct=? AND i.toct=?) OR (i.toct=? AND i.fromct=?)";
-//				query="SELECT COUNT(*) FROM icd i WHERE (i.fromct=? AND i.toct=?)";
-				
 				ps1 = c.prepareStatement(query);
 				ps1.setString(1, fromConstType);
 				ps1.setString(2, toConstType);
@@ -147,10 +165,6 @@ public class DBUtil{
 				toConstType=data.getIcd(i).getTo().getType();
 				query = "SELECT MIN(ABS(i.fromc-i.toc)) FROM icd i WHERE (i.toct = ? AND i.fromct = ?) OR " +
 						"(i.toct = ? AND i.fromct = ?)";
-//				query = "SELECT MIN(ABS(i.fromc-i.toc)) FROM icd i WHERE (i.toct = ? AND i.fromct = ?)";
-//				query = "SELECT COUNT(*) FROM icd i WHERE (i.toct = ? AND i.fromct = ?) OR " +
-//				"(i.toct = ? AND i.fromct = ?)";
-			
 				ps1 = c.prepareStatement(query);
 				ps1.setString(1, toConstType);
 				ps1.setString(2, fromConstType);
@@ -177,10 +191,6 @@ public class DBUtil{
 				fromConstType = data.getIcd(i).getFrom().getType();
 				toConstSur = data.getIcd(i).getTo().getSurface();
 				toConstType = data.getIcd(i).getTo().getType();
-				
-//				query = "SELECT COUNT(*) FROM icd i WHERE " +
-//						"(i.fromcs = ? OR i.tocs = ?) AND " +
-//						"((i.fromct = ? AND i.toct = ?) OR (i.fromct = ? AND i.toct = ?))";
 				query = "SELECT COUNT(*) FROM icd i WHERE " +
 				"((i.fromcs = ?) AND (i.fromct = ? AND i.toct = ?)) OR " +
 				"((i.tocs = ?) AND (i.fromct = ? AND i.toct = ?))";
@@ -192,12 +202,7 @@ public class DBUtil{
 				ps1.setString(4, toConstSur);
 				ps1.setString(5, fromConstType);
 				ps1.setString(6, toConstType);
-//				ps1.setString(1, fromConstSur);
-//				ps1.setString(2, fromConstSur);
-//				ps1.setString(3, fromConstType);
-//				ps1.setString(4, toConstType);
-//				ps1.setString(5, toConstType);
-//				ps1.setString(6, fromConstType);
+
 				ResultSet rs1 = ps1.executeQuery();
 				if(rs1.next())
 					queryResult.add(new Integer(rs1.getInt(1)));
