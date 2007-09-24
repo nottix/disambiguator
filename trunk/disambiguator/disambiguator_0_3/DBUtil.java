@@ -7,7 +7,7 @@
  * @author Simone Notargiacomo, Lorenzo Tavernese
  */
 
-package disambiguator_0_2;
+package disambiguator_0_3;
 
 import java.io.*;
 import java.util.*;
@@ -124,6 +124,8 @@ public class DBUtil{
 				rs1 = ps1.executeQuery();
 				if(rs1.next())
 					queryResult.add(new Integer(rs1.getInt(1)));
+				else
+					queryResult.add(new Integer(0));
 				rs1.close();
 				ps1.close();
 			}
@@ -149,6 +151,8 @@ public class DBUtil{
 					System.out.println("FromType: "+fromConstType+", ToType: "+toConstType+", Int: "+rs1.getInt(1));
 					queryResult.add(new Integer(rs1.getInt(1)));
 				}
+				else
+					queryResult.add(new Integer(0));
 				rs1.close();
 				ps1.close();
 			}
@@ -158,25 +162,54 @@ public class DBUtil{
 		}
 	}
 	
-	public static void queryFrequentRelDis(IcdList data, ArrayList queryResult) {
+	public static void queryDepProb(IcdList data, ArrayList queryResult) {
 		try{
+			double num=0, den=0;
 			for(int i=0; i<data.size();i++){
+				fromConstSur=data.getIcd(i).getFrom().getSurface();
+				toConstSur=data.getIcd(i).getTo().getSurface();
 				fromConstType=data.getIcd(i).getFrom().getType();
 				toConstType=data.getIcd(i).getTo().getType();
-				query = "SELECT MIN(ABS(i.fromc-i.toc)) FROM icd i WHERE (i.toct = ? AND i.fromct = ?) OR " +
-						"(i.toct = ? AND i.fromct = ?)";
+				query = "SELECT COUNT(*) FROM icd i WHERE (i.fromcs = ? AND i.tocs = ?) AND " +
+						"(i.fromct = ? AND i.toct = ?)";
 				ps1 = c.prepareStatement(query);
-				ps1.setString(1, toConstType);
-				ps1.setString(2, fromConstType);
+				ps1.setString(1, fromConstSur);
+				ps1.setString(2, toConstSur);
 				ps1.setString(3, fromConstType);
 				ps1.setString(4, toConstType);
 				rs1 = ps1.executeQuery();
-				
+
 				if(rs1.next()) {
-					queryResult.add(new Integer(rs1.getInt(1)));
+					//queryResult.add(new Integer(rs1.getInt(1)));
+					num = rs1.getInt(1);
 				}
 				rs1.close();
 				ps1.close();
+				
+				query = "SELECT COUNT(*) FROM icd i WHERE (i.fromcs = ? AND i.tocs = ?) OR " +
+						"(i.fromcs = ? AND i.tocs = ?)";
+				ps1 = c.prepareStatement(query);
+				ps1.setString(1, fromConstSur);
+				ps1.setString(2, toConstSur);
+				ps1.setString(3, toConstSur);
+				ps1.setString(4, fromConstSur);
+				rs1 = ps1.executeQuery();
+				
+				if(rs1.next()) {
+					//queryResult.add(new Integer(rs1.getInt(1)));
+					den = rs1.getInt(1);
+				}
+				rs1.close();
+				ps1.close();
+				
+				if(den!=0)
+				{
+					queryResult.add(new Integer( (int)((num/den)*100) ));
+					System.out.println("AAAAAAAAAAAAAAAAAAAAAAA: "+(int)((num/den)*100)+", num: "+num+", den: "+den);
+				}
+				else
+					queryResult.add(new Integer(0));
+				
 			}
 		}
 		catch(Exception e){
@@ -206,6 +239,8 @@ public class DBUtil{
 				ResultSet rs1 = ps1.executeQuery();
 				if(rs1.next())
 					queryResult.add(new Integer(rs1.getInt(1)));
+				else
+					queryResult.add(new Integer(0));
 				rs1.close();
 				ps1.close();
 			}

@@ -7,7 +7,7 @@
  * @author Simone Notargiacomo, Lorenzo Tavernese
  */
 
-package disambiguator_0_2;
+package disambiguator_0_3;
 
 import chaos.XDG.*;
 import chaos.processors.*;
@@ -148,7 +148,8 @@ public class Disambiguator extends DependencyProcessor {
 						 * Se il primo algoritmo di disambiguazione ritorna un risultato
 						 * valido, viene impostata la plausibilità dell'ICD disambiguato ad 1. 
 						 */
-						ret = getFrequentSurType(completeList); //Primo algoritmo
+//						ret = getFrequentSurType(completeList); //Primo algoritmo
+						ret = getDepProb(completeList); //Terzo algoritmo
 						if(ret!=null)
 							break;
 					case 2:
@@ -156,7 +157,8 @@ public class Disambiguator extends DependencyProcessor {
 						if(ret!=null)
 							break;
 					case 3:
-						ret = getFrequentRelDis(completeList); //Terzo algoritmo
+						//ret = getDepProb(completeList); //Terzo algoritmo
+						ret = getFrequentSurType(completeList); //Primo algoritmo
 						if(ret!=null)
 							break;
 					case 4:
@@ -365,10 +367,10 @@ public class Disambiguator extends DependencyProcessor {
 	 * @param data Lista contenente gli ICD ambigui
 	 * @return Lista contenente l'ICD scelto tra quelli ambigui
 	 */
-	public IcdList getFrequentRelDis(IcdList data) {
+	public IcdList getDepProb(IcdList data) {
 		queryResult = new ArrayList();
 		IcdList resultIcd = new IcdList();
-		DBUtil.queryFrequentRelDis(data, queryResult);
+		DBUtil.queryDepProb(data, queryResult);
 		index=getMin(queryResult);
 		if(index>=0) {
 			data.getIcd(index).setPlausibility(1);
