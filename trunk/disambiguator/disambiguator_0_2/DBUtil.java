@@ -215,6 +215,11 @@ public class DBUtil{
 		}
 	}
 	
+	/**
+	 * Aggiunge nel DB i valori necessari per la disambiguazione.
+	 * 
+	 * @param Lista di ICD da aggiungere al DB
+	 */
 	public static void queryAddToDB(IcdList data) {
 		try {
 			for(int k=0; k < data.size(); k++) {
@@ -233,6 +238,48 @@ public class DBUtil{
 			}
 		}
 		catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Questo metodo rimuove chaos dal DB.
+	 * Dopo aver chiamato tale funzione bisogna ripopolare il DB.
+	 */
+	public static void queryFreeDB() {
+		try {
+		    InputStreamReader isr = new InputStreamReader( System.in );
+		    BufferedReader stdin = new BufferedReader( isr );
+		    System.out.print( "Sei sicuro di voler eliminare chaos dal DB? [si/no]: " );
+		    String input = stdin.readLine();
+		    if(input.compareToIgnoreCase("si")==0) {
+		    	query = "DROP DATABASE IF EXISTS chaos";
+		    	ps1 = c.prepareStatement(query);
+		    	ps1.execute();
+		    }
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * Questo metodo rimuove i dati nella tabella ICD presente nel DB.
+	 * Dopo aver chiamato tale funzione bisogna ripopolare il DB.
+	 */
+	public static void queryFreeTable() {
+		try {
+		    InputStreamReader isr = new InputStreamReader( System.in );
+		    BufferedReader stdin = new BufferedReader( isr );
+		    System.out.print( "Sei sicuro di voler eliminare i dati nella tabella? [si/no]: " );
+		    String input = stdin.readLine();
+		    if(input.compareToIgnoreCase("si")==0) {
+		    	query = "DELETE FROM icd";
+		    	ps1 = c.prepareStatement(query);
+		    	ps1.execute();
+		    }
+		}
+		catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
