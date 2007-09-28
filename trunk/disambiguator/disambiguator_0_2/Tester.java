@@ -23,12 +23,13 @@ public class Tester {
 	public static void main(String[] args) {
 		try {
 			InputStreamReader isr;
-			BufferedReader stdin;
+			BufferedReader stdin, stdin2;
 			int input;
 			do {
 				printMenu();
 				isr = new InputStreamReader( System.in );
 				stdin = new BufferedReader( isr );
+				stdin2 = new BufferedReader( isr );
 				input = stdin.read();
 				switch(input) {
 					case '1':
@@ -43,12 +44,13 @@ public class Tester {
 					case '4':
 						startDisambiguator();
 						System.out.print("\nPremere invio per continuare...");
-						while(stdin.read()!='\n');
+						stdin.reset();
+						while(stdin2.read()!='\n');
 						break;
 					case '5':
 						evaluate();
 						System.out.print("\nPremere invio per continuare...");
-						while(stdin.read()!='\n');
+						while(stdin2.read()!='\n');
 						break;
 					case '0':
 						break;
@@ -57,6 +59,9 @@ public class Tester {
 						break;
 				}
 			}while(input != '0');
+			stdin.close();
+			stdin2.close();
+			isr.close();
 		}
 		catch (IOException e) {
 			e.printStackTrace();
