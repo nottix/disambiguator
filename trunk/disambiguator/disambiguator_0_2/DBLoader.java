@@ -89,7 +89,7 @@ public class DBLoader {
 	}	
 
 	public static void main(String[] args) {
-		DBUtil.startTransaction();
+		DBUtil.startTransaction("chaos");
 		perNum = DBUtil.getPercentualeTrain();
 		addToDB();
 		DBUtil.close();

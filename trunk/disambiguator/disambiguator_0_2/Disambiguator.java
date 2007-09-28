@@ -54,7 +54,7 @@ public class Disambiguator extends DependencyProcessor {
 	 * ovvero avvia la connessione al DB relazionale ed inizializza gli oggetti principali della classe.
 	 */
 	public void initialize() throws ProcessorException {
-		DBUtil.startTransaction();
+		DBUtil.startTransaction("chaos");
 	}
 	
 	/**
