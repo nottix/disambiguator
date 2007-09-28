@@ -134,7 +134,7 @@ public class Tester {
 			Date date = new Date(System.currentTimeMillis()-start);
 			System.out.println("Tempo impiegato: "+date.getMinutes()+" minuti e "+date.getSeconds()+" secondi");
 			System.out.println("Statistiche: Primo: "+disambiguator.statistics[0]+", Secondo: "+disambiguator.statistics[1]+"," +
-					" Terzo: "+disambiguator.statistics[2]+", Quarto: "+disambiguator.statistics[3]+", Quinto: "+disambiguator.statistics[4]);
+					" Terzo: "+disambiguator.statistics[2]+", Quarto: "+disambiguator.statistics[3]);
 			System.out.println("Disambiguazione completata");
 		}
 		catch(Exception e) {
