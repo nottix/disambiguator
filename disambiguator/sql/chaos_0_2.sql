@@ -7,6 +7,8 @@ Target Database: chaos
 Date: 21/09/2007 19.50.29
 */
 
+CREATE DATABASE chaos;
+USE chaos;
 SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for icd

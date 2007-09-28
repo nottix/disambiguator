@@ -63,11 +63,16 @@ public class DBUtil{
 		return percentualeTrain;
 	}
 	
-	public static Connection startTransaction() {
+	public static Connection startTransaction(String db) {
 		try {
 			loadProperty();
 			Class.forName(property.getProperty("jdbcDriver"));
-			c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
+			if(db!=null) {
+				c = DriverManager.getConnection(property.getProperty("connectionURL")+db,property.getProperty("username"),property.getProperty("password"));
+			}
+			else {
+				c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
+			}
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -157,32 +162,6 @@ public class DBUtil{
 		}
 	}
 	
-	public static void queryFrequentRelDis(IcdList data, ArrayList queryResult) {
-		try{
-			for(int i=0; i<data.size();i++){
-				fromConstType=data.getIcd(i).getFrom().getType();
-				toConstType=data.getIcd(i).getTo().getType();
-				query = "SELECT MIN(ABS(i.fromc-i.toc)) FROM icd i WHERE (i.toct = ? AND i.fromct = ?) OR " +
-						"(i.toct = ? AND i.fromct = ?)";
-				ps1 = c.prepareStatement(query);
-				ps1.setString(1, toConstType);
-				ps1.setString(2, fromConstType);
-				ps1.setString(3, fromConstType);
-				ps1.setString(4, toConstType);
-				rs1 = ps1.executeQuery();
-				
-				if(rs1.next()) {
-					queryResult.add(new Integer(rs1.getInt(1)));
-				}
-				rs1.close();
-				ps1.close();
-			}
-		}
-		catch(Exception e){
-				e.printStackTrace();		
-		}
-	}
-	
 	public static void queryFrequentSurRel(IcdList data, ArrayList queryResult) {
 		try {
 			for(int i=0; i<data.size(); i++) {
@@ -237,6 +216,60 @@ public class DBUtil{
 			}
 		}
 		catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+    private static Vector readText() {
+        Vector comandi = null;
+		try {
+			BufferedReader buffer = new BufferedReader(new FileReader(new File("sql//chaos.sql")));
+			comandi = new Vector();
+			String letto = null;
+			boolean avanti = true;
+			
+			while(avanti)
+			{
+				int ch;
+			    letto="";
+			    while( (ch=buffer.read()) != ';' && ch!=-1 ) {  
+			    	letto += (char)ch;
+			    }
+			    if(ch==-1)
+			        break;
+			    letto += ';';
+			    System.out.println(letto);
+			    if(letto.equals("\n") || letto==null)
+			    	avanti = false;
+			    else {
+			    	comandi.add(letto);
+			    }
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+        return comandi;
+    }
+	
+	public static void queryCreateDB() {
+		try {
+		    InputStreamReader isr = new InputStreamReader( System.in );
+		    BufferedReader stdin = new BufferedReader( isr );
+		    System.out.print( "Sei sicuro di voler creare il DB? [si/no]: " );
+		    String input = stdin.readLine();
+		    if(input.compareToIgnoreCase("si")==0) {
+		    	Statement st = c.createStatement();
+		    	Vector vet = readText();
+		    	for(int i=0; i<vet.size(); i++) {
+		    		st.addBatch((String)vet.get(i));
+		    	}
+		    	st.executeBatch();
+		    	st.close();
+		    }
+		}
+		catch(Exception e) {
 			e.printStackTrace();
 		}
 	}

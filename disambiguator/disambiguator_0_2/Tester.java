@@ -33,21 +33,24 @@ public class Tester {
 				input = stdin.read();
 				switch(input) {
 					case '1':
-						loadDB();
+						createDB();
 						break;
 					case '2':
-						removeTrainCorpus();
+						loadDB();
 						break;
 					case '3':
-						removeDB();
+						removeTrainCorpus();
 						break;
 					case '4':
+						removeDB();
+						break;
+					case '5':
 						startDisambiguator();
 						System.out.print("\nPremere invio per continuare...");
 						stdin.reset();
 						while(stdin2.read()!='\n');
 						break;
-					case '5':
+					case '6':
 						evaluate();
 						System.out.print("\nPremere invio per continuare...");
 						while(stdin2.read()!='\n');
@@ -70,30 +73,37 @@ public class Tester {
 	
 	private static void printMenu() {
 		System.out.print("Progetto di Intelligenza Artificiale 2006/2007\n\n" +
-			"1: Creare il DB e caricare il corpus di training\n" +
-			"2: Rimuovere il corpus di training dal DB\n" +
-			"3: Rimuovere il DB chaos\n" +
+			"1: Creare il DB\n" +
+			"2: Caricare il corpus di training\n" +
+			"3: Rimuovere il corpus di training dal DB\n" +
+			"4: Rimuovere il DB chaos\n" +
 			"------------------------------------------\n" +
-			"4: Avviare la disambiguazione\n" +
-			"5: Calcolare la precision e la recall\n" +
+			"5: Avviare la disambiguazione\n" +
+			"6: Calcolare la precision e la recall\n" +
 			"0: Uscire\n\n>");
 	}
 	
+	private static void createDB() {
+		DBUtil.startTransaction(null);
+		DBUtil.queryCreateDB();
+		DBUtil.close();
+	}
+	
 	private static void loadDB() {
-		DBUtil.startTransaction();
+		DBUtil.startTransaction("chaos");
 		DBLoader.setPerNum(DBUtil.getPercentualeTrain());
 		DBLoader.addToDB();
 		DBUtil.close();
 	}
 	
 	private static void removeTrainCorpus() {
-		DBUtil.startTransaction();
+		DBUtil.startTransaction("chaos");
 		DBUtil.queryFreeTable();
 		DBUtil.close();
 	}
 
 	private static void removeDB() {
-		DBUtil.startTransaction();
+		DBUtil.startTransaction(null);
 		DBUtil.queryFreeDB();
 		DBUtil.close();
 	}
