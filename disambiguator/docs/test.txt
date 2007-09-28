@@ -1,0 +1,43 @@
+corpus		dev		precisione		recall			f-measure		Tempo (min,sec)
+
+ai_train	chaos2(-2,-4)	0.7336480479951055	-			-
+
+ai_train	chaos2(-2,+4)	0.7461143067792686	0.42242653258799234
+
+ai-train	chaos2(+2,+4)	0.7714092290451596	0.43782469441663713
+
+
+ai-train	chaos2(tutto)	0.7724203971146031	0.4385124868907056
+
+ai-train	chaos2(tutto)	0.7780977266045941	0.4417455721144422	0.5635498030949331	5m
+
+ai-train	chaos2(tutto)	0.7794926836935749	0.44260073704577857	0.5646115599179716	5m 10s
+
+----
+
+ai_train	chaos		0.6714919117548471	-			-
+
+ai-train	chaos		0.698			-			-
+
+----
+
+
+Ambiguo
+Precision: 0.6982584870934285, Recall: 0.4920265062519952, F-Measure: 0.5772763427013669
+
+Disambiguo:
+Tempo impiegato: 5 minuti e 12 secondi
+Statistiche: Primo: 94, Secondo: 739, Terzo: 259, Quarto: 168
+Precision: 0.777969662600471, Recall: 0.44142643386519365, F-Measure: 0.5632564755823026
+
+Tempo impiegato: 5 minuti e 11 secondi
+Statistiche: Primo: 94, Secondo: 739, Terzo: 259, Quarto: 168
+Precision: 0.7794169819432928, Recall: 0.44237700187571344, F-Measure: 0.5644096341108981
+
+Tempo impiegato: 6 minuti e 18 secondi
+Statistiche: Primo: 94, Secondo: 753, Terzo: 252, Quarto: 161
+Precision: 0.7778020899930014, Recall: 0.44109627333727247, F-Measure: 0.5629437426636233
+
+Tempo impiegato: 6 minuti e 16 secondi
+Statistiche: Primo: 94, Secondo: 739, Terzo: 259, Quarto: 168
+Precision: 0.780268008486613, Recall: 0.4426571908048982, F-Measure: 0.5648607861081206

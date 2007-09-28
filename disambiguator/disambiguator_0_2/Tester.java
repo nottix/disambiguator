@@ -47,11 +47,15 @@ public class Tester {
 					case '5':
 						startDisambiguator();
 						System.out.print("\nPremere invio per continuare...");
-						stdin.reset();
 						while(stdin2.read()!='\n');
 						break;
 					case '6':
-						evaluate();
+						evaluateDis();
+						System.out.print("\nPremere invio per continuare...");
+						while(stdin2.read()!='\n');
+						break;
+					case '7':
+						evaluateAmb();
 						System.out.print("\nPremere invio per continuare...");
 						while(stdin2.read()!='\n');
 						break;
@@ -79,7 +83,8 @@ public class Tester {
 			"4: Rimuovere il DB chaos\n" +
 			"------------------------------------------\n" +
 			"5: Avviare la disambiguazione\n" +
-			"6: Calcolare la precision e la recall\n" +
+			"6: Calcolare la precision, recall e f-measure disambiguati\n" +
+			"7: Calcolare la precision, recall e f-measure iniziali\n" +
 			"0: Uscire\n\n>");
 	}
 	
@@ -108,8 +113,13 @@ public class Tester {
 		DBUtil.close();
 	}
 	
-	private static void evaluate() {
-		Evaluator.loadDir();
+	private static void evaluateDis() {
+		Evaluator.loadDirDis();
+		Evaluator.calcPrecisionRecall();
+	}
+	
+	private static void evaluateAmb() {
+		Evaluator.loadDirAmb();
 		Evaluator.calcPrecisionRecall();
 	}
 	

@@ -73,6 +73,22 @@ public class DBUtil{
 			else {
 				c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
 			}
+			
+//			loadProperty();
+//			//Class.forName(property.getProperty("jdbcDriver"));
+//			DriverManager.registerDriver(new com.mysql.embedded.jdbc.MySqlEmbeddedDriver());
+//			String url = "jdbc:mysql-embedded/";
+//			Properties props = new Properties();
+//			props.put("library.path", "C://Documents and Settings//SeT//Desktop//mysql-je-1.30-windows//lib");
+//			props.put("--datadir", "c://chaosParser//");
+//	        props.put("--basedir", "C://Documents and Settings//SeT//Desktop//mysql-je-1.30-windows//");
+//	        props.put("--default-character-set","utf8");
+//	        props.put("--default-collation","utf8_general_ci");
+//	        props.put("shutdown", "false");
+//	        if(db!=null)
+//	        	c = DriverManager.getConnection(url+"chaos",props);
+//	        else
+//	        	c = DriverManager.getConnection(url,props);
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -205,6 +221,7 @@ public class DBUtil{
 				   query = "INSERT into icd (fromc, toc, fromcs, tocs, fromct, toct) VALUES ('"+data.getIcd(k).getFromId()+"'" +
 				   ",'"+data.getIcd(k).getToId()+
 				   "', ?, ?, ?, ?)";
+				   System.out.println(query);
 				   ps1 = c.prepareStatement(query);
 				   ps1.setString(1, data.getIcd(k).getFrom().getSurface());
 				   ps1.setString(2, data.getIcd(k).getTo().getSurface());
@@ -255,6 +272,11 @@ public class DBUtil{
 	
 	public static void queryCreateDB() {
 		try {
+//	        ps1.execute("CREATE DATABASE chaos");
+//	        ps1.execute("USE chaos");
+//	        ps1.execute("CREATE TABLE icd");
+//	        ps1.close();
+			
 		    InputStreamReader isr = new InputStreamReader( System.in );
 		    BufferedReader stdin = new BufferedReader( isr );
 		    System.out.print( "Sei sicuro di voler creare il DB? [si/no]: " );

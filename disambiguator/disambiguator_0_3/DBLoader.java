@@ -15,6 +15,7 @@ import java.io.*;
 import java.util.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import java.sql.*;
 
 /**
  * Classe statica utilizzata per il caricamento del corpus
@@ -85,9 +86,18 @@ public class DBLoader {
 	}	
 
 	public static void main(String[] args) {
-		DBUtil.startTransaction();
-		perNum = DBUtil.getPercentualeTrain();
-		addToDB();
-		DBUtil.close();
+		try {
+			Statement st = DBUtil.startTransaction().createStatement();
+			perNum = DBUtil.getPercentualeTrain();
+			st.execute("CREATE DATABASE test");
+			st.execute("USE test");
+			//st.execute("CREATE TABLE icd)
+			st.close();
+			//addToDB();
+			DBUtil.close();
+		}
+		catch (Exception e) {
+			
+		}
 	}
 }

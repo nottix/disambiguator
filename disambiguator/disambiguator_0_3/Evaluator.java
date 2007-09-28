@@ -24,6 +24,7 @@ import java.io.*;
  */
 public class Evaluator {
 	
+	private static String dir0 = DBUtil.getCorpusChaosDir();
 	private static String dir1 = DBUtil.getCorpusTrainDir();
 	private static String dir2 = DBUtil.getCorpusOutputDir();
 

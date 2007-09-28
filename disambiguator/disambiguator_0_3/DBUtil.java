@@ -66,8 +66,18 @@ public class DBUtil{
 	public static Connection startTransaction() {
 		try {
 			loadProperty();
-			Class.forName(property.getProperty("jdbcDriver"));
-			c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
+			//Class.forName(property.getProperty("jdbcDriver"));
+			//DriverManager.registerDriver(new com.mysql.embedded.jdbc.MySqlEmbeddedDriver());
+			String url = "jdbc:mysql-embedded/TestDatabase";
+			Properties props = new Properties();
+			props.put("library.path", "C://Documents and Settings//SeT//Desktop//mysql-je-1.30-windows//lib");
+			props.put("--datadir", "c://chaosParser//");
+	        props.put("--basedir", "C://Documents and Settings//SeT//Desktop//mysql-je-1.30-windows//");
+	        props.put("--default-character-set","utf8");
+	        props.put("--default-collation","utf8_general_ci");
+	        c = DriverManager.getConnection(url,props);
+	        
+			//c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
 		}
 		catch(Exception e) {
 			e.printStackTrace();
