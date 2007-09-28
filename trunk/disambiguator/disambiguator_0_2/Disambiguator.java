@@ -134,7 +134,7 @@ public class Disambiguator extends DependencyProcessor {
 					}
 					
 				}
-				
+
 				/*
 				 * Da questo punto iniziano i cinque algoritmi di disambiguazione.
 				 * Si sottopone la lista degli ICD ambigui ad ogni algoritmo in sequenza,
@@ -165,7 +165,7 @@ public class Disambiguator extends DependencyProcessor {
 						 * dell'ICD.
 						 */
 						if(completeList.size()!=0) {
-							statistics[4]++;
+							statistics[3]++;
 							ret = new IcdList();
 							ret.addElement(completeList.getIcd((new Random()).nextInt(completeList.size())));
 							ret.getIcd(0).setPlausibility(1);
@@ -314,7 +314,6 @@ public class Disambiguator extends DependencyProcessor {
 		if(index>=0) {
 			data.getIcd(index).setPlausibility(1);
 			resultIcd.addElement(data.getIcd(index));
-			printAllIcds(resultIcd);
 			statistics[1]++;
 		}
 		else
@@ -341,8 +340,7 @@ public class Disambiguator extends DependencyProcessor {
 		if(index>=0) {
 			data.getIcd(index).setPlausibility(1);
 			resultIcd.addElement(data.getIcd(index));
-			printAllIcds(resultIcd);
-			statistics[3]++;
+			statistics[2]++;
 		}
 		else
 			resultIcd = null;
@@ -385,7 +383,7 @@ public class Disambiguator extends DependencyProcessor {
 			Date date = new Date(System.currentTimeMillis()-start);
 			System.out.println("Tempo impiegato: "+date.getMinutes()+" minuti e "+date.getSeconds()+" secondi");
 			System.out.println("Statistiche: Primo: "+disambiguator.statistics[0]+", Secondo: "+disambiguator.statistics[1]+"," +
-					" Terzo: "+disambiguator.statistics[2]+", Quarto: "+disambiguator.statistics[3]+", Quinto: "+disambiguator.statistics[4]);
+					" Terzo: "+disambiguator.statistics[2]+", Quinto: "+disambiguator.statistics[3]);
 			System.out.println("Disambiguazione completata");
 		}
 		catch(Exception e) {
