@@ -26,6 +26,9 @@ public class Evaluator {
 	
 	private static String dir1 = DBUtil.getCorpusTrainDir();
 	private static String dir2 = DBUtil.getCorpusOutputDir();
+	
+	private static Vector<IcdList> vetPrec;
+	private static Vector<IcdList> vetRec;
 
 	public static Vector<IcdList> load(String dir) {
 		IcdList list1 = null;
@@ -112,12 +115,20 @@ public class Evaluator {
 		return (2*precision*recall)/(precision+recall);
 	}
 	
-	public static void main(String[] args) {
-		Vector<IcdList> vl = load(dir1);
-		Vector<IcdList> vl2 = load(dir2);
-		double precision = calcPrecision2(vl,vl2);
-		double recall = calcRecall2(vl,vl2);
+	public static void calcPrecisionRecall() {
+		double precision = calcPrecision2(vetPrec, vetRec);
+		double recall = calcRecall2(vetPrec, vetRec);
 		double fmeasure = calcFMeasure(precision, recall);
 		System.out.println("Precision: "+precision+", Recall: "+recall+", F-Measure: "+fmeasure);
+	}
+	
+	public static void loadDir() {
+		vetPrec = load(dir1);
+		vetRec = load(dir2);
+	}
+	
+	public static void main(String[] args) {
+		loadDir();
+		calcPrecisionRecall();
 	}
 }
