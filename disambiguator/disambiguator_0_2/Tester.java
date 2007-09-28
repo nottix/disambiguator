@@ -42,13 +42,13 @@ public class Tester {
 						break;
 					case '4':
 						startDisambiguator();
-						System.out.print("\nPremere un tasto per continuare...");
-						stdin.read();
+						System.out.print("\nPremere invio per continuare...");
+						while(stdin.read()!='\n');
 						break;
 					case '5':
 						evaluate();
-						System.out.print("\nPremere un tasto per continuare...");
-						stdin.read();
+						System.out.print("\nPremere invio per continuare...");
+						while(stdin.read()!='\n');
 						break;
 					case '0':
 						break;
