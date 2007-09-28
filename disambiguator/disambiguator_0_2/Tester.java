@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.util.Date;
 import java.util.Vector;
 
+import chaos.XDG.IcdList;
 import chaos.XDG.XDG;
 import chaos.alternatives.AvailableOutputFormat;
 import chaos.textstructure.Paragraph;
@@ -30,17 +31,26 @@ public class Tester {
 				stdin = new BufferedReader( isr );
 				input = stdin.read();
 				switch(input) {
-					case 1:
+					case '1':
 						loadDB();
 						break;
-					case 2:
+					case '2':
 						removeTrainCorpus();
 						break;
-					case 3:
+					case '3':
 						removeDB();
 						break;
-					case 4:
+					case '4':
 						startDisambiguator();
+						System.out.print("\nPremere un tasto per continuare...");
+						stdin.read();
+						break;
+					case '5':
+						evaluate();
+						System.out.print("\nPremere un tasto per continuare...");
+						stdin.read();
+						break;
+					case '0':
 						break;
 					default:
 						System.out.println("Selezionare una delle opzioni elencate!");
@@ -60,6 +70,7 @@ public class Tester {
 			"3: Rimuovere il DB chaos\n" +
 			"------------------------------------------\n" +
 			"4: Avviare la disambiguazione\n" +
+			"5: Calcolare la precision e la recall\n" +
 			"0: Uscire\n\n>");
 	}
 	
@@ -80,6 +91,11 @@ public class Tester {
 		DBUtil.startTransaction();
 		DBUtil.queryFreeDB();
 		DBUtil.close();
+	}
+	
+	private static void evaluate() {
+		Evaluator.loadDir();
+		Evaluator.calcPrecisionRecall();
 	}
 	
 	private static void startDisambiguator() {

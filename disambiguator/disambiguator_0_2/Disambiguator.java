@@ -156,14 +156,10 @@ public class Disambiguator extends DependencyProcessor {
 						if(ret!=null)
 							break;
 					case 3:
-						ret = getFrequentRelDis(completeList); //Terzo algoritmo
+						ret = getFrequentRel(completeList); //Terzo algoritmo
 						if(ret!=null)
 							break;
 					case 4:
-						ret = getFrequentRel(completeList); //Quarto algoritmo
-						if(ret!=null)
-							break;
-					case 5:
 						/*
 						 * Questo è l'ultimo algoritmo che equivale alla semplice scelta casuale
 						 * dell'ICD.
@@ -347,33 +343,6 @@ public class Disambiguator extends DependencyProcessor {
 			resultIcd.addElement(data.getIcd(index));
 			printAllIcds(resultIcd);
 			statistics[3]++;
-		}
-		else
-			resultIcd = null;
-		return resultIcd;
-	}
-	
-	/**
-	 * Questo metodo implementa il terzo algoritmo stocastico.
-	 * <<<<NON VALIDO>>>>
-	 * Ricerca nel corpus di training tutte le occorrenze degli ICD
-	 * che hanno:
-	 * <fromConstType> e <toConstType> (e viceversa)
-	 * uguali a quelli degli ICD ambigui. 
-	 * Dopo avere eseguito le query al DB sceglie l'ICD più frequente.
-	 * 
-	 * @param data Lista contenente gli ICD ambigui
-	 * @return Lista contenente l'ICD scelto tra quelli ambigui
-	 */
-	public IcdList getFrequentRelDis(IcdList data) {
-		queryResult = new ArrayList();
-		IcdList resultIcd = new IcdList();
-		DBUtil.queryFrequentRelDis(data, queryResult);
-		index=getMin(queryResult);
-		if(index>=0) {
-			data.getIcd(index).setPlausibility(1);
-			resultIcd.addElement(data.getIcd(index));
-			statistics[2]++;
 		}
 		else
 			resultIcd = null;
