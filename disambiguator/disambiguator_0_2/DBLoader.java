@@ -58,6 +58,10 @@ public class DBLoader {
         return text;
     }
 	
+	public static void setPerNum(double per) {
+		perNum = per;
+	}
+	
 	public static int addToDB() {
 		int ret = 0;
 		Text t = null;
