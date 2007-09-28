@@ -24,6 +24,7 @@ import java.io.*;
  */
 public class Evaluator {
 	
+	private static String dir0 = DBUtil.getCorpusChaosDir();
 	private static String dir1 = DBUtil.getCorpusTrainDir();
 	private static String dir2 = DBUtil.getCorpusOutputDir();
 	
@@ -122,13 +123,18 @@ public class Evaluator {
 		System.out.println("Precision: "+precision+", Recall: "+recall+", F-Measure: "+fmeasure);
 	}
 	
-	public static void loadDir() {
+	public static void loadDirDis() {
 		vetPrec = load(dir1);
 		vetRec = load(dir2);
 	}
 	
+	public static void loadDirAmb() {
+		vetPrec = load(dir1);
+		vetRec = load(dir0);
+	}
+	
 	public static void main(String[] args) {
-		loadDir();
+		loadDirDis();
 		calcPrecisionRecall();
 	}
 }

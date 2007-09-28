@@ -149,16 +149,22 @@ public class Disambiguator extends DependencyProcessor {
 						 * valido, viene impostata la plausibilità dell'ICD disambiguato ad 1. 
 						 */
 						ret = getFrequentSurType(completeList); //Primo algoritmo
-						if(ret!=null)
+						if(ret!=null) {
+							//System.out.println("ok1");
 							break;
+						}
 					case 2:
 						ret = getFrequentSurRel(completeList); //Secondo algoritmo
-						if(ret!=null)
+						if(ret!=null) {
+							//System.out.println("ok2");
 							break;
+						}
 					case 3:
 						ret = getFrequentRel(completeList); //Terzo algoritmo
-						if(ret!=null)
+						if(ret!=null) {
+							//System.out.println("ok3");
 							break;
+						}
 					case 4:
 						/*
 						 * Questo è l'ultimo algoritmo che equivale alla semplice scelta casuale
