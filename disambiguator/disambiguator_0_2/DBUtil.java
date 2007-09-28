@@ -146,7 +146,6 @@ public class DBUtil{
 				ps1.setString(4, toConstType);
 				rs1 = ps1.executeQuery();
 				if(rs1.next()) {
-					System.out.println("FromType: "+fromConstType+", ToType: "+toConstType+", Int: "+rs1.getInt(1));
 					queryResult.add(new Integer(rs1.getInt(1)));
 				}
 				rs1.close();
