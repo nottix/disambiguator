@@ -34,7 +34,7 @@ public class Evaluator {
 	/**
 	 * Carica in un vettore l'ultimo 30% degli XDG
 	 * @param dir
-	 * @return
+	 * @return il vettore con gli XDG
 	 */
 	public static Vector<IcdList> load(String dir) {
 		IcdList list1 = null;
@@ -63,7 +63,7 @@ public class Evaluator {
 	/**
 	 * Carica in un vettore tutti gli XDG disambiguati 
 	 * @param dir
-	 * @return
+	 * @return il vettore con gli XDG
 	 */
 	public static Vector<IcdList> loadChaos(String dir) {
 		IcdList list1 = null;
