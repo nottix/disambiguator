@@ -196,7 +196,7 @@ public class DBUtil{
 	/**
 	 * Aggiunge nel DB i valori necessari per la disambiguazione.
 	 * 
-	 * @param Lista di ICD da aggiungere al DB
+	 * @param data Lista di ICD da aggiungere al DB
 	 */
 	public static void queryAddToDB(IcdList data) {
 		try {
