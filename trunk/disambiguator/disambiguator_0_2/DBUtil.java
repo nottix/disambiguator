@@ -73,22 +73,6 @@ public class DBUtil{
 			else {
 				c = DriverManager.getConnection(property.getProperty("connectionURL"),property.getProperty("username"),property.getProperty("password"));
 			}
-			
-//			loadProperty();
-//			//Class.forName(property.getProperty("jdbcDriver"));
-//			DriverManager.registerDriver(new com.mysql.embedded.jdbc.MySqlEmbeddedDriver());
-//			String url = "jdbc:mysql-embedded/";
-//			Properties props = new Properties();
-//			props.put("library.path", "C://Documents and Settings//SeT//Desktop//mysql-je-1.30-windows//lib");
-//			props.put("--datadir", "c://chaosParser//");
-//	        props.put("--basedir", "C://Documents and Settings//SeT//Desktop//mysql-je-1.30-windows//");
-//	        props.put("--default-character-set","utf8");
-//	        props.put("--default-collation","utf8_general_ci");
-//	        props.put("shutdown", "false");
-//	        if(db!=null)
-//	        	c = DriverManager.getConnection(url+"chaos",props);
-//	        else
-//	        	c = DriverManager.getConnection(url,props);
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -98,7 +82,7 @@ public class DBUtil{
 	
 	public static void loadProperty() {
 		try {
-			File ff = new File(System.getProperty("user.dir")+"/conf/configuration.properties");
+			File ff = new File(System.getProperty("user.dir")+"//conf//configuration.properties");
 			
 			FileInputStream f;
 			f = new FileInputStream (ff);

@@ -1,0 +1,43 @@
+Progetto di Intelligenza Artificiale 2006/2007
+
+@REQUISITI:
+-Java sdk1.5.06
+-MySQL 5 o superiore
+-Chaos
+
+@USO DEL MODULO:
+Per utilizzare il modulo basta compilare ed eseguire la classe Tester, che consente
+il caricamento del DB. Prima devono essere cambiati i parametri che si trovano nel file property
+situato in ./conf/.
+Parametri:
+	#connectionURL = jdbc:mysql://localhost:3306/
+	#jdbcDriver = org.gjt.mm.mysql.Driver
+	#username = root //Username per la connessione al DBMS
+	#password = root //Password per la connessione al DBMS
+	#corpusTrainDir = c://ChaosParser//AI_train// //Directory del corpus di training
+	#corpusChaosDir = c://ChaosParser//Chaos//    //Directory del corpus da disambiguare
+	#corpusOutputDir = c://ChaosParser//Chaos2//  //Dir destinazione del corpus disambiguato
+	#percentualeTrain = 0.70 //Percentuale di file XML da utilizzare come training
+Bisogna assicurarsi che il parser Chaos sia installato correttamente e che le variabili d'ambiente siano
+impostate con l'esatto percorso. Inoltre, in caso di sistemi unix, ricordarsi che i percorsi sono soggetti
+al case-sensitive.
+Al primo avvio del Tester apparira' un menu che chiedera' di scegliere tra le seguenti opzioni:
+	1: Creare il DB
+	2: Caricare il corpus di training
+	3: Rimuovere il corpus di training dal DB
+	4: Rimuovere il DB chaos
+	5: Avviare la disambiguazione
+	6: Calcolare la precision, recall e f-measure disambiguati
+	7: Calcolare la precision, recall e f-measure iniziali
+	0: Uscire
+Bisogna innanzitutto creare il DB ( 1 ), dopodiche' caricare il corpus di training ( 2 ) che richiedera'
+circa 15 minuti. Si puo' quindi passare alla disambiguazione ( 5 ) che richiedera' circa 5 minuti.
+Infine si puo' calcolare la precision, la recall e l'f-measure ( 6 ).
+
+
+-------------------------------------------------------------------------------
+
+Il progetto puo' essere reperito anche da: http://disambiguator.googlecode.com/
+
+Notargiacomo Simone
+Tavernese Lorenzo
