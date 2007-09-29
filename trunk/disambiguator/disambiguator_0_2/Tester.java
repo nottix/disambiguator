@@ -1,4 +1,13 @@
-package disambiguator_0_2;
+/**
+ * Progetto di Intelligenza Artificiale 2006/2007
+ * 
+ * Disambiguatore sintattico:
+ * Utilizza algoritmi di disambiguazione stocastici e randomici
+ * 
+ * @author Simone Notargiacomo, Lorenzo Tavernese
+ */
+
+package disambiguator;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,10 +22,16 @@ import chaos.alternatives.AvailableOutputFormat;
 import chaos.textstructure.Paragraph;
 import chaos.textstructure.Text;
 
+/**
+ * Classe realizzata per la dimostrazione delle funzionalità del progetto
+ * 
+ * @version 0.2
+ * @author Simone Notargiacomo, Lorenzo Tavernese
+ */
 public class Tester {
 
 	/**
-	 * Serve per dare una dimostrazione delle funzionalit� di tutto il progetto.
+	 * Serve per dare una dimostrazione delle funzionalita' di tutto il progetto.
 	 * 
 	 * @param args
 	 */
