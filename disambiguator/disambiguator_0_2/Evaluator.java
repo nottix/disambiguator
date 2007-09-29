@@ -7,7 +7,7 @@
  * @author Simone Notargiacomo, Lorenzo Tavernese
  */
 
-package disambiguator_0_2;
+package disambiguator;
 
 import chaos.XDG.*;
 import chaos.textstructure.*;
