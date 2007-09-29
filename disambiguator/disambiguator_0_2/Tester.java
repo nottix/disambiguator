@@ -16,7 +16,7 @@ import chaos.textstructure.Text;
 public class Tester {
 
 	/**
-	 * Serve per dare una dimostrazione delle funzionalità di tutto il progetto.
+	 * Serve per dare una dimostrazione delle funzionalitï¿½ di tutto il progetto.
 	 * 
 	 * @param args
 	 */

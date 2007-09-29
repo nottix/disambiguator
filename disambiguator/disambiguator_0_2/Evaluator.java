@@ -28,16 +28,50 @@ public class Evaluator {
 	private static String dir1 = DBUtil.getCorpusTrainDir();
 	private static String dir2 = DBUtil.getCorpusOutputDir();
 	
-	private static Vector<IcdList> vetPrec;
-	private static Vector<IcdList> vetRec;
+	private static Vector<IcdList> vet1;
+	private static Vector<IcdList> vet2;
 
+	/**
+	 * Carica in un vettore l'ultimo 30% degli XDG
+	 * @param dir
+	 * @return
+	 */
 	public static Vector<IcdList> load(String dir) {
 		IcdList list1 = null;
 		Vector<IcdList> vl = new Vector<IcdList>();
 		Text t = null;
 		try {
 			File [] files = (new File(dir)).listFiles(); //I docs vengono presi in ordine lessicografico
-			for (int z=(int)Math.round(files.length*DBUtil.getPercentualeTrain()); z < files.length; z++) {
+			for (int z=((int)Math.round(files.length*(DBUtil.getPercentualeTrain()))); z < files.length; z++) {
+				System.out.println("File: "+files[z].getAbsolutePath());
+				t = DBLoader.load_new(files[z]);
+				Vector<Paragraph> par = t.getParagraphs();
+				for(int l = 0; l < par.size(); l++) {
+					for(int w=0; w < par.get(l).getXdgs().size(); w++) {
+						list1 = ((XDG)(par.get(l).getXdgs()).get(w)).getSetOfIcds();
+						vl.add(list1);
+					}
+				}
+			}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return vl;
+	}
+	
+	/**
+	 * Carica in un vettore tutti gli XDG disambiguati 
+	 * @param dir
+	 * @return
+	 */
+	public static Vector<IcdList> loadChaos(String dir) {
+		IcdList list1 = null;
+		Vector<IcdList> vl = new Vector<IcdList>();
+		Text t = null;
+		try {
+			File [] files = (new File(dir)).listFiles(); //I docs vengono presi in ordine lessicografico
+			for (int z=0; z < files.length; z++) {
 				System.out.println("File: "+files[z].getAbsolutePath());
 				t = DBLoader.load_new(files[z]);
 				Vector<Paragraph> par = t.getParagraphs();
@@ -117,20 +151,20 @@ public class Evaluator {
 	}
 	
 	public static void calcPrecisionRecall() {
-		double precision = calcPrecision2(vetPrec, vetRec);
-		double recall = calcRecall2(vetPrec, vetRec);
+		double precision = calcPrecision2(vet1, vet2);
+		double recall = calcRecall2(vet1, vet2);
 		double fmeasure = calcFMeasure(precision, recall);
 		System.out.println("Precision: "+precision+", Recall: "+recall+", F-Measure: "+fmeasure);
 	}
 	
 	public static void loadDirDis() {
-		vetPrec = load(dir1);
-		vetRec = load(dir2);
+		vet1 = load(dir1);
+		vet2 = loadChaos(dir2);
 	}
 	
 	public static void loadDirAmb() {
-		vetPrec = load(dir1);
-		vetRec = load(dir0);
+		vet1 = load(dir1);
+		vet2 = load(dir0);
 	}
 	
 	public static void main(String[] args) {

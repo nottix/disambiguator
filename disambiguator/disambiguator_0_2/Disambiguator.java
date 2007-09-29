@@ -20,7 +20,7 @@ import java.net.*;
 
 /**
  * Classe principale del modulo di Disambiguazione.
- * Può essere integrato nel parser Chaos per disambiguare
+ * Puo' essere integrato nel parser Chaos per disambiguare
  * singolarmente un XDG
  * 
  * @version 0.2
@@ -30,7 +30,7 @@ public class Disambiguator extends DependencyProcessor {
 	
 	/* Lista degli ICD ambigui con lo stesso ID di destinazione, all'interno di una frase */
 	private IcdList completeList = new IcdList();
-	/* Contiene tutti gli ICD con plausibilità minore di 1 che sono in una frase */
+	/* Contiene tutti gli ICD con plausibilita' minore di 1 che sono in una frase */
 	private IcdList icdList = new IcdList();
 	/* Array contenente i risultati di una query */
 	private ArrayList queryResult;
@@ -90,7 +90,7 @@ public class Disambiguator extends DependencyProcessor {
 		try {
 			/* 
 			 * Questo ciclo for prende tutti gli ICD che hanno
-			 * plausibilità minore di 1 e li inserisce in icdList.
+			 * plausibilitaÃ¬ minore di 1 e li inserisce in icdList.
 			 */
 			for(int i=0; i< icds.size(); i++) {
 				icd = icds.getIcd(i);
@@ -114,7 +114,7 @@ public class Disambiguator extends DependencyProcessor {
 			}
 			
 			/*
-			 * Questo ciclo for è il più importante del metodo, infatti
+			 * Questo ciclo for e' il piu' importante del metodo, infatti
 			 * si occupa di sottoporre agli algoritmi di disambiguazione
 			 * tutti gli ICD ambigui con lo stesso ID destinazione.
 			 * Esegue tale operazione per tutti gli ICD ambigui di una frase.
@@ -124,7 +124,7 @@ public class Disambiguator extends DependencyProcessor {
 				toSur = icdList.getIcd(h).getTo().getSurface();
 				if( !retIcds.isIn(icdList.getIcd(h)) ) {
 					completeList.addElement(icdList.getIcd(h));
-					retIcds.addElement(icdList.getIcd(h)); //Archi già aggiungi alla lista
+					retIcds.addElement(icdList.getIcd(h)); //Archi gia' aggiungi alla lista
 				}
 				for(int l=0; l<icdList.size(); l++) {
 					if(icdList.getIcd(l).getTo().getSurface().equals(toSur) &&
@@ -138,7 +138,7 @@ public class Disambiguator extends DependencyProcessor {
 				/*
 				 * Da questo punto iniziano i cinque algoritmi di disambiguazione.
 				 * Si sottopone la lista degli ICD ambigui ad ogni algoritmo in sequenza,
-				 * in modo che se uno degli algoritmi ritorna un risultato si può passare direttamente
+				 * in modo che se uno degli algoritmi ritorna un risultato si puoÃ¬ passare direttamente
 				 * al set di ICD ambigui successivo, ovvero con lo stesso ID destinazione.
 				 */
 				int start=1;
@@ -146,7 +146,7 @@ public class Disambiguator extends DependencyProcessor {
 					case 1:
 						/*
 						 * Se il primo algoritmo di disambiguazione ritorna un risultato
-						 * valido, viene impostata la plausibilità dell'ICD disambiguato ad 1. 
+						 * valido, viene impostata la plausibilita' dell'ICD disambiguato ad 1. 
 						 */
 						ret = getFrequentSurType(completeList); //Primo algoritmo
 						if(ret!=null) {
@@ -167,7 +167,7 @@ public class Disambiguator extends DependencyProcessor {
 						}
 					case 4:
 						/*
-						 * Questo è l'ultimo algoritmo che equivale alla semplice scelta casuale
+						 * Questo e' l'ultimo algoritmo che equivale alla semplice scelta casuale
 						 * dell'ICD.
 						 */
 						if(completeList.size()!=0) {
@@ -283,7 +283,7 @@ public class Disambiguator extends DependencyProcessor {
 		//Ritorna il valore massimo assoluto contenuto nella lista queryResult
 		index = getMax(queryResult);
 		if(index>=0) {
-			//Assegna plausibilità 1 all'ICD disambiguato
+			//Assegna plausibilita' 1 all'ICD disambiguato
 			data.getIcd(index).setPlausibility(1);
 			//Aggiunge l'ICD disambiguato alla lista resultIcd e la ritorna in uscita
 			resultIcd.addElement(data.getIcd(index));
@@ -307,7 +307,7 @@ public class Disambiguator extends DependencyProcessor {
 	 * <fromConstSurface, fromConstType> e <toConstType> oppure
 	 * <toConstSurface, toConstType> e <fromConstType>
 	 * uguali a quelli degli ICD ambigui. 
-	 * Dopo avere eseguito le query al DB sceglie l'ICD più frequente.
+	 * Dopo avere eseguito le query al DB sceglie l'ICD piu' frequente.
 	 * 
 	 * @param data Lista contenente gli ICD ambigui
 	 * @return Lista contenente l'ICD scelto tra quelli ambigui
@@ -333,7 +333,7 @@ public class Disambiguator extends DependencyProcessor {
 	 * che hanno:
 	 * <fromConstType> e <toConstType> (e viceversa)
 	 * uguali a quelli degli ICD ambigui. 
-	 * Dopo avere eseguito le query al DB sceglie l'ICD più frequente.
+	 * Dopo avere eseguito le query al DB sceglie l'ICD piu' frequente.
 	 * 
 	 * @param data Lista contenente gli ICD ambigui
 	 * @return Lista contenente l'ICD scelto tra quelli ambigui
