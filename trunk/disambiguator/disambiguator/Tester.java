@@ -16,7 +16,6 @@ import java.io.InputStreamReader;
 import java.util.Date;
 import java.util.Vector;
 
-import chaos.XDG.IcdList;
 import chaos.XDG.XDG;
 import chaos.alternatives.AvailableOutputFormat;
 import chaos.textstructure.Paragraph;
